@@ -19,7 +19,7 @@
 
 **[Bitwarden](https://bitwarden.com/).** Password manager.
 
-**[Claude Sonnet](https://claude.ai/).** Current preferred LLM.
+**[Claude 3.5 Sonnet](https://claude.ai/).** Current preferred general purpose LLM.
 
 **[Cronometer](https://cronometer.com/).** Nutrition logging.
 
