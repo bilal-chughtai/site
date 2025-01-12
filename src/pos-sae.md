@@ -6,7 +6,7 @@ _This is an informal research note. It is the result of a few-day exploration in
 
 ![](img/pos-sae/1.png)
 
-Figure 1: **(Dots)** The top 3 PCA components of rows 1 to 127 of gpt2-small’s positional embedding matrix explain 95% of their variance. **(Crosses)** SAEs trained on layer 0 residual stream activations learn many features that together recover this 1 dimensional helical manifold. Colour corresponds to the position on which the feature is most active. Blue corresponds to position 1, red corresponds to position 127. The position 0 row and SAE features are omitted (as they are weird).
+<center>_**(Dots)** The top 3 PCA components of rows 1 to 127 of gpt2-small’s positional embedding matrix explain 95% of their variance. **(Crosses)** SAEs trained on layer 0 residual stream activations learn many features that together recover this 1 dimensional helical manifold. Colour corresponds to the position on which the feature is most active. Blue corresponds to position 1, red corresponds to position 127. The position 0 row and SAE features are omitted (as they are weird)._</center>
 
 We investigate _positional SAE features_ learned by layer 0 residual stream SAEs trained on gpt2-small. In particular, we study the activation `blocks.0.hook_resid_pre`, which is the sum of the token embeddings and positional embeddings. Importantly gpt2-small uses absolute learned positional embeddings – that is, the positional embeddings are a trainable parameter (learned) and are injected into the residual stream (absolute).
 
@@ -42,13 +42,13 @@ To investigate this we hold `tok` or `pos` fixed in `all_feature_acts` and
 
 ### Positional features
 
-We first replicate Figure 1f of [Gurnee et al. (2024)](https://arxiv.org/pdf/2401.12181), which finds instances of sinusoidal positional _neurons_ in MLP layers.
+We first replicate Figure 1f of [Gurnee et al. (2024)](https://arxiv.org/pdf/2401.12181), which finds instances of sinusoidal positional _neurons_ in MLP layers:
 
 ![](img/pos-sae/2.png)
 
 To do so, we assign each feature a _positional score_. We first compute the mean activation of each feature at each position by averaging over all possible input tokens. The position score is the max value of this over all positions, i.e.
 
-$p_i=\max_{pos}\{\text{mean}_{tok}{f_i(tok,pos)}\}$
+$$p_i=\text{max}_{pos}\{\text{mean}_{tok}\{f_i(tok,pos)\}\}$$
 
 where $f_i(tok,pos)$ is the feature activation for feature i for the given input. 
 

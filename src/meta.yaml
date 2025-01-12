@@ -4,7 +4,7 @@
   description: "We build a comprehensive benchmark to measure situational awareness in LLMs. It consists of 16 tasks, which we group into 7 categories and 3 aspects of situational awareness (self-knowledge, situational inferences, and taking actions)."
   math: false
   type: ["all"]
-  tags: ["ai", "research"]
+  tags: ["ai", "research", "paper"]
   coauthors:
     [
       "Rudolf Laine",
@@ -19,7 +19,9 @@
   elsewhere:
     [
       "https://www.lesswrong.com/posts/YsCRXZYr5DcJ84XHq/me-myself-and-ai-the-situational-awareness-dataset-sad-for",
-    ]
+      "https://situational-awareness-dataset.org/",
+      "https://arxiv.org/abs/2407.04694"
+      ]
 
 - label: zero-to-one
   title: "Book Summary: Zero to One"
@@ -71,6 +73,9 @@
   math: false
   type: ["all"]
   tags: ["careers", "ai"]
+  elsewhere: [
+    "https://www.lesswrong.com/posts/PdtkXcgbRpdHWRNt6/you-should-consider-applying-to-phds-soon"
+  ]
 
 - label: activation-space-interpretability
   title: "Activation space interpretability may be doomed"
@@ -114,9 +119,10 @@
   description: ""
   math: true
   type: ["all"]
-  tags: ["ai", "interpretability", "research"]
+  tags: ["ai", "interpretability", "research", "paper"]
   elsewhere:
-    ["https://www.lesswrong.com/posts/kp5h6khwrK47psMaA/transformer-circuit-faithfulness-metrics-are-not-robust"]
+    ["https://www.lesswrong.com/posts/kp5h6khwrK47psMaA/transformer-circuit-faithfulness-metrics-are-not-robust",
+    "https://arxiv.org/abs/2407.08734"]
   coauthors:
     ["Joseph Miller", "William Saunders"]
 
@@ -128,3 +134,18 @@
   type: ["all"]
   tags: ["personal"]
   
+- label: cuplc
+  title: "CUPLC website enhancements"
+  date: 2023-09-01
+  description: ""
+  math: false
+  type: ["all"]
+  tags: ["sport"]
+
+- label: essay
+  title: "Part III Essay: The search for CMB B-mode polarization from inflationary gravitational waves"
+  date: 2021-06-01
+  description: ""
+  math: false
+  type: ["all"]
+  tags: ["physics"]

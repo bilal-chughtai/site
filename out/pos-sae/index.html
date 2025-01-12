@@ -167,7 +167,7 @@
         <p><em>This is an informal research note. It is the result of a few-day exploration into positional SAE features conducted as part of Neel Nanda’s training phase of the ML Alignment &amp; Theory Scholars Program - Summer 2024 cohort.</em></p>
 <h2 id="section-0">Summary</h2>
 <p><img alt="" src="assets/1.png"/></p>
-<p>Figure 1: <strong>(Dots)</strong> The top 3 PCA components of rows 1 to 127 of gpt2-small’s positional embedding matrix explain 95% of their variance. <strong>(Crosses)</strong> SAEs trained on layer 0 residual stream activations learn many features that together recover this 1 dimensional helical manifold. Colour corresponds to the position on which the feature is most active. Blue corresponds to position 1, red corresponds to position 127. The position 0 row and SAE features are omitted (as they are weird).</p>
+<p><center><em><strong>(Dots)</strong> The top 3 PCA components of rows 1 to 127 of gpt2-small’s positional embedding matrix explain 95% of their variance. <strong>(Crosses)</strong> SAEs trained on layer 0 residual stream activations learn many features that together recover this 1 dimensional helical manifold. Colour corresponds to the position on which the feature is most active. Blue corresponds to position 1, red corresponds to position 127. The position 0 row and SAE features are omitted (as they are weird).</em></center></p>
 <p>We investigate <em>positional SAE features</em> learned by layer 0 residual stream SAEs trained on gpt2-small. In particular, we study the activation <code>blocks.0.hook_resid_pre</code>, which is the sum of the token embeddings and positional embeddings. Importantly gpt2-small uses absolute learned positional embeddings – that is, the positional embeddings are a trainable parameter (learned) and are injected into the residual stream (absolute).</p>
 <p>We find that this SAE learns a set of <em>positional features</em>. We investigate some of the properties of these features, finding</p>
 <ul>
@@ -188,10 +188,10 @@
 <p>where for each $i$, either $g_i=0$ or $h_i=0$ identically for all inputs in their domain and $x$ is a <code>d_model</code> dimensional vector.</p>
 <p>To investigate this we hold <code>tok</code> or <code>pos</code> fixed in <code>all_feature_acts</code> and vary the other input. We first restrict to <code>pos &lt; sae.cfg.context_size</code>. </p>
 <h3 id="section-3">Positional features</h3>
-<p>We first replicate Figure 1f of <a href="https://arxiv.org/pdf/2401.12181">Gurnee et al. (2024)</a>, which finds instances of sinusoidal positional <em>neurons</em> in MLP layers.</p>
+<p>We first replicate Figure 1f of <a href="https://arxiv.org/pdf/2401.12181">Gurnee et al. (2024)</a>, which finds instances of sinusoidal positional <em>neurons</em> in MLP layers:</p>
 <p><img alt="" src="assets/2.png"/></p>
 <p>To do so, we assign each feature a <em>positional score</em>. We first compute the mean activation of each feature at each position by averaging over all possible input tokens. The position score is the max value of this over all positions, i.e.</p>
-<p>$p_i=\max_{pos}\{\text{mean}_{tok}{f_i(tok,pos)}\}$</p>
+<p>$$p_i=\text{max}_{pos}\{\text{mean}_{tok}\{f_i(tok,pos)\}\}$$</p>
 <p>where $f_i(tok,pos)$ is the feature activation for feature i for the given input. </p>
 <p>We find positional scores drop off rapidly. There seem to only be ~50 positional features (of 24k total features) in this SAE. </p>
 <p><img alt="" src="assets/3.png"/></p>
@@ -233,7 +233,7 @@
         
         
         
-        <p>There may be comments and footnotes on the version of this post that was published on:</p>
+        <p>There may be comments, footnotes, or more information on the version of this post that was published on:</p>
         <ul>
             
             <li><a href="https://www.lesswrong.com/posts/ctGeJGHg9pbc8memF/understanding-positional-features-in-layer-0-saes">www.lesswrong.com</a></li>

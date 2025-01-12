@@ -12,7 +12,7 @@ How do these variations change the results of experiments that measure circuit f
 - The correct circuit for a set of prompts is undefined. The type of ablation you use to isolate the circuit determines the task that you are asking the circuit to perform - and therefore also the optimal circuit.
 - This is especially important because previous work in automatic circuit discovery has tested algorithms by their ability to recover these "ground-truth" circuits from the literature - without considering these potential pitfalls and nuances.
 
-Full paper [here](https://arxiv.org/abs/2407.08734).
+Read the full paper [here](https://arxiv.org/abs/2407.08734).
 
 ## Case Studies
 
@@ -25,8 +25,7 @@ The [IOI circuit](https://arxiv.org/abs/2211.00593) is the most well known circu
 > _"When Mary and John went to the store, John gave a bottle of milk to ____"_
 
 ![](img/faithfulness/2.webp)
-
-Image from: [Wang et al. (2022)](https://arxiv.org/abs/2211.00593)
+<center> _Image from: [Wang et al. (2022)](https://arxiv.org/abs/2211.00593)_</center>
 
 The circuit is specified as a graph of important attention heads (nodes) and the interactions between them (edges) as applied to a specific sequence of tokens. The authors report that the circuit explains **87%** of the logit difference between the two name tokens. They find this number by passing some inputs to the model and ablating all activations outside of the circuit. Then they measure how much of the logit difference between the correct and incorrect name logits remains.
 
@@ -36,10 +35,10 @@ They ablate the heads by replacing their activations with the **mean** value cal
 
 ![](img/faithfulness/3.webp)
 
-[IOI] Logit difference recovered (%) with **resample** and **mean** ablations (100% is best)
+<center> _[IOI] Logit difference recovered (%) with **resample** and **mean** ablations (100% is best)_
 
-1. **Nodes/Specific Toks** = Ablate **nodes** not in the circuit (at relevant token positions).  
-2. **Edges/Specific Toks** = Ablate **edges** not in the circuit (at relevant token positions).
+1. *Nodes/Specific Toks = Ablate nodes not in the circuit (at relevant token positions).*
+2. *Edges/Specific Toks = Ablate edges not in the circuit (at relevant token positions).*</center>
 
 The first thing that jumps out from the box plots above is the very large range of results from different prompts. The charts here are cut off and some points are over 10,000%. This means that although the _average_ logit difference recovered is reasonable, few prompts actually have a logit difference recovered close to 100%.
 
@@ -57,7 +56,7 @@ Which gives a substantially different result.
 
 ![](img/faithfulness/4.webp)
 
-[IOI] Logit difference recovered (%) for the ABBA and BABA input distributions using different size ABC datasets to calculate the **mean** ablation. We also vary the method by which we average over datapoints. We ablate nodes not in the circuit (at relevant token positions) - this is how faithfulness is measured in the IOI paper.
+<center> _[IOI] Logit difference recovered (%) for the ABBA and BABA input distributions using different size ABC datasets to calculate the **mean** ablation. We also vary the method by which we average over datapoints. We ablate nodes not in the circuit (at relevant token positions) - this is how faithfulness is measured in the IOI paper._</center>
 
 The authors combine two variations of the prompt format in their dataset that have different orderings of the names (ABBA or BABA). We separate these groups and find that BABA prompts score systemically higher.
 
@@ -80,18 +79,18 @@ Where the correct next token is `file`. The circuit looks like this:
 
 ![](img/faithfulness/5.webp)
 
-*Image from: [Heimersheim and Janiak (2023)](https://www.alignmentforum.org/posts/u6KXXmKFbXfWzoAXn/a-circuit-for-python-docstrings-in-a-4-layer-attention-only)*
+<center>_Image from: [Heimersheim and Janiak (2023)](https://www.alignmentforum.org/posts/u6KXXmKFbXfWzoAXn/a-circuit-for-python-docstrings-in-a-4-layer-attention-only)_</center>
 
 The authors measure the faithfulness as the percentage of prompts where the highest logit is the correct answer and get a result of 58% (compared to the full model at 56%). As with the IOI circuit, they arrived at this number by **resampling** the activations of attention heads outside of the circuit, not by ablating the edges outside of the circuit. When we instead ablate the _edges_, we find a very different result.
 
 ![](img/faithfulness/6.webp)
 
-[Docstring] Percentage of correct top-1 outputs with **resample** and **mean** ablations (mean computed over clean and corrupt prompts).
+<center>_[Docstring] Percentage of correct top-1 outputs with **resample** and **mean** ablations (mean computed over clean and corrupt prompts)._</center>
 
-1. **Nodes** = Ablate nodes outside of the circuit.
-2. **Edges** = Ablate edges outside of the circuit.
-3. **Nodes (tokens)** = Ablate nodes outside the circuit  (at relevant token positions).
-4. **Edges (tokens)** = Ablate edges outside the circuit  (at relevant token positions).
+1. *Nodes = Ablate nodes outside of the circuit.*
+2. *Nodes (tokens)	 = Ablate nodes outside the circuit  (at relevant token positions).*
+3. *Edges = Ablate edges outside of the circuit.*
+4. *Edges (tokens) = Ablate edges outside the circuit  (at relevant token positions).*
 
 The authors also don't distinguish between tokens in their ablations, even though the circuit specifies particular token positions for each edge. When we make this distinction the faithfulness metric drops dramatically. Finally, we try the experiments using **mean** ablations, instead of resampling activations from different prompts. This dramatically increases the faithfulness scores of the edge-level circuit.
 
@@ -99,11 +98,11 @@ Finally we note that, as with the IOI circuit, there is lots of variation betwee
 
 ![](img/faithfulness/7.webp)
 
-*[Docstring] Probability of correct answer with **resample** and **mean** ablations (mean computed per token over clean and corrupt prompts).*  
-***1. Nodes** = Ablate nodes outside of the circuit*  
-***2. Edges** = Ablate edges outside of the circuit*  
-***3. Nodes (tokens)** = Ablate nodes outside the circuit  (at relevant token positions).*  
-***4. Edges (tokens)** = Ablate edges outside the circuit  (at relevant token positions).*
+<center>*[Docstring] Probability of correct answer with **resample** and **mean** ablations (mean computed per token over clean and corrupt prompts).* </center>
+*1. Nodes = Ablate nodes outside of the circuit*  
+*2. Edges = Ablate edges outside of the circuit*  
+*3. Nodes (tokens) = Ablate nodes outside the circuit  (at relevant token positions).*  
+*4. Edges (tokens) = Ablate edges outside the circuit  (at relevant token positions).*
 
 ### Sports Players Circuit
 
@@ -111,17 +110,17 @@ Finally we note that, as with the IOI circuit, there is lots of variation betwee
 
 ![](img/faithfulness/8.webp)
 
-_Image from: [Nanda et al. (2023)](https://www.alignmentforum.org/posts/iGuwZTHWb6DFY3sKB/fact-finding-attempting-to-reverse-engineer-factual-recall)_
+<center>_Image from: [Nanda et al. (2023)](https://www.alignmentforum.org/posts/iGuwZTHWb6DFY3sKB/fact-finding-attempting-to-reverse-engineer-factual-recall)_</center>
 
 They test their circuit by **mean** ablating the edges outside of the circuit. When we use **resample** ablations instead, the metric goes to zero. This case is a little different because their aim wasn't to find the full circuit but to identify the place in the model where factual recall occurs, so this result doesn't negate their hypothesis. But it does again highlight the sensitivity of faithfulness scores to these nuanced choices in methodology
 
 ![](img/faithfulness/9.webp)
 
-[Sports Players] The percentage of prompts for which the correct sport has the highest output logit with **mean** and **resample** ablations.
+<center> _[Sports Players] The percentage of prompts for which the correct sport has the highest output logit with **mean** and **resample** ablations._ </center>
 
-1. **Ablated Model** = Ablate all activations*  
-2. **Circuit** = Ablate all activation except those in the circuit
-3. **Full model** = No ablations
+1. *Ablated Model = Ablate all activations*  
+2. *Circuit = Ablate all activation except those in the circuit*
+3. *Full model = No ablations*
 
 ## Methodology Should Match the Circuit
 
@@ -143,7 +142,7 @@ Furthermore, two of their algorithms, SP and HISP, ablate _nodes_ to discover th
 
 ![](img/faithfulness/10.webp)
 
-[Tracr Reverse and Tracr X-Proportion] Conmy et al. define the "ground-truth" circuit as those edges required to recover performance with **zero** ablation. But their circuit discovery algorithms are tuned to find the edges (or nodes in the case of SP and HISP) required to recover performance with **resample** ablations. When we adjust the circuit discovery algorithms to search for the edges required to recover performance with **resample** ablations, we find that all three algorithms have perfect performance.
+<center>*[Tracr Reverse and Tracr X-Proportion] Conmy et al. define the "ground-truth" circuit as those edges required to recover performance with **zero** ablation. But their circuit discovery algorithms are tuned to find the edges (or nodes in the case of SP and HISP) required to recover performance with **resample** ablations. When we adjust the circuit discovery algorithms to search for the edges required to recover performance with **resample** ablations, we find that all three algorithms have perfect performance.*</>
 
 This example demonstrates the point that the correct circuit for a prompt alone is undefined. The method by which the circuit is isolated is crucial in determining the optimal set of components. When the ablation methodology for the circuit discovery algorithm and the "ground-truth" circuit are mismatched, the algorithm underperforms.
 

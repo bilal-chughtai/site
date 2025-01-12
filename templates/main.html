@@ -10,56 +10,24 @@
 </header>
 {% endblock %}
 
-{% block left_column %}
-{% if toc %}
-<p class="toc-heading">On this page:</p>
-<nav id="toc" class="table-of-contents">
-    <hr class="toc-separator">
-    <ul>
-        {% for item in toc %}
-        <li class="toc-h{{ item.level }}">
-            <a href="#{{ item.id }}">{{ item.text }}</a>
-        </li>
-        {% endfor %}
-    </ul>
-    <hr class="toc-separator">
-</nav>
-{% endif %}
-{% endblock %}
+{% set toc = false %}
 
 {% block content %}
 <h1 class="post-title">Bilal Chughtai</h1>
 
-{% if toc %}
-<div class="collapsed-sidebar">
-    <p class="toc-heading">On this page:</p>
-    <nav id="collapsed-toc" class="table-of-contents">
-        <hr class="toc-separator">
-        <ul>
-            {% for item in toc %}
-            <li class="toc-h{{ item.level }}">
-                <a href="#{{ item.id }}">{{ item.text }}</a>
-            </li>
-            {% endfor %}
-        </ul>
-        <hr class="toc-separator">
-    </nav>
-</div>
-{% endif %}
-
 <h2 id="section-0">About</h2>
 
-<p>I care about and spend most of my time thinking about how to make powerful AI go well for humanity. I'll be starting on the Google DeepMind language model interpretability team in February 2024.</p>
+<p>I spend my time thinking about how to make powerful AI go well for humanity. I'll be starting on the Google DeepMind language model interpretability team in February 2024. Opinions my own.</p>
 
 <p>This site serves as a minimal home for the artefacts I produce on the internet.</p>
 
-<p>
+<p> Links:
 <a href="https://scholar.google.com/citations?user=i-L98bwAAAAJ&hl=en">google scholar</a> // 
 <a href="https://www.linkedin.com/in/bilalchughtai/">linkedin</a> //
-<a href="https://x.com/bilalchughtai_">twitter</a> // 
 <a href="https://www.lesswrong.com/users/bilalchughtai">lesswrong</a> // 
+<a href="https://x.com/bilalchughtai_">twitter</a> // 
 <a href="https://www.instapaper.com/p/bilalchughtai">instapaper</a> // 
-<a href="mailto:brchughtaii@gmail.com">email</a>
+<a href="mailto:brchughtaii@gmail.com">email</a>.
 </p>
 
 

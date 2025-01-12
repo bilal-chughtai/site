@@ -8,7 +8,7 @@ We investigate RMU, a recent unlearning method proposed by [Li et al. (2024)](h
 
 ![](img/rmu/gihxaeyomtjz1g2t0syj.webp)
 
-*Performing a simple directional ablation on the residual stream of an RMU model recovers a large proportion of hazardous knowledge.*
+<center>*Performing a simple directional ablation on the residual stream of an RMU model recovers a large proportion of hazardous knowledge.*</center>
 
 # What is RMU?
 
@@ -36,7 +36,7 @@ Note that u is a random unit vector sampled before the fine-tuning procedure, 
 
 ![](img/rmu/lf0wfud8g9iipoholob5.webp)
 
-_Figure 7 from [Li et al. (2024)](https://arxiv.org/abs/2403.03218), summarizing the RMU loss term._
+<center>_Figure 7 from [Li et al. (2024)](https://arxiv.org/abs/2403.03218), summarizing the RMU loss term._</center>
 
 # Examining an RMU model
 
@@ -73,14 +73,14 @@ We can take a handful of hazardous prompts, run them through the baseline and RM
 Comparing the baseline and RMU activations via cosine similarity reveals that the activations differ dramatically starting at layer 8 (this corresponds to the activations _at the start of_ layer 8):
 
 ![](img/rmu/ujg4gldk9nzmbxznw3n0.webp)
-_Activations from the baseline model and the RMU model begin to differ significantly at layer 8._
+<center>_Activations from the baseline model and the RMU model begin to differ significantly at layer 8._</center>
 
 This makes sense, as the RMU model was trained with $l=8$ i.e. the activations at the start of layer 8 are the ones used in the RMU loss term, and so these are the activations that are directly incentivized to change on hazardous data.
 
 Visualizing the norm of the activations reveals a clear bump at layer 8:
 
 ![](img/rmu/bp00xzdukxmdlgoj7ecx.webp)
-_Activation norms in the RMU model jump suddenly at layer 8._
+<center>_Activation norms in the RMU model jump suddenly at layer 8._</center>
 
 This suggests the following intuition for how RMU is working:
 
@@ -130,11 +130,10 @@ It is worth noting that, although the RMU ablated model is coherent, its answers
 Looking inside the model also reveals that ablating the "junk" direction from the RMU model makes its activations look more similar to those of the baseline model:
 
 ![](img/rmu/welw2uthm0rlkfcoucwq.webp)
-_Ablating the "junk" direction from the RMU model restores most activation similarity with the baseline model._
+<center>_Ablating the "junk" direction from the RMU model restores most activation similarity with the baseline model._</center>
 
 ![](img/rmu/b4qgknseyye8gn9l7jak.webp)
-
-_Ablating the "junk" direction from the RMU model yields activation norms that look similar to those of the baseline model._
+<center>_Ablating the "junk" direction from the RMU model yields activation norms that look similar to those of the baseline model._</center>
 
 # Does directional ablation recover unlearned knowledge?
 
@@ -152,7 +151,6 @@ To measure how much hazardous knowledge is recovered by directional ablation, we
 
 ![](img/rmu/gihxaeyomtjz1g2t0syj.webp)
 
-
 We can see that directional ablation **recovers a significant fraction of the performance gap** between the RMU model and the baseline model on WMDP benchmarks:
 
 - For **WMDP-Bio**, directional ablation recovers **~71% of the performance gap**.
@@ -167,7 +165,7 @@ To summarize, RMU seems to be operating at both levels:
 - [Shallow]: a significant fraction of the performance gap is explained by the model injecting junk into the residual stream.
 - [Deep]: a significant fraction of the performance gap remains even after clearing the junk from the residual stream.
 
-It seems useful to understand that RMU's effectiveness as an unlearning method, as quantified by its performance on the WMDP benchmark, is comprised of _both shallow and deep_ unlearning_._ We hope that this work disentangles these mechanisms a bit, and sheds some light on how to think about how RMU is working.
+It seems useful to understand that RMU's effectiveness as an unlearning method, as quantified by its performance on the WMDP benchmark, is comprised of _both shallow and deep unlearning_. We hope that this work disentangles these mechanisms a bit, and sheds some light on how to think about how RMU is working.
 
 # Author contributions 
 

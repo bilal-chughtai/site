@@ -177,7 +177,7 @@
 <h1 id="section-0">Summary</h1>
 <p>We investigate RMU, a recent unlearning method proposed by <a href="https://arxiv.org/abs/2403.03218">Li et al. (2024)</a>, through the lens of model internals. Through this lens, we explain that RMU mostly works by flooding the residual stream with "junk" in hazardous contexts, resulting in incoherence. We then propose a simple intervention to "clear the junk" from the residual stream. This intervention mostly restores the model's coherence in hazardous contexts, and recovers a significant proportion (but not all) of its original hazardous knowledge. This suggests that the effectiveness of RMU can be understood roughly in two pieces: (1) a shallow mechanism, where the residual stream is flooded with junk; and (2) a deeper mechanism, where even after the junk is cleared, knowledge is still inaccessible.</p>
 <p><img alt="" src="assets/gihxaeyomtjz1g2t0syj.webp"/></p>
-<p><em>Performing a simple directional ablation on the residual stream of an RMU model recovers a large proportion of hazardous knowledge.</em></p>
+<p><center><em>Performing a simple directional ablation on the residual stream of an RMU model recovers a large proportion of hazardous knowledge.</em></center></p>
 <h1 id="section-1">What is RMU?</h1>
 <p>Representation Misdirection for Unlearning (RMU) is a state-of-the-art unlearning method presented by <a href="https://arxiv.org/abs/2403.03218">Li et al. (2024)</a>.</p>
 <p>In the unlearning paradigm, we would like the model to unlearn (or "forget") some hazardous knowledge. At the same time, we would also like to make sure the model retains non-hazardous knowledge, so that the model remains useful.</p>
@@ -201,7 +201,7 @@
 </ul>
 <p>Note that u is a random unit vector sampled before the fine-tuning procedure, and kept constant throughout (i.e. it is not freshly sampled at each training step). Also note that the layer $l$ at which to target activations, and also the scalar multiplier c are predetermined hyperparameters.</p>
 <p><img alt="" src="assets/lf0wfud8g9iipoholob5.webp"/></p>
-<p><em>Figure 7 from <a href="https://arxiv.org/abs/2403.03218">Li et al. (2024)</a>, summarizing the RMU loss term.</em></p>
+<p><center><em>Figure 7 from <a href="https://arxiv.org/abs/2403.03218">Li et al. (2024)</a>, summarizing the RMU loss term.</em></center></p>
 <h1 id="section-2">Examining an RMU model</h1>
 <p>The original paper (<a href="https://arxiv.org/abs/2403.03218">Li et al., 2024</a>) performs RMU over multiple open-source models of varying scales. The authors made all code <a href="https://github.com/centerforaisafety/wmdp">available on GitHub</a>, and all resulting models <a href="https://huggingface.co/cais">available on HuggingFace</a>.</p>
 <p>For our analysis, we pick a single model pair: <a href="https://huggingface.co/HuggingFaceH4/zephyr-7b-beta">zephyr-7B-beta</a> (which we will refer to as "baseline") and <a href="https://huggingface.co/cais/Zephyr_RMU">Zephyr_RMU</a> (which we will refer to as "RMU").</p>
@@ -224,11 +224,11 @@ RMU COMPLETION: 'Some, such as as in U, that is to be a after,100 percent, That\
 <p>We can take a handful of hazardous prompts, run them through the baseline and RMU models, and compare their activations. We specifically study the activations at the last token position of the prompt.</p>
 <p>Comparing the baseline and RMU activations via cosine similarity reveals that the activations differ dramatically starting at layer 8 (this corresponds to the activations <em>at the start of</em> layer 8):</p>
 <p><img alt="" src="assets/ujg4gldk9nzmbxznw3n0.webp"/>
-<em>Activations from the baseline model and the RMU model begin to differ significantly at layer 8.</em></p>
+<center><em>Activations from the baseline model and the RMU model begin to differ significantly at layer 8.</em></center></p>
 <p>This makes sense, as the RMU model was trained with $l=8$ i.e. the activations at the start of layer 8 are the ones used in the RMU loss term, and so these are the activations that are directly incentivized to change on hazardous data.</p>
 <p>Visualizing the norm of the activations reveals a clear bump at layer 8:</p>
 <p><img alt="" src="assets/bp00xzdukxmdlgoj7ecx.webp"/>
-<em>Activation norms in the RMU model jump suddenly at layer 8.</em></p>
+<center><em>Activation norms in the RMU model jump suddenly at layer 8.</em></center></p>
 <p>This suggests the following intuition for how RMU is working:</p>
 <ul>
 <li>In hazardous contexts, inject a large random vector ("junk") into the residual stream before layer 8.</li>
@@ -262,9 +262,9 @@ RMU ABLATED COMPLETION: 'The Thumb mode in ARM architecture is a compressed inst
 <h2 id="section-7">Directional ablation mostly restores activations to baseline</h2>
 <p>Looking inside the model also reveals that ablating the "junk" direction from the RMU model makes its activations look more similar to those of the baseline model:</p>
 <p><img alt="" src="assets/welw2uthm0rlkfcoucwq.webp"/>
-<em>Ablating the "junk" direction from the RMU model restores most activation similarity with the baseline model.</em></p>
-<p><img alt="" src="assets/b4qgknseyye8gn9l7jak.webp"/></p>
-<p><em>Ablating the "junk" direction from the RMU model yields activation norms that look similar to those of the baseline model.</em></p>
+<center><em>Ablating the "junk" direction from the RMU model restores most activation similarity with the baseline model.</em></center></p>
+<p><img alt="" src="assets/b4qgknseyye8gn9l7jak.webp"/>
+<center><em>Ablating the "junk" direction from the RMU model yields activation norms that look similar to those of the baseline model.</em></center></p>
 <h1 id="section-8">Does directional ablation recover unlearned knowledge?</h1>
 <p>As previously noted, while the RMU ablated model seems to have its coherence restored on hazardous prompts, its behavior still does not exactly match that of the baseline model.</p>
 <p>Is this difference significant? Does ablating the "junk" direction from the RMU model suddenly recover its unlearned knowledge? Or is this intervention just restoring coherence, without recovering unlearned knowledge?</p>
@@ -285,7 +285,7 @@ RMU ABLATED COMPLETION: 'The Thumb mode in ARM architecture is a compressed inst
 <li>[Shallow]: a significant fraction of the performance gap is explained by the model injecting junk into the residual stream.</li>
 <li>[Deep]: a significant fraction of the performance gap remains even after clearing the junk from the residual stream.</li>
 </ul>
-<p>It seems useful to understand that RMU's effectiveness as an unlearning method, as quantified by its performance on the WMDP benchmark, is comprised of <em>both shallow and deep</em> unlearning_._ We hope that this work disentangles these mechanisms a bit, and sheds some light on how to think about how RMU is working.</p>
+<p>It seems useful to understand that RMU's effectiveness as an unlearning method, as quantified by its performance on the WMDP benchmark, is comprised of <em>both shallow and deep unlearning</em>. We hope that this work disentangles these mechanisms a bit, and sheds some light on how to think about how RMU is working.</p>
 <h1 id="section-10">Author contributions</h1>
 <p>Andy led the investigation, performed all experiments, and wrote the post. Bilal suggested experiment ideas and provided feedback.</p>
     </div>
@@ -293,7 +293,7 @@ RMU ABLATED COMPLETION: 'The Thumb mode in ARM architecture is a compressed inst
         
         
         
-        <p>There may be comments and footnotes on the version of this post that was published on:</p>
+        <p>There may be comments, footnotes, or more information on the version of this post that was published on:</p>
         <ul>
             
             <li><a href="https://www.lesswrong.com/posts/6QYpXEscd8GuE7BgW/unlearning-via-rmu-is-mostly-shallow">www.lesswrong.com</a></li>
