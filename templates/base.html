@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{% block description %}Civilization. AI. Book reviews. Startups. Effective altruism. Progress studies. Radical futures. The abolition of death.{% endblock %}">
+    <link rel="icon" type="image/svg+xml" href="{{ '../' if not is_index else '' }}assets/favicon.svg">
+    <title>{% block title %}Bilal Chughtai{% endblock %}</title>
+    {% if use_mathjax %}
+    <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+    </script>
+    <script type="text/javascript" id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    {% endif %}
+    <link rel="stylesheet" href="{{ '../' if not is_index else '' }}css/style.css">
+</head>
+<body>
+    {% block header %}
+    {% endblock %}
+    <div class="container">
+        <div class="column left">
+            <div class="sticky-div">
+                {% block left_column %}{% endblock %}
+            </div>
+        </div>
+        <div class="column main">
+            <div class="collapsed-sidebar">
+                {% block collapsed_sidebar %}{% endblock %}
+            </div>
+            <div class="content">
+                {% block content %}{% endblock %}
+            </div>
+        </div>
+        <!--<div class="column right">
+            <div class="sticky-div">
+                {% block right_column %}{% endblock %}
+            </div>
+        </div>-->
+    </div>
+    <footer></footer>
+</body>
+</html>

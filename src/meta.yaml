@@ -1,0 +1,130 @@
+- label: sad
+  title: "Me, Myself, and AI: The Situational Awareness Dataset (SAD) for LLMs"
+  date: 2024-07-08
+  description: "We build a comprehensive benchmark to measure situational awareness in LLMs. It consists of 16 tasks, which we group into 7 categories and 3 aspects of situational awareness (self-knowledge, situational inferences, and taking actions)."
+  math: false
+  type: ["all"]
+  tags: ["ai", "research"]
+  coauthors:
+    [
+      "Rudolf Laine",
+      "Jan Betley",
+      "Kaivu Hariharan",
+      "Jeremy Scheurer",
+      "Mikita Balesni",
+      "Alex Meinke",
+      "Marius Hobbhahn",
+      "Owain Evans",
+    ]
+  elsewhere:
+    [
+      "https://www.lesswrong.com/posts/YsCRXZYr5DcJ84XHq/me-myself-and-ai-the-situational-awareness-dataset-sad-for",
+    ]
+
+- label: zero-to-one
+  title: "Book Summary: Zero to One"
+  date: 2024-12-26
+  description: "A summary of Peter Thiel's book, Zero to One."
+  math: false
+  type: ["all"]
+  tags: ["books", "startups"]
+  elsewhere:
+    [
+      "https://www.lesswrong.com/posts/7LZHS4afrXCNuuGK9/book-summary-zero-to-one"
+    ]
+
+- label: favourites
+  title: "Product recommendations"
+  date: 2025-01-11
+  description: "A list of some of my favourite things."
+  math: false
+  type: ["all"]
+  tags: ["productivity"]
+
+
+- label: caps-lock
+  title: "You should remap your caps lock key"
+  date: 2024-12-01
+  description: "Caps lock is a waste of space."
+  math: false
+  type: ["all"]
+  tags: ["productivity"]
+  elsewhere:
+    [
+      "https://www.lesswrong.com/posts/hPLvZsNZGsQSLfMee/remap-your-caps-lock-key"
+    ]
+
+- label: frontier-lab
+  title: "Reasons for and against working on technical AI safety at a frontier AI lab"
+  date: 2024-12-26
+  description: "I am about to start working on a frontier lab safety team. This post presents a varied set of perspectives that I collected and thought through before accepting my offer."
+  math: false
+  type: ["all"]
+  tags: ["careers", "ai"]
+  elsewhere: ["https://www.lesswrong.com/posts/cyYgdYJagkG4HGZBk/reasons-for-and-against-working-on-technical-ai-safety-at-a",
+  "https://forum.effectivealtruism.org/posts/vCZxmMP2dDjxFByrD/reasons-for-and-against-working-on-technical-ai-safety-at-a"]
+
+- label: phd
+  title: "You should consider applying to PhDs (soon!)"
+  date: 2024-11-29
+  description: "Junior AI safety researchers should consider applying to PhDs soon."
+  math: false
+  type: ["all"]
+  tags: ["careers", "ai"]
+
+- label: activation-space-interpretability
+  title: "Activation space interpretability may be doomed"
+  date: 2025-01-08
+  description: "There may be a fundamental problem with interpretability work that attempts to understand neural networks by decomposing their individual activation spaces in isolation: It seems likely to find features of the activations - features that help explain the statistical structure of activation spaces, rather than features of the model - the features the model’s own computations make use of."
+  math: true
+  type: ["all"]
+  tags: ["ai", "interpretability", "research"]
+  elsewhere:
+    ["https://www.lesswrong.com/posts/gYfpPbww3wQRaxAFD/activation-space-interpretability-may-be-doomed"]
+  coauthors:
+    ["Lucius Bushnaq"]
+
+- label: pos-sae
+  title: "Understanding positional features in layer 0 SAEs"
+  date: 2024-07-29
+  description: ""
+  math: true
+  type: ["all"]
+  tags: ["ai", "interpretability", "research"]
+  elsewhere:
+    ["https://www.lesswrong.com/posts/ctGeJGHg9pbc8memF/understanding-positional-features-in-layer-0-saes"]
+  coauthors:
+    ["Yeu-Tong Lau"]
+
+- label: rmu
+  title: "Unlearning via RMU is mostly shallow"
+  date: 2024-07-23
+  description: ""
+  math: true
+  type: ["all"]
+  tags: ["ai", "interpretability", "research"]
+  elsewhere:
+    ["https://www.lesswrong.com/posts/6QYpXEscd8GuE7BgW/unlearning-via-rmu-is-mostly-shallow"]
+  coauthors:
+    ["Andy Arditi"]
+
+- label: faithfulness
+  title: "Transformer circuit faithfulness metrics are not robust"
+  date: 2024-07-12
+  description: ""
+  math: true
+  type: ["all"]
+  tags: ["ai", "interpretability", "research"]
+  elsewhere:
+    ["https://www.lesswrong.com/posts/kp5h6khwrK47psMaA/transformer-circuit-faithfulness-metrics-are-not-robust"]
+  coauthors:
+    ["Joseph Miller", "William Saunders"]
+
+- label: intellectual-progress-2024
+  title: "Intellectual progress in 2024"
+  date: 2025-01-11
+  description: ""
+  math: false
+  type: ["all"]
+  tags: ["personal"]
+  
