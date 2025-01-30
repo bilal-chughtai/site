@@ -149,3 +149,16 @@
   math: false
   type: ["all"]
   tags: ["physics"]
+
+- label: review
+  title: "Open problems in mechanistic interpretability"
+  date: 2025-01-29
+  description: ""
+  math: false
+  type: ["all"]
+  tags: ["interpretability", "ai", "paper"]
+  coauthors: ["Lee Sharkey"]
+  elsewhere: [
+    "https://arxiv.org/abs/2501.16496",
+    "https://www.lesswrong.com/posts/fqDzevPyw3GGaF5o9/paper-open-problems-in-mechanistic-interpretability"
+  ]
