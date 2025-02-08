@@ -162,3 +162,16 @@
     "https://arxiv.org/abs/2501.16496",
     "https://www.lesswrong.com/posts/fqDzevPyw3GGaF5o9/paper-open-problems-in-mechanistic-interpretability"
   ]
+
+- label: dd
+  title: "Detecting strategic deception using linear probes"
+  date: 2025-02-06
+  description: ""
+  math: false
+  type: ["all"]
+  tags: ["interpretability", "ai", "paper"]
+  coauthors: ["Nix Goldowsky-Dill", "Stefan Heimersheim", "Marius Hobbhahn"]
+  elsewhere: [
+"https://arxiv.org/abs/2502.03407",
+"https://www.lesswrong.com/posts/9pGbTz6c78PGwJein/detecting-strategic-deception-using-linear-probes"
+  ]

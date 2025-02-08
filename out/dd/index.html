@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+
+    <title>Detecting strategic deception using linear probes - Bilal Chughtai</title>
+    
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NN7RTLBRKY"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-NN7RTLBRKY');
+</script>
+<body>
+    
+<header>
+    <nav>
+        <div class="site-name heading-font">Bilal Chughtai &mdash; <a href="../">home page</a>
+        </div>
+    </nav>
+</header>
+
+    <div class="container">
+        <div class="column left">
+            <div class="sticky-div">
+                
+
+
+            </div>
+        </div>
+        <div class="column main">
+            <div class="collapsed-sidebar">
+                
+            </div>
+            <div class="content">
+                
+<article>
+    <h2 class="post-title">Detecting strategic deception using linear probes</h2>
+    <div class="post-meta">
+        
+        <p>Co-authored with: <strong>Nix Goldowsky-Dill, Stefan Heimersheim, Marius Hobbhahn</strong></p>
+        
+        <p>
+            <time datetime="2025-02-06">2025-02-06</time>
+            &middot; 0.5k words 
+            &middot; 2 minute read
+        </p>
+        <!-- <p class="post-summary"> <strong>Summary</strong>: </p> -->
+    </div>
+
+    
+
+    <div class="post-content">
+        <p>Can you tell when an LLM is lying from the activations? Are simple methods good enough? We recently published a <a href="https://arxiv.org/abs/2502.03407">paper</a> investigating if linear probes detect when Llama is deceptive.</p>
+<p>Abstract:</p>
+<blockquote>
+<p>AI models might use deceptive strategies as part of scheming or misaligned behaviour. Monitoring outputs alone is insufficient, since the AI might produce seemingly benign outputs while its internal reasoning is misaligned. We thus evaluate if linear probes can robustly detect deception by monitoring model activations. We test two probe-training datasets, one with contrasting instructions to be honest or deceptive (following <a href="https://arxiv.org/abs/2310.01405">Zou et al., 2023</a>) and one of responses to simple roleplaying scenarios. We test whether these probes generalize to realistic settings where Llama-3.3-70B-Instruct behaves deceptively, such as concealing insider trading (<a href="https://arxiv.org/abs/2311.07590">Scheurer et al., 2023</a>) and purposely underperforming on safety evaluations (<a href="https://arxiv.org/abs/2410.21514">Benton et al., 2024</a>). We find that our probe distinguishes honest and deceptive responses with AUROCs between 0.96 and 0.999 on our evaluation datasets. If we set the decision threshold to have a 1% false positive rate on chat data not related to deception, our probe catches 95-99% of the deceptive responses. Overall we think white-box probes are promising for future monitoring systems, but current performance is insufficient as a robust defence against deception. Our probes' outputs can be viewed on our <a href="http://data.apolloresearch.ai/dd/">website</a> and our code on <a href="http://github.com/ApolloResearch/deception-detection">github</a>.</p>
+</blockquote>
+<p>We train probes using simple training data (from <a href="https://arxiv.org/abs/2310.01405">RepE</a> paper) and techniques (logistic regression):</p>
+<p><img alt="" src="assets/1.webp"/></p>
+<p>We test these probes in more complicated and realistic environments where Llama-3.3-70B responds deceptively:</p>
+<p><img alt="" src="assets/2.webp"/></p>
+<p>The probe fires far less on alpaca responses unrelated to deception, indicating it may partially be a probe for “deception-related” text rather than “actually-deceptive” text.</p>
+<p>We compare a variety of probing methods. Training on roleplaying scenarios and probing the activations after a follow-up question works well. Using SAE activations or the probe from <a href="https://www.anthropic.com/research/probes-catch-sleeper-agents">Simple Probes Can Catch Sleeper Agents</a> works less well.</p>
+<p>As a black-box baseline we give GPT-4o the transcript and ask if Llama responded deceptively. Our probe performs comparably to this baseline, although we iterated more on the probe than the baseline.</p>
+<p><img alt="" src="assets/3.webp"/></p>
+<p>While the probes are decent, they are imperfect. Some common failures:</p>
+<ul>
+<li>The probe firing on honest confessions of prior deception (<a href="https://data.apolloresearch.ai/dd/instructed-pairs/roleplaying__plain/sample_347_honest.html">example 1</a>)</li>
+<li>The mean score being incorrect even if the per-token probe behavior is reasonable (<a href="https://data.apolloresearch.ai/dd/instructed-pairs/roleplaying__plain/sample_270_deceptive.html">example 2</a>).</li>
+<li>But other failures have no easy explanation, such as <a href="https://data.apolloresearch.ai/dd/instructed-pairs/roleplaying__plain/sample_80_honest.html">example 3</a> below where the probe fires on an objectively-honest response.</li>
+</ul>
+<p><img alt="" src="assets/4.webp"/></p>
+<p>We are excited about future work improving deception-probes. We are especially curious to see if probes work in more difficult settings where it’s not obvious from the transcript that the model is being deceptive–for example environments where models <a href="https://arxiv.org/abs/2412.14093">alignment fake</a> or <a href="https://arxiv.org/abs/2412.04984">sandbag</a> even without chain-of-thought.</p>
+<p>Find the full paper <a href="https://arxiv.org/abs/2502.03407">here</a>, our code <a href="https://github.com/ApolloResearch/deception-detection">here</a>, and our website displaying probe-outputs <a href="https://data.apolloresearch.ai/dd/">here</a>.</p>
+    </div>
+    <div class="footer">
+        
+        
+        
+        <p>There may be comments, footnotes, or more information on the version of this post that was published on:</p>
+        <ul>
+            
+            <li><a href="https://arxiv.org/abs/2502.03407">arxiv.org</a></li>
+            
+            <li><a href="https://www.lesswrong.com/posts/9pGbTz6c78PGwJein/detecting-strategic-deception-using-linear-probes">www.lesswrong.com</a></li>
+            
+        </ul>
+        </p>
+        
+    </div>
+</article>
+
+            </div>
+        </div>
+        <!--<div class="column right">
+            <div class="sticky-div">
+                
+            </div>
+        </div>-->
+    </div>
+    <footer></footer>
+</body>
+</html>
