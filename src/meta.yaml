@@ -175,3 +175,11 @@
 "https://arxiv.org/abs/2502.03407",
 "https://www.lesswrong.com/posts/9pGbTz6c78PGwJein/detecting-strategic-deception-using-linear-probes"
   ]
+
+- label: gdm
+  title: "Joining Google DeepMind"
+  date: 2025-02-17
+  description: ""
+  math: false
+  type: ["all"]
+  tags: ["careers", "ai", "interpretability"]
