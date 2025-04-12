@@ -3,7 +3,6 @@
   date: 2024-07-08
   description: "We build a comprehensive benchmark to measure situational awareness in LLMs. It consists of 16 tasks, which we group into 7 categories and 3 aspects of situational awareness (self-knowledge, situational inferences, and taking actions)."
   math: false
-  type: ["all"]
   tags: ["ai", "research", "paper"]
   coauthors:
     [
@@ -28,7 +27,6 @@
   date: 2024-12-26
   description: "A summary of Peter Thiel's book, Zero to One."
   math: false
-  type: ["all"]
   tags: ["books", "startups"]
   elsewhere:
     [
@@ -40,7 +38,6 @@
   date: 2025-01-11
   description: "A list of some of my favourite things."
   math: false
-  type: ["all"]
   tags: ["productivity"]
 
 
@@ -49,7 +46,6 @@
   date: 2024-12-01
   description: "Caps lock is a waste of space."
   math: false
-  type: ["all"]
   tags: ["productivity"]
   elsewhere:
     [
@@ -61,7 +57,6 @@
   date: 2024-12-26
   description: "I am about to start working on a frontier lab safety team. This post presents a varied set of perspectives that I collected and thought through before accepting my offer."
   math: false
-  type: ["all"]
   tags: ["careers", "ai"]
   elsewhere: ["https://www.lesswrong.com/posts/cyYgdYJagkG4HGZBk/reasons-for-and-against-working-on-technical-ai-safety-at-a",
   "https://forum.effectivealtruism.org/posts/vCZxmMP2dDjxFByrD/reasons-for-and-against-working-on-technical-ai-safety-at-a"]
@@ -71,7 +66,6 @@
   date: 2024-11-29
   description: "Junior AI safety researchers should consider applying to PhDs soon."
   math: false
-  type: ["all"]
   tags: ["careers", "ai"]
   elsewhere: [
     "https://www.lesswrong.com/posts/PdtkXcgbRpdHWRNt6/you-should-consider-applying-to-phds-soon"
@@ -82,7 +76,6 @@
   date: 2025-01-08
   description: "There may be a fundamental problem with interpretability work that attempts to understand neural networks by decomposing their individual activation spaces in isolation: It seems likely to find features of the activations - features that help explain the statistical structure of activation spaces, rather than features of the model - the features the model’s own computations make use of."
   math: true
-  type: ["all"]
   tags: ["ai", "interpretability", "research"]
   elsewhere:
     ["https://www.lesswrong.com/posts/gYfpPbww3wQRaxAFD/activation-space-interpretability-may-be-doomed"]
@@ -94,7 +87,6 @@
   date: 2024-07-29
   description: ""
   math: true
-  type: ["all"]
   tags: ["ai", "interpretability", "research"]
   elsewhere:
     ["https://www.lesswrong.com/posts/ctGeJGHg9pbc8memF/understanding-positional-features-in-layer-0-saes"]
@@ -106,7 +98,6 @@
   date: 2024-07-23
   description: ""
   math: true
-  type: ["all"]
   tags: ["ai", "interpretability", "research"]
   elsewhere:
     ["https://www.lesswrong.com/posts/6QYpXEscd8GuE7BgW/unlearning-via-rmu-is-mostly-shallow"]
@@ -118,7 +109,6 @@
   date: 2024-07-12
   description: ""
   math: true
-  type: ["all"]
   tags: ["ai", "interpretability", "research", "paper"]
   elsewhere:
     ["https://www.lesswrong.com/posts/kp5h6khwrK47psMaA/transformer-circuit-faithfulness-metrics-are-not-robust",
@@ -131,7 +121,6 @@
   date: 2025-01-11
   description: ""
   math: false
-  type: ["all"]
   tags: ["personal"]
   
 - label: cuplc
@@ -139,7 +128,6 @@
   date: 2023-09-01
   description: ""
   math: false
-  type: ["all"]
   tags: ["sport"]
 
 - label: essay
@@ -147,7 +135,6 @@
   date: 2021-06-01
   description: ""
   math: false
-  type: ["all"]
   tags: ["physics"]
 
 - label: review
@@ -155,7 +142,6 @@
   date: 2025-01-29
   description: ""
   math: false
-  type: ["all"]
   tags: ["interpretability", "ai", "paper"]
   coauthors: ["Lee Sharkey"]
   elsewhere: [
@@ -168,7 +154,6 @@
   date: 2025-02-06
   description: ""
   math: false
-  type: ["all"]
   tags: ["interpretability", "ai", "paper"]
   coauthors: ["Nix Goldowsky-Dill", "Stefan Heimersheim", "Marius Hobbhahn"]
   elsewhere: [
@@ -181,8 +166,14 @@
   date: 2025-02-17
   description: ""
   math: false
-  type: ["all"]
   tags: ["careers", "ai", "interpretability"]
   elsewhere: [
     "https://www.linkedin.com/posts/bilalchughtai_im-excited-to-share-that-im-starting-a-activity-7306735125826850816-UJpi?utm_source=share&utm_medium=member_desktop&rcm=ACoAACy6rLMBE3sQAk8sLKQF2roS-gHr056HXSU"
   ]
+
+- label: bookshelf
+  title: "Bookshelf"
+  date: 2025-04-12
+  description: ""
+  math: false
+  tags: ["books"]

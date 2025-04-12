@@ -24,8 +24,8 @@ class PostMeta:
     date: datetime
     description: str # abstract that shows up at the top of the post
     math: bool # whether latex is included
-    type: list[str] # a hierarchical list of subtypes, e.g. ["book reviews", "fiction"]
     tags: list[str] # a list of tags, e.g. ["computing", "civilisation"]
+    type: list[str] | None = None # a hierarchical list of subtypes, e.g. ["book reviews", "fiction"]
     sublist: list[str] | None = None # for short review posts, a list of books reviewed, to list on main page
     coauthors: list[str] | None = None # a list of coauthors
     prequel: str | None = None # label of the post that is the prequel to this one
@@ -161,7 +161,6 @@ def prepare_common_context():
 class PostGroupings:
     posts_by_year: list[dict[str, list[Post]]]
     posts_by_tag: list[dict[str, list[Post]]]
-    posts_by_type: list[dict[str, list[Post]]]
 
 def create_post_groupings(posts: list[Post]) -> PostGroupings:
     for post in posts:
@@ -176,22 +175,6 @@ def create_post_groupings(posts: list[Post]) -> PostGroupings:
             "year": year,
             "posts": list(year_posts)
         })
-
-    posts_by_type = []
-
-    def post_type_list_to_str(post_type_list: list[str]):
-        assert len(post_type_list) > 0
-        if len(post_type_list) == 1:
-            return post_type_list[0]
-        else:
-            return post_type_list[0] + " &mdash; " + post_type_list[1]
-    
-    for post_type, post_type_posts in groupby(sorted(posts, key=lambda x: x.meta.type), key=lambda x: x.meta.type):
-        posts_by_type.append({
-            "type": post_type_list_to_str(post_type),
-            "posts": sorted(list(post_type_posts), key=lambda x: x.meta.date, reverse=True)
-        })
-    posts_by_type.sort(key=lambda x: x["type"])
         
     # posts may have many tags!
     posts_by_tag = []
@@ -206,7 +189,7 @@ def create_post_groupings(posts: list[Post]) -> PostGroupings:
         })
     posts_by_tag.sort(key=lambda tag_di: len(tag_di["posts"]), reverse=True)
 
-    return PostGroupings(posts_by_year, posts_by_tag, posts_by_type)
+    return PostGroupings(posts_by_year, posts_by_tag)
 
 def generate_main_page(jinja_env: Environment, post_groupings: PostGroupings, context: dict, out_dir: str):
     main_template = jinja_env.get_template("main.html")
@@ -230,7 +213,6 @@ def render_main_content(jinja_template: Template, posts_by_year: list[dict[str, 
 def render_main_content_with_toc(template: Template, post_groupings: PostGroupings, context: dict, toc: list[dict[str, str]]):
     return template.render(
         posts_by_year=post_groupings.posts_by_year,
-        posts_by_type=post_groupings.posts_by_type,
         posts_by_tag=post_groupings.posts_by_tag,
         use_mathjax=False,
         is_index=True,
