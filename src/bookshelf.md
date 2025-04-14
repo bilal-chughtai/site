@@ -30,7 +30,7 @@ Suggestions always welcome.
 - [Human Compatible](https://en.wikipedia.org/wiki/Human_Compatible): Artificial Intelligence and the Problem of Control (Stuart Russell, 2019)
 - [Superforecasting](https://www.amazon.co.uk/Superforecasting-Science-Prediction-Philip-Tetlock/dp/1847947158): The Art of Science and Prediction (Philip Tetlock & Dan Gardner, 2015)
 - *[The Scout Mindset](https://en.wikipedia.org/wiki/The_Scout_Mindset): Why Some People See Things Clearly and Others Don't (Julia Galef, 2021)*
-- [Algorithms to Live By](https://en.wikipedia.org/wiki/Why_We_Sleep): The Computer Science of Decisions (Brian Christian & Tom Griffiths, 2016)
+- [Algorithms to Live By](https://brianchristian.org/algorithms-to-live-by/): The Computer Science of Decisions (Brian Christian & Tom Griffiths, 2016)
 - [Superintelligence](https://en.wikipedia.org/wiki/Superintelligence:_Paths,_Dangers,_Strategies): Paths, Dangers, Strategies (Nick Bostrom, 2014)
 
 ## 2021
