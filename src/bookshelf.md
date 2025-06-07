@@ -1,9 +1,10 @@
-A log of all the books I've read since ~2021 in reverse chronological order. *Italics* indicate I only skimmed/partially read. Last updated: May 30th 2025.
+A log of all the books I've read since ~2021 in reverse chronological order. *Italics* indicate I only skimmed/partially read. Last updated: June 07th 2025.
 
 Suggestions always welcome.
 
 ## 2025
 
+- [The Metamorphosis](https://en.wikipedia.org/wiki/The_Metamorphosis) (Franz Kafka, 1915)
 - [The Little Prince](https://en.wikipedia.org/wiki/The_Little_Prince) (Antoine de Saint-Exupéry, 1943)
 - [1984](https://en.wikipedia.org/wiki/Nineteen_Eighty-Four) (George Orwell, 1949)
 - [How to Actually Change Your Mind](https://www.readthesequences.com/Book-II-How-To-Actually-Change-Your-Mind) (Eliezer Yudkowsky, 2009)
