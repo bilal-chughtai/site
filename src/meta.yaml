@@ -177,3 +177,10 @@
   description: ""
   math: false
   tags: ["books"]
+
+- label: hd
+  title: "My health dashboard"
+  date: 2025-06-15
+  description: ""
+  math: false
+  tags: ["health"]
