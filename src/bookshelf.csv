@@ -1,11 +1,12 @@
 Title,Subtitle,Author,Start Date,End Date,Partial,Link,Publish Year,Additional Text,Notes
+"How to Win Friends and Influence People","","Dale Carnegie",2021-01-01,2021-01-01,True,"https://en.wikipedia.org/wiki/How_to_Win_Friends_and_Influence_People",1936,,False
 "Why We Sleep","The New Science of Sleep and Dreams","Matthew Walker",2021-01-01,2021-01-01,False,"https://en.wikipedia.org/wiki/Why_We_Sleep",2017,,False
 "The Precipice","Existential Risk and the Future of Humanity","Toby Ord",2021-01-01,2021-01-01,False,"https://en.wikipedia.org/wiki/The_Precipice:_Existential_Risk_and_the_Future_of_Humanity",2020,,False
 "Doing Good Better","Effective Altruism and How You Can Make a Difference","William MacAskill",2022-01-01,2022-01-01,False,"https://www.effectivealtruism.org/doing-good-better",2015,,False
 "Human Compatible","Artificial Intelligence and the Problem of Control","Stuart Russell",2022-01-01,2022-01-01,False,"https://en.wikipedia.org/wiki/Human_Compatible",2019,,False
 "Superforecasting","The Art of Science and Prediction","Philip Tetlock & Dan Gardner",2022-01-01,2022-01-01,False,"https://www.amazon.co.uk/Superforecasting-Science-Prediction-Philip-Tetlock/dp/1847947158",2015,,False
 "The Scout Mindset","Why Some People See Things Clearly and Others Don't","Julia Galef",2022-01-01,2022-01-01,True,"https://en.wikipedia.org/wiki/The_Scout_Mindset",2021,,False
-"Algorithms to Live By","The Computer Science of Decisions","Brian Christian & Tom Griffiths",2022-01-01,2022-01-01,False,"https://brianchristian.org/algorithms-to-live-by/",2016,,False
+"Algorithms to Live By","The Computer Science of Decisions","Brian Christian & Tom Griffiths",2022-01-01,2022-01-01,True,"https://brianchristian.org/algorithms-to-live-by/",2016,,False
 "Superintelligence","Paths, Dangers, Strategies","Nick Bostrom",2022-01-01,2022-01-01,False,"https://en.wikipedia.org/wiki/Superintelligence:_Paths,_Dangers,_Strategies",2014,,False
 "Harry Potter and the Methods of Rationality",,"Eliezer Yudkowsky",2024-01-01,2024-01-01,False,"https://hpmor.com/",2015,,False
 "Zero to One","Notes on Startups, or How to Build the Future","Peter Thiel & Blake Masters",2024-01-01,2024-01-01,False,"https://en.wikipedia.org/wiki/Zero_to_One",2014,"my summary [here](https://bilalchughtai.co.uk/zero-to-one/)",True

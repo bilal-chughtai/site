@@ -1,4 +1,4 @@
-A log of all the books I've read since ~2021 in reverse chronological order. *Italics* indicate I only skimmed/partially read. Last updated: June 24th 2025.
+A log of all the books I've read since ~2021 in reverse chronological order. *Italics* indicate I only skimmed/partially read. Last updated: July 24th 2025.
 
 Suggestions always welcome.
 
@@ -33,7 +33,7 @@ Suggestions always welcome.
 ## 2022
 
 - [Superintelligence: Paths, Dangers, Strategies](https://en.wikipedia.org/wiki/Superintelligence:_Paths,_Dangers,_Strategies) (Nick Bostrom, 2014)
-- [Algorithms to Live By: The Computer Science of Decisions](https://brianchristian.org/algorithms-to-live-by/) (Brian Christian & Tom Griffiths, 2016)
+- [*Algorithms to Live By: The Computer Science of Decisions*](https://brianchristian.org/algorithms-to-live-by/) (Brian Christian & Tom Griffiths, 2016)
 - [*The Scout Mindset: Why Some People See Things Clearly and Others Don't*](https://en.wikipedia.org/wiki/The_Scout_Mindset) (Julia Galef, 2021)
 - [Superforecasting: The Art of Science and Prediction](https://www.amazon.co.uk/Superforecasting-Science-Prediction-Philip-Tetlock/dp/1847947158) (Philip Tetlock & Dan Gardner, 2015)
 - [Human Compatible: Artificial Intelligence and the Problem of Control](https://en.wikipedia.org/wiki/Human_Compatible) (Stuart Russell, 2019)
@@ -43,3 +43,4 @@ Suggestions always welcome.
 
 - [The Precipice: Existential Risk and the Future of Humanity](https://en.wikipedia.org/wiki/The_Precipice:_Existential_Risk_and_the_Future_of_Humanity) (Toby Ord, 2020)
 - [Why We Sleep: The New Science of Sleep and Dreams](https://en.wikipedia.org/wiki/Why_We_Sleep) (Matthew Walker, 2017)
+- [*How to Win Friends and Influence People*](https://en.wikipedia.org/wiki/How_to_Win_Friends_and_Influence_People) (Dale Carnegie, 1936)
