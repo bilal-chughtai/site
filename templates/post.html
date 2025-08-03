@@ -7,7 +7,8 @@
 {% block header %}
 <header>
     <nav>
-        <div class="site-name heading-font">Bilal Chughtai &mdash; <a href="{{ '../' if not is_index else '' }}">home page</a>
+        <div class="site-name heading-font">Bilal Chughtai &mdash; <a href="{{ '../' if not is_index else '' }}">home
+                page</a>
         </div>
     </nav>
 </header>
@@ -38,7 +39,7 @@
         {% endif %}
         <p>
             <time datetime="{{ post.meta.date }}">{{ post.meta.date }}</time>
-            &middot; {{ (post.meta.word_count / 1000) | round(1) }}k words 
+            &middot; {{ (post.meta.word_count / 1000) | round(1) }}k words
             &middot; {{ (post.meta.word_count / 275) | round | int }} minute read
         </p>
         <!-- <p class="post-summary"> <strong>Summary</strong>: {{ post.meta.description }}</p> -->
@@ -71,7 +72,7 @@
         <p>Previous: <a href="../{{ post.meta.prequel }}/">{{ get_post_title(post.meta.prequel) }}</a></p>
         {% endif %}
         {% if post.meta.elsewhere %}
-        <p>There may be comments, footnotes, or more information on the version of this post that was published on:</p>
+        <p><em>There may be more information or discussion about this post elsewhere:</em></p>
         <ul>
             {% for link in post.meta.elsewhere %}
             <li><a href="{{ link }}">{{ get_domain(link) }}</a></li>

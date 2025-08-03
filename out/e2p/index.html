@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+
+    <title>everything2prompt - Bilal Chughtai</title>
+    
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NN7RTLBRKY"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-NN7RTLBRKY');
+</script>
+
+<body>
+    
+<header>
+    <nav>
+        <div class="site-name heading-font">Bilal Chughtai &mdash; <a href="../">home
+                page</a>
+        </div>
+    </nav>
+</header>
+
+    <div class="container">
+        <div class="column left">
+            <div class="sticky-div">
+                
+
+<nav id="toc" class="table-of-contents">
+    <hr class="toc-separator">
+    <ul>
+        
+        <li class="toc-h1">
+            <a href="#section-0">The Problem</a>
+        </li>
+        
+        <li class="toc-h1">
+            <a href="#section-1">The Solution</a>
+        </li>
+        
+        <li class="toc-h1">
+            <a href="#section-2">Example Use Cases</a>
+        </li>
+        
+        <li class="toc-h1">
+            <a href="#section-3">Lessons Learned</a>
+        </li>
+        
+        <li class="toc-h1">
+            <a href="#section-4">Links</a>
+        </li>
+        
+        <li class="toc-h1">
+            <a href="#section-5">Screenshots</a>
+        </li>
+        
+    </ul>
+    <hr class="toc-separator">
+</nav>
+
+
+            </div>
+        </div>
+        <div class="column main">
+            <div class="collapsed-sidebar">
+                
+            </div>
+            <div class="content">
+                
+<article>
+    <h2 class="post-title">everything2prompt</h2>
+    <div class="post-meta">
+        
+        <p>
+            <time datetime="2025-08-03">2025-08-03</time>
+            &middot; 1.1k words
+            &middot; 4 minute read
+        </p>
+        <!-- <p class="post-summary"> <strong>Summary</strong>: </p> -->
+    </div>
+
+    
+    <div class="collapsed-sidebar">
+        <nav id="collapsed-toc" class="table-of-contents">
+            <hr class="toc-separator">
+            <ul>
+                
+                <li class="toc-h1">
+                    <a href="#section-0">The Problem</a>
+                </li>
+                
+                <li class="toc-h1">
+                    <a href="#section-1">The Solution</a>
+                </li>
+                
+                <li class="toc-h1">
+                    <a href="#section-2">Example Use Cases</a>
+                </li>
+                
+                <li class="toc-h1">
+                    <a href="#section-3">Lessons Learned</a>
+                </li>
+                
+                <li class="toc-h1">
+                    <a href="#section-4">Links</a>
+                </li>
+                
+                <li class="toc-h1">
+                    <a href="#section-5">Screenshots</a>
+                </li>
+                
+            </ul>
+            <hr class="toc-separator">
+        </nav>
+    </div>
+    
+
+    <div class="post-content">
+        <p>Last weekend I participated in the <a href="https://workshoplabs.ai/">Workshop Labs</a> x <a href="https://ilikethefuture.com/">SOTA</a> <a href="https://sotaletters.substack.com/p/human-augmentation-hackathon">Human Augmentation Hackathon</a>. The hackathon scope was to build tools that foster human-AI symbiosis; that augment human capabilities rather than automate us away. I built a tool I'm calling "everything2prompt", that scrapes all my personal data and turns it into easily accessible, low friction, language model context. It lets me prompt models with e.g. "write my weekly review" and get a response in seconds, without first having to find and inject the context manually myself. The project came 3rd overall of 19 projects.</p>
+<h1 id="section-0">The Problem</h1>
+<p>You may have heard about prompt engineering; dialling language model prompts to elicit maximal capability on some given query. Recently, <a href="https://simonwillison.net/2025/Jun/27/context-engineering/">context engineering</a> has become the new meta; providing models with the necessary information that it has not seen during training, in context, to be able to answer more sophisticated queries.</p>
+<p>I will often want to ask LLMs questions about my personal information. My most important personal data lives in a range of apps:</p>
+<ul>
+<li><strong><a href="https://obsidian.md/">Obsidian</a></strong> (notes)</li>
+<li><strong><a href="https://todoist.com/">Todoist</a></strong> (task management)</li>
+<li><strong><a href="https://calendar.google.com/">Google Calendar</a></strong> (events and meetings)</li>
+<li><strong><a href="https://www.instapaper.com/">Instapaper</a></strong> (saved articles)</li>
+<li><strong><a href="https://www.garmin.com/">Garmin</a></strong> (activity)</li>
+<li><strong><a href="https://ouraring.com/">Oura</a></strong> (recovery)</li>
+<li><strong><a href="https://cronometer.com/">Cronometer</a></strong> (nutrition)</li>
+</ul>
+<p>It by default is high friction to impossible to get this information into LLMs. Some data can be copy pasted in as needed (e.g. Obsidian), but most cannot.</p>
+<p><img alt="" src="assets/Pasted image 20250803125750.png"/></p>
+<p>I wanted to build a tool that turns all of my data sources into language model context. Unfortunately I have so much personal context (~600k tokens currently and counting) that one prompt will not suffice. Some clever query-specific semantic search/filtering strategy is needed to not hit context length limits.</p>
+<p>There do exist off the shelf tools to do this, but</p>
+<ul>
+<li>I figured it would not be that hard to roll my own. Indeed, it only took me about 8 hours to build something already very useful to me.</li>
+<li>Similar to my <a href="https://bilalchughtai.co.uk/hd/">health dashboard</a>, no off-the-shelf solution integrated all of my specific data sources.</li>
+<li>In general I like deleting unnecessary components from the stack and reducing complexity.</li>
+<li>Owning the code lets me customise/hack significantly more.</li>
+</ul>
+<h1 id="section-1">The Solution</h1>
+<p>The core design is as follows:</p>
+<ul>
+<li>I regularly scrape data from all data sources and save it in some local cache. The cache minimises direct API requests to the data sources, and also reduces latency, as I then don't need to await API responses to grab context.</li>
+<li>Each cache object contains various metadata properties, that allow me to filter to only relevant cache objects at query time. The properties I include are the data source, a date, and a list of tags. Much of my data is highly structured already, so this works well.</li>
+<li>The cache can be queried by specifying some query using the following syntax: <code>source:source1,source2,... tag:tag1,tag2,... from:YYYY-MM-DD to:YYYY-MM-DD</code>. All fields are optional.</li>
+<li>I built two user interfaces:<ul>
+<li>Some hotkey launches a <a href="https://www.raycast.com/blog/getting-started-with-script-commands">raycast script</a> that accepts a query as an argument. When ran, this pastes the grabbed context at your cursor and saves to clipboard history. </li>
+<li>A <a href="https://modelcontextprotocol.io/overview">Model Context Protocol</a> (MCP) server, that allows models to write and call queries itself to grab relevant context.</li>
+</ul>
+</li>
+</ul>
+<p><img alt="" src="assets/Pasted image 20250803130535.png"/>
+<img alt="" src="assets/Pasted image 20250803130545.png"/></p>
+<h1 id="section-2">Example Use Cases</h1>
+<p>Some example prompts I have been using to demo the system:</p>
+<ul>
+<li><strong>"What have I achieved in the past week?"</strong> -- Will grab from all data sources from the past week, e.g. completed todoist tasks, recent notes, calendar events, activities, etc, and write a weekly review.</li>
+<li><strong>"Write a blog post in the style of my previous blog posts about todays hackathon"</strong> -- Will load notes on this hackathon from my Obsidian, and my prior blog posts, also in Obsidian. The first draft of this very blog post was written by Claude using this prompt.</li>
+<li><strong>"How far have I run in July 2025?"</strong> -- Pulls health data and does a long-ish calculation that I would otherwise find annoying to do.</li>
+<li><strong>"I remember reading a blog post about X at some point, please find the link</strong>" -- Pulls instapaper articles and searches over them. Claude will sometimes choose to filter and then read the articles itself to understand the contents too.</li>
+</ul>
+<h1 id="section-3">Lessons Learned</h1>
+<ul>
+<li>I was initially skeptical that the MCP would be that large of an improvement over manually specifying queries. I expected myself to better know what data was relevant than models would, and for this to dominate. This is true, but I neglected to consider that it is much much lower friction to use this tool if you don't even need to think about it's existence, and this matters a lot. With a carefully written prompt explaining how to use the query language and what allowed arguments are, the model is almost as good as me. MCP also scales incredibly well with model capability, and will only get better over time.</li>
+<li>Many projects at this hackathon should have just been MCPs, yet I was the only MCP. People like building frontends in hackathons a little too much in my opinion. It is so easy to build an MCP.</li>
+<li>Building things you wanted to build anyway at hackathons is great. I otherwise would not have got to this for several more weeks or months, and think it's already providing value. </li>
+<li>Compared to my last hackathon, I spent far more time thinking about how exactly to demo this system and present it well. This was a good use of time. I was surprised to get feedback from both judges and other participants that my presentation was excellent; my prior was that public speaking in general was not a strong suit of mine.</li>
+</ul>
+<h1 id="section-4">Links</h1>
+<p>Code is available <a href="https://github.com/bilal-chughtai/everything2prompt">here</a>. Slides are available <a href="https://docs.google.com/presentation/d/1o4qZ1xlcn6tKxTNmNRS8oQdSLOd8emWLaAuNcfbsh9A/edit?slide=id.g371af394405_0_0#slide=id.g371af394405_0_0">here</a>. </p>
+<p>I plan to spend some more time iterating on this tool over the next few weeks. But I'll note that I plan to write non-general code that works for my set of data sources and the precise ways I use them. I expect it should not be hard to fork and adapt the code to work with different ways of using the data sources I use or add new data sources entirely.</p>
+<h1 id="section-5">Screenshots</h1>
+<p><img alt="" src="assets/Pasted image 20250803133117.png"/>
+<img alt="" src="assets/Pasted image 20250803133130.png"/>
+<img alt="" src="assets/unnamed.png"/></p>
+<p><br/></p>
+<p><em>Thanks to Workshop Labs and SOTA for hosting, and to all the participants for an entertaining weekend. Thanks to Salman for chatting through the idea with me beforehand.</em></p>
+    </div>
+    <div class="footer">
+        
+        
+        
+        <p><em>There may be more information or discussion about this post elsewhere:</em></p>
+        <ul>
+            
+            <li><a href="https://github.com/bilal-chughtai/everything2prompt">github.com</a></li>
+            
+            <li><a href="https://docs.google.com/presentation/d/1o4qZ1xlcn6tKxTNmNRS8oQdSLOd8emWLaAuNcfbsh9A/edit?slide=id.g371af394405_0_0#slide=id.g371af394405_0_0">docs.google.com</a></li>
+            
+        </ul>
+        </p>
+        
+    </div>
+</article>
+
+            </div>
+        </div>
+        <!--<div class="column right">
+            <div class="sticky-div">
+                
+            </div>
+        </div>-->
+    </div>
+    <footer></footer>
+</body>
+
+</html>
