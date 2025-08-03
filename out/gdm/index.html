@@ -69,6 +69,7 @@
 <p>AI is improving at a rapid pace. This is both exciting and scary. If we are to safely create powerful general artificial intelligence and deploy it widely to automate labour and solve many of the world's most challenging problems, there will be a number of both technical and societal challenges and risks to overcome. My work focuses on a subset of these. But there is much work to be done, and perhaps not a whole lot of time to do it. </p>
 <p>It seems plausible that we as a species will soon succeed in building machines as intelligent as humans; AI systems that go beyond the chat bots we are all familiar with, to agents that can reason, plan, and autonomously act in the world to accomplish real tasks. If we get to such a point and are insufficiently careful about how we build and deploy such systems, they may end up causing more harm than good -- an outcome I deeply care about avoiding. If we do succeed however, it's possible that such AI systems might very rapidly enable a future significantly better than the present -- an outcome worth fighting for.</p>
     </div>
+    
     <div class="footer">
         
         
@@ -93,6 +94,62 @@
         </div>-->
     </div>
     <footer></footer>
+
+    <!-- Footnote tooltip script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Create a single tooltip element
+            const tooltip = document.createElement('div');
+            tooltip.className = 'footnote-tooltip';
+            document.body.appendChild(tooltip);
+            let hideTimer;
+
+            function positionTooltip(ref) {
+                const rect = ref.getBoundingClientRect();
+                const scrollX = window.scrollX || window.pageXOffset;
+                const scrollY = window.scrollY || window.pageYOffset;
+                // Initial placement below the reference
+                let top = scrollY + rect.bottom + 8;
+                let left = scrollX + rect.left;
+                tooltip.style.top = top + 'px';
+                tooltip.style.left = left + 'px';
+                // Adjust if it overflows the right edge
+                const tt = tooltip.getBoundingClientRect();
+                const viewportWidth = document.documentElement.clientWidth;
+                if (tt.right > viewportWidth - 8) {
+                    const overflow = tt.right - (viewportWidth - 8);
+                    tooltip.style.left = (left - overflow) + 'px';
+                }
+                // Adjust if it overflows the left edge
+                if (tt.left < 8) {
+                    tooltip.style.left = (scrollX + 8) + 'px';
+                }
+            }
+
+            function showTooltip(ref) {
+                clearTimeout(hideTimer);
+                tooltip.innerHTML = ref.getAttribute('data-footnote');
+                tooltip.style.display = 'block';
+                positionTooltip(ref);
+            }
+
+            function hideTooltip() {
+                hideTimer = setTimeout(() => {
+                    tooltip.style.display = 'none';
+                }, 300); // 300ms delay before hiding
+            }
+
+            // Attach events to each footnote reference
+            document.querySelectorAll('a.footnote-ref').forEach(function (ref) {
+                ref.addEventListener('mouseenter', () => showTooltip(ref));
+                ref.addEventListener('mouseleave', hideTooltip);
+            });
+
+            // Keep tooltip open when hovering over it
+            tooltip.addEventListener('mouseenter', () => clearTimeout(hideTimer));
+            tooltip.addEventListener('mouseleave', hideTooltip);
+        });
+    </script>
 </body>
 
 </html>

@@ -65,6 +65,7 @@
     <div class="post-content">
         <p>As part of Part III (the masters year) of the Mathematical Tripos at Cambridge, I wrote this <a href="https://github.com/bilal-chughtai/PartIIIEssay/blob/master/main.pdf?raw=true">essay</a>.</p>
     </div>
+    
     <div class="footer">
         
         
@@ -81,6 +82,62 @@
         </div>-->
     </div>
     <footer></footer>
+
+    <!-- Footnote tooltip script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Create a single tooltip element
+            const tooltip = document.createElement('div');
+            tooltip.className = 'footnote-tooltip';
+            document.body.appendChild(tooltip);
+            let hideTimer;
+
+            function positionTooltip(ref) {
+                const rect = ref.getBoundingClientRect();
+                const scrollX = window.scrollX || window.pageXOffset;
+                const scrollY = window.scrollY || window.pageYOffset;
+                // Initial placement below the reference
+                let top = scrollY + rect.bottom + 8;
+                let left = scrollX + rect.left;
+                tooltip.style.top = top + 'px';
+                tooltip.style.left = left + 'px';
+                // Adjust if it overflows the right edge
+                const tt = tooltip.getBoundingClientRect();
+                const viewportWidth = document.documentElement.clientWidth;
+                if (tt.right > viewportWidth - 8) {
+                    const overflow = tt.right - (viewportWidth - 8);
+                    tooltip.style.left = (left - overflow) + 'px';
+                }
+                // Adjust if it overflows the left edge
+                if (tt.left < 8) {
+                    tooltip.style.left = (scrollX + 8) + 'px';
+                }
+            }
+
+            function showTooltip(ref) {
+                clearTimeout(hideTimer);
+                tooltip.innerHTML = ref.getAttribute('data-footnote');
+                tooltip.style.display = 'block';
+                positionTooltip(ref);
+            }
+
+            function hideTooltip() {
+                hideTimer = setTimeout(() => {
+                    tooltip.style.display = 'none';
+                }, 300); // 300ms delay before hiding
+            }
+
+            // Attach events to each footnote reference
+            document.querySelectorAll('a.footnote-ref').forEach(function (ref) {
+                ref.addEventListener('mouseenter', () => showTooltip(ref));
+                ref.addEventListener('mouseleave', hideTooltip);
+            });
+
+            // Keep tooltip open when hovering over it
+            tooltip.addEventListener('mouseenter', () => clearTimeout(hideTimer));
+            tooltip.addEventListener('mouseleave', hideTooltip);
+        });
+    </script>
 </body>
 
 </html>

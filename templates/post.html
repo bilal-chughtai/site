@@ -64,6 +64,14 @@
     <div class="post-content">
         {{ post_content | safe }}
     </div>
+    {% if post.meta.label == "todo" %}
+    <style>
+        .post-content img {
+            width: 80%;
+            height: auto;
+        }
+    </style>
+    {% endif %}
     <div class="footer">
         {% if post.meta.sequel %}
         <p>Next: <a href="../{{ post.meta.sequel }}/">{{ get_post_title(post.meta.sequel) }}</a></p>

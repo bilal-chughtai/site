@@ -370,3 +370,53 @@ pre {
 ul {
     margin-top: 0em;
 }
+
+/* Footnote styling */
+.footnote-ref {
+    text-decoration: none;
+    color: var(--theme-color);
+    position: relative;
+    font-size: 0.8em;
+    vertical-align: super;
+}
+
+sup[id^="fnref:"] {
+    vertical-align: baseline;
+    font-size: inherit;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    position: static; */
+}
+
+/* Hide CSS pseudo-element tooltips since JS-driven tooltips will be used */
+.footnote-ref::after, .footnote-ref::before {
+    display: none !important;
+}
+
+/* Styles for the interactive footnote tooltip */
+.footnote-tooltip {
+    position: absolute;
+    display: none;
+    background: var(--background-color);
+    border: 1px solid var(--theme-color-highlights);
+    padding: 0.5rem;
+    border-radius: 4px;
+    max-width: 600px;
+    min-width: 350px;
+    font-size: 0.9em;
+    color: var(--text-color);
+    z-index: 1000;
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+/* Links inside the tooltip */
+.footnote-tooltip a {
+    color: var(--theme-color);
+    text-decoration: none;
+}
+.footnote-tooltip a:hover {
+    color: var(--theme-color-highlights);
+    text-decoration: underline;
+}

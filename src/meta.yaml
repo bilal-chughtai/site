@@ -196,3 +196,10 @@
       "https://github.com/bilal-chughtai/everything2prompt",
       "https://docs.google.com/presentation/d/1o4qZ1xlcn6tKxTNmNRS8oQdSLOd8emWLaAuNcfbsh9A/edit?slide=id.g371af394405_0_0#slide=id.g371af394405_0_0"
     ]
+
+- label: todo
+  title: "An opinionated guide to building a good to-do system"
+  date: 2025-08-03
+  description: ""
+  math: false
+  tags: ["productivity"]

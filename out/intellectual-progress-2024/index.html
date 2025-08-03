@@ -196,6 +196,7 @@
 <h1 id="section-3">What now?</h1>
 <p>I'm both excited and terrified by the future. AI capabilities continue to increase at an alarming rate. I expect the wider world will begin to reckon with AGI and start to feel the impacts of the past few years of AI developments in a big way for the first time in 2025. On a personal level, it now feels more important than ever to me to knuckle down and do great work. It also seems more important than ever to make sure that this effort is directed well, and to carefully and properly evaluate whether my time is being best spent on what I believe to be the most important thing. I feel pretty good about working on mechanistic interpretability at GDM for now, and am excited to get started in February. In the mean time, I'm spending most of my January thinking through higher level AI strategy questions, getting my life in order, and trying (but mostly failing) to get some rest in the calm before the storm.</p>
     </div>
+    
     <div class="footer">
         
         
@@ -212,6 +213,62 @@
         </div>-->
     </div>
     <footer></footer>
+
+    <!-- Footnote tooltip script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Create a single tooltip element
+            const tooltip = document.createElement('div');
+            tooltip.className = 'footnote-tooltip';
+            document.body.appendChild(tooltip);
+            let hideTimer;
+
+            function positionTooltip(ref) {
+                const rect = ref.getBoundingClientRect();
+                const scrollX = window.scrollX || window.pageXOffset;
+                const scrollY = window.scrollY || window.pageYOffset;
+                // Initial placement below the reference
+                let top = scrollY + rect.bottom + 8;
+                let left = scrollX + rect.left;
+                tooltip.style.top = top + 'px';
+                tooltip.style.left = left + 'px';
+                // Adjust if it overflows the right edge
+                const tt = tooltip.getBoundingClientRect();
+                const viewportWidth = document.documentElement.clientWidth;
+                if (tt.right > viewportWidth - 8) {
+                    const overflow = tt.right - (viewportWidth - 8);
+                    tooltip.style.left = (left - overflow) + 'px';
+                }
+                // Adjust if it overflows the left edge
+                if (tt.left < 8) {
+                    tooltip.style.left = (scrollX + 8) + 'px';
+                }
+            }
+
+            function showTooltip(ref) {
+                clearTimeout(hideTimer);
+                tooltip.innerHTML = ref.getAttribute('data-footnote');
+                tooltip.style.display = 'block';
+                positionTooltip(ref);
+            }
+
+            function hideTooltip() {
+                hideTimer = setTimeout(() => {
+                    tooltip.style.display = 'none';
+                }, 300); // 300ms delay before hiding
+            }
+
+            // Attach events to each footnote reference
+            document.querySelectorAll('a.footnote-ref').forEach(function (ref) {
+                ref.addEventListener('mouseenter', () => showTooltip(ref));
+                ref.addEventListener('mouseleave', hideTooltip);
+            });
+
+            // Keep tooltip open when hovering over it
+            tooltip.addEventListener('mouseenter', () => clearTimeout(hideTimer));
+            tooltip.addEventListener('mouseleave', hideTooltip);
+        });
+    </script>
 </body>
 
 </html>
