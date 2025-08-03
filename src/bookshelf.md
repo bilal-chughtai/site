@@ -1,6 +1,10 @@
-A log of all the books I've read since ~2021 in reverse chronological order. *Italics* indicate I only skimmed/partially read. Last updated: July 24th 2025.
+A log of all the books I've read since ~2021 in reverse chronological order. *Italics* indicate I only skimmed/partially read. Last updated: August 03rd 2025.
 
 Suggestions always welcome.
+
+## Currently Reading
+
+- [Brave New World](https://en.wikipedia.org/wiki/Brave_New_World) (Aldous Huxley, 1932)
 
 ## 2025
 
