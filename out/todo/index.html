@@ -44,19 +44,23 @@
     <ul>
         
         <li class="toc-h1">
-            <a href="#section-0">What makes a good to do system?</a>
+            <a href="#section-0">Why care about having a good to-do system?</a>
+        </li>
+        
+        <li class="toc-h1">
+            <a href="#section-1">What makes a good to-do system?</a>
         </li>
         
         <li class="toc-h2">
-            <a href="#section-1">Principles</a>
+            <a href="#section-2">Principles</a>
         </li>
         
         <li class="toc-h1">
-            <a href="#section-2">My setup</a>
+            <a href="#section-3">My system</a>
         </li>
         
-        <li class="toc-h1">
-            <a href="#section-3">When to break the rules</a>
+        <li class="toc-h2">
+            <a href="#section-4">Other components of my system</a>
         </li>
         
     </ul>
@@ -78,7 +82,7 @@
         
         <p>
             <time datetime="2025-08-03">2025-08-03</time>
-            &middot; 2.5k words
+            &middot; 2.6k words
             &middot; 9 minute read
         </p>
         <!-- <p class="post-summary"> <strong>Summary</strong>: </p> -->
@@ -91,19 +95,23 @@
             <ul>
                 
                 <li class="toc-h1">
-                    <a href="#section-0">What makes a good to do system?</a>
+                    <a href="#section-0">Why care about having a good to-do system?</a>
+                </li>
+                
+                <li class="toc-h1">
+                    <a href="#section-1">What makes a good to-do system?</a>
                 </li>
                 
                 <li class="toc-h2">
-                    <a href="#section-1">Principles</a>
+                    <a href="#section-2">Principles</a>
                 </li>
                 
                 <li class="toc-h1">
-                    <a href="#section-2">My setup</a>
+                    <a href="#section-3">My system</a>
                 </li>
                 
-                <li class="toc-h1">
-                    <a href="#section-3">When to break the rules</a>
+                <li class="toc-h2">
+                    <a href="#section-4">Other components of my system</a>
                 </li>
                 
             </ul>
@@ -113,21 +121,22 @@
     
 
     <div class="post-content">
-        <p>Building a to-do system you actually stick to and use consistently is difficult. It took me significant iteration to nail mine. But now that I have, it acts as my second brain.<sup id="fnref:1"><a class="footnote-ref" data-footnote='
+        <p>Building a good to-do system has perhaps been the most important intervention I've ever made to improve my productivity. None of the advice I give below was initially obvious to me, so my first few systems were deeply flawed and thus failed. It took me significant iteration over several years to nail my system. But now that I have, it acts as my second brain,<sup id="fnref:1"><a class="footnote-ref" data-footnote='
 &lt;p&gt;I also have a third and fourth brain, namely Obsidian and my Google Calendar, but those are beyond the scope of this post, and also somewhat conceptually simpler. &lt;a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
-' href="#fn:1">1</a></sup> I would be completely lost without it.<sup id="fnref:2"><a class="footnote-ref" data-footnote='
+' href="#fn:1">1</a></sup> and I would be completely lost without it.<sup id="fnref:2"><a class="footnote-ref" data-footnote='
 &lt;p&gt;Recently, a friend asked me what I was up to for the rest of the day and prohibited me from checking my to-do system. I struggled. &lt;a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
-' href="#fn:2">2</a></sup> You might want to consider spending some time either creating or dialling your to do system too.<sup id="fnref:3"><a class="footnote-ref" data-footnote="
+' href="#fn:2">2</a></sup> I think many people would be more much effective and impactful if they were more organized, and that a good to-do system takes you a significant chunk of the way towards this. This post aims to communicate some of the frames I use when thinking about to-do systems and productivity that I've developed up over the years, and concretely serves as an actionable and opinionated guide to building your very own to-do system.<sup id="fnref:3"><a class="footnote-ref" data-footnote="
 &lt;p&gt;In general, I think people systematically neglect spending time on workflow improvements. I expect in the AI era, where the rate at which new workflows become possible is increased, you should probably be spending even more time on workflow iteration than normal. Recently, I've been spending something like a day a week on improving workflows. &lt;a class=&quot;footnote-backref&quot; href=&quot;#fnref:3&quot; title=&quot;Jump back to footnote 3 in the text&quot;&gt;↩&lt;/a&gt;&lt;/p&gt;
-" href="#fn:3">3</a></sup> This post aims to help you do so.</p>
-<p>Why should you care about having a good to-do system? A good to-do system solves three distinct <em>problems</em>.</p>
+" href="#fn:3">3</a></sup></p>
+<h1 id="section-0">Why care about having a good to-do system?</h1>
+<p>Why should you care about having a good to-do system in the first place? A good to-do system solves three distinct <em>problems</em>.</p>
 <ol type="a">
 <li><strong>Forgetting tasks</strong>. The event that most counterfactually led to me developing my current system was completely forgetting to follow up on a career opportunity; a potentially pretty costly mistake.</li>
 <li><strong>Mental clutter</strong>. Having to remember everything you need to do, even if in principle possible, is <em>also</em> costly, as retaining your entire to-do list in working memory will reduce the amount of focus and attention you can pay to the task you are currently working on. As someone who finds mental clutter pretty distracting, not having a good to do system was historically particularly costly for me.</li>
 <li><strong>Bad prioritization</strong>. A good to do system helps you more efficiently and correctly choose the what task to do next. It <a href="https://www.lesswrong.com/posts/4WLQvcgDWxeuFRymz/ai-and-wisdom-1-wisdom-amortised-optimisation-and-ai">amortises</a> some of the cost of planning.</li>
 </ol>
 <p>In the remainder of this post, I discuss my high level philosophy behind good to do systems, an opinionated set of general principles based on my experience iterating on mine over the years, demo my current system, and finally discuss some exceptional cases where I think it's actually okay (and personally do) defect from these principles. AIs tell me the below principles have significant overlap with ideas from David Allen's <a href="https://en.wikipedia.org/wiki/Getting_Things_Done">Getting Things Done</a> and Cal Newport's <a href="https://www.goodreads.com/book/show/25744928-deep-work">Deep Work</a>, though I've never read either.</p>
-<h1 id="section-0">What makes a good to do system?</h1>
+<h1 id="section-1">What makes a good to-do system?</h1>
 <p>It's instructive to think about when we might use a to-do system before discussing how to build a good one.</p>
 <p>I find myself firing up my to do system to do one of the four following <em>activities</em>:</p>
 <ol>
@@ -137,7 +146,7 @@
 <li>I want to perform <strong>maintenance</strong>: e.g. edit some tasks, delete stale tasks, etc.</li>
 </ol>
 <p>So, what makes a to do system <em>good</em>? At minimum, it should solve <em>problems</em> a-c via letting you do <em>activities</em> 1-4 above. A further key property it should have is that of <strong>reducing cognitive load</strong> when thinking about tasks. If your system is somehow increasing it, you are doing something wrong, and should probably iterate to reduce that. The most common way systems of mine have failed historically is via insufficiently reducing cognitive load (and even sometimes increasing it!).</p>
-<h2 id="section-1">Principles</h2>
+<h2 id="section-2">Principles</h2>
 <p>With that in mind, here are my concrete importance ordered principles for building a good to-do system.</p>
 <p><strong>Adding tasks should be low friction</strong>. If adding tasks is high friction, you will just not do it when your discipline levels are low or tiredness levels are high. Low friction in this context means "with few actions". So concretely, this means you should both be able to add the task and tag and organize it easily. It is hard to get to a to do system to literally zero friction, but getting any habit as close as possible to a <a href="&lt;https://www.benkuhn.net/zero/">zero-effort</a> habit will improve the probability you stick to it immensely.</p>
 <p><strong>It should be possible to add tasks as soon as you think of them, and check tasks off as complete as soon as you complete them.</strong> If you cannot, you will need to do one of the following. One option is to retain the new/completed task in working memory until some point you can access your system. This risks you either forgetting the task or cluttering your working memory. Another option is to maintain a "task cache" somewhere you do have instant access to, and then later sync said cache to the ground truth system. This is obviously risky and so will inevitably at some point break. Note that new tasks can be tasks to create tasks, e.g. "deal with X" can be quickly jot down, and then later refined.</p>
@@ -150,7 +159,7 @@
 <p><strong>Some tasks recur.</strong> Many tasks recur on a regular cadence. Paying bills, cleaning, watering your plants, etc. You should not have to make a new task for each instance of a recurring task, as this is high friction. The feature to recur a task is very helpful.</p>
 <p><strong>Regular reviews are important.</strong> Tasks go stale. It is important to regularly review everything in your to-do system and delete things that have become irrelevant, and to surface things that have changed priority. Perhaps schedule a recurring monthly task to do so, to batch this work.</p>
 <p><strong>It should interface nicely with your calendar.</strong> A calendar event in some sense is a task, but it's a special kind of task that does not need to be checked off as complete; it completes by default at the end of the allotted time. This distinction makes using a calendar as a to-do system problematic (as you risk forgetting to do a task in the allotted window, and then not being reminded of it again in future), and using a to-do system as a calendar annoying (as you need to check off things that should just get checked off by default). Calendar integration <em>is</em> useful though, as when planning your tasks for the day, it is useful to see what calendar events you have. If you <strong>time box tasks</strong> it can also be useful to see those on your calendar.</p>
-<h1 id="section-2">My setup</h1>
+<h1 id="section-3">My system</h1>
 <p>I use and recommend the fantastic <a href="https://todoist.com/">todoist</a> software.<sup id="fnref:5"><a class="footnote-ref" data-footnote='
 &lt;p&gt;If relevant, todoist also has a good &lt;a href="https://developer.todoist.com/api/v1/"&gt;API&lt;/a&gt;. &lt;a class="footnote-backref" href="#fnref:5" title="Jump back to footnote 5 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
 ' href="#fn:5">5</a></sup> I've been using and have been happy with todoist for &gt;2 years. I suspect there are also other good options.<sup id="fnref:6"><a class="footnote-ref" data-footnote='
@@ -170,7 +179,7 @@
 <p><strong>Calendar sync.</strong> Todoist has a two-way calendar sync, so time boxed tasks will show up on my google calendar, and calendar events will show up in my todoist interface (I discuss above what I think of as a task and what I think of as a calendar event). You can also show all of your tasks for a particular day in your calendar, including those which don't have a specific time attached, but I find this chaotic so don't. It also has the nice feature that completed time boxed tasks show up with a ✔️ in my calendar. <img alt="" src="assets/Pasted image 20250629153532.png"/></p>
 <p><strong>More complex filters and views.</strong> I have a dedicated "work" project, and two associated filter views to separate todays work tasks from personal tasks. This is helpful because I often don't want to see personal stuff while at the office, or work stuff on a sunday night.</p>
 <p><img alt="" src="assets/Pasted image 20250720232020.png"/></p>
-<h1 id="section-3">When to break the rules</h1>
+<h2 id="section-4">Other components of my system</h2>
 <p>The vast majority of my tasks make it into todoist and abide by the above principles. There are a few categories of exceptions.</p>
 <p>One general category of exception are cases where simplicity is sufficient so wins out.</p>
 <ul>
@@ -185,7 +194,7 @@
 <p><br/></p>
 <hr/>
 <p><br/></p>
-<p><em>Thanks to Hannah Erlebach for organizing a retreat where I built the first version of my current to-do system. Thanks to Cindy Wu, Jeevan Fernando and Neel Nanda for helpful feedback on drafts and discussion.</em></p>
+<p><em>Thanks to Hannah Erlebach for organizing a retreat where I built the first version of my current to-do system. Thanks to Cindy Wu, Chloe Li, Jeevan Fernando and Neel Nanda for helpful feedback on drafts and discussion.</em></p>
 <p><br/></p>
 <div class="footnote">
 <hr/>

@@ -1,8 +1,9 @@
-# Introduction
+Building a good to-do system has perhaps been the most important intervention I've ever made to improve my productivity. None of the advice I give below was initially obvious to me, so my first few systems were deeply flawed and thus failed. It took me significant iteration over several years to nail my system. But now that I have, it acts as my second brain,[^1] and I would be completely lost without it.[^2] I think many people would be more much effective and impactful if they were more organized, and that a good to-do system takes you a significant chunk of the way towards this. This post aims to communicate some of the frames I use when thinking about to-do systems and productivity that I've developed up over the years, and concretely serves as an actionable and opinionated guide to building your very own to-do system.[^3]
 
-Building a to-do system you actually stick to and use consistently is difficult. It took me significant iteration to nail mine. But now that I have, it acts as my second brain.[^1] I would be completely lost without it.[^2] You might want to consider spending some time either creating or dialling your to do system too.[^3] This post aims to help you do so.
 
-Why should you care about having a good to-do system? A good to-do system solves three distinct _problems_.
+# Why care about having a good to-do system?
+
+Why should you care about having a good to-do system in the first place? A good to-do system solves three distinct _problems_.
 
 <ol type="a">
   <li><strong>Forgetting tasks</strong>. The event that most counterfactually led to me developing my current system was completely forgetting to follow up on a career opportunity; a potentially pretty costly mistake.</li>
@@ -12,7 +13,7 @@ Why should you care about having a good to-do system? A good to-do system solves
 
 In the remainder of this post, I discuss my high level philosophy behind good to do systems, an opinionated set of general principles based on my experience iterating on mine over the years, demo my current system, and finally discuss some exceptional cases where I think it's actually okay (and personally do) defect from these principles. AIs tell me the below principles have significant overlap with ideas from David Allen's [Getting Things Done](https://en.wikipedia.org/wiki/Getting_Things_Done) and Cal Newport's [Deep Work](https://www.goodreads.com/book/show/25744928-deep-work), though I've never read either.
 
-# What makes a good to do system?
+# What makes a good to-do system?
 
 It's instructive to think about when we might use a to-do system before discussing how to build a good one.
 
@@ -25,7 +26,7 @@ I find myself firing up my to do system to do one of the four following _activit
 
 So, what makes a to do system _good_? At minimum, it should solve _problems_ a-c via letting you do _activities_ 1-4 above. A further key property it should have is that of **reducing cognitive load** when thinking about tasks. If your system is somehow increasing it, you are doing something wrong, and should probably iterate to reduce that. The most common way systems of mine have failed historically is via insufficiently reducing cognitive load (and even sometimes increasing it!).
 
-## Principles 
+## Principles
 
 With that in mind, here are my concrete importance ordered principles for building a good to-do system.
 
@@ -47,7 +48,7 @@ With that in mind, here are my concrete importance ordered principles for buildi
 
 **It should interface nicely with your calendar.** A calendar event in some sense is a task, but it's a special kind of task that does not need to be checked off as complete; it completes by default at the end of the allotted time. This distinction makes using a calendar as a to-do system problematic (as you risk forgetting to do a task in the allotted window, and then not being reminded of it again in future), and using a to-do system as a calendar annoying (as you need to check off things that should just get checked off by default). Calendar integration _is_ useful though, as when planning your tasks for the day, it is useful to see what calendar events you have. If you **time box tasks** it can also be useful to see those on your calendar.
 
-# My setup
+# My system
 
 I use and recommend the fantastic [todoist](https://todoist.com/) software.[^5] I've been using and have been happy with todoist for >2 years. I suspect there are also other good options.[^6]
 
@@ -79,7 +80,7 @@ Below I've created a bunch of tasks in the "demo" project with various hopefully
 
 ![](img/todo/Pasted image 20250720232020.png)
 
-# When to break the rules
+## Other components of my system
 
 The vast majority of my tasks make it into todoist and abide by the above principles. There are a few categories of exceptions.
 
@@ -99,11 +100,12 @@ Some other exceptions:
 
 <br>
 
-_Thanks to Hannah Erlebach for organizing a retreat where I built the first version of my current to-do system. Thanks to Cindy Wu, Jeevan Fernando and Neel Nanda for helpful feedback on drafts and discussion._
+_Thanks to Hannah Erlebach for organizing a retreat where I built the first version of my current to-do system. Thanks to Cindy Wu, Chloe Li, Jeevan Fernando and Neel Nanda for helpful feedback on drafts and discussion._
 
 <br>
 
 [^1]: I also have a third and fourth brain, namely Obsidian and my Google Calendar, but those are beyond the scope of this post, and also somewhat conceptually simpler.
+
 [^2]: Recently, a friend asked me what I was up to for the rest of the day and prohibited me from checking my to-do system. I struggled.
 
 [^3]: In general, I think people systematically neglect spending time on workflow improvements. I expect in the AI era, where the rate at which new workflows become possible is increased, you should probably be spending even more time on workflow iteration than normal. Recently, I've been spending something like a day a week on improving workflows.

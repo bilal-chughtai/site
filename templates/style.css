@@ -372,21 +372,16 @@ ul {
 }
 
 /* Footnote styling */
-.footnote-ref {
-    text-decoration: none;
-    color: var(--theme-color);
-    position: relative;
-    font-size: 0.8em;
-    vertical-align: super;
-}
 
 sup[id^="fnref:"] {
-    vertical-align: baseline;
-    font-size: inherit;
-    line-height: 1.7;
     margin: 0;
     padding: 0;
-    position: static; */
+    line-height: 1.7;
+    vertical-align: super;
+    font-size: 0.8em;
+    position: relative;
+    text-decoration: none;
+    color: var(--theme-color);
 }
 
 /* Hide CSS pseudo-element tooltips since JS-driven tooltips will be used */
