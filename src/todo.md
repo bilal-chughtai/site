@@ -3,7 +3,7 @@ My to-do system is by far the most important system I have for keeping my life o
 
 # Why care about having a good to-do system?
 
-Why should you care about having a good to-do system in the first place? A good to-do system, as I aluded to above, improves your productivity by solving three distinct _problems_.
+Why should you care about having a good to-do system in the first place? A good to-do system, as I alluded to above, improves your productivity by solving three distinct _problems_.
 
 <ol type="a">
   <li><strong>Forgetting tasks</strong>. The event that most counterfactually led to me developing my current system was completely forgetting to follow up on a career opportunity; a potentially pretty costly mistake.</li>
