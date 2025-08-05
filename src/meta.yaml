@@ -199,7 +199,12 @@
 
 - label: todo
   title: "An opinionated guide to building a good to-do system"
-  date: 2025-08-03
+  date: 2025-08-05
   description: ""
   math: false
   tags: ["productivity"]
+  elsewhere:
+  [
+    https://www.lesswrong.com/posts/4dkzn2jdW4jCg8m8Y/an-opinionated-guide-to-building-a-good-to-do-system,
+    
+  ]
