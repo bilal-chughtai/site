@@ -203,8 +203,9 @@
   description: ""
   math: false
   tags: ["productivity"]
-  elsewhere:
-  [
-    https://www.lesswrong.com/posts/4dkzn2jdW4jCg8m8Y/an-opinionated-guide-to-building-a-good-to-do-system,
-    
+  elsewhere: [
+    "https://www.lesswrong.com/posts/4dkzn2jdW4jCg8m8Y/an-opinionated-guide-to-building-a-good-to-do-system",
+    "https://forum.effectivealtruism.org/posts/rCsC9iiLdHJkC8GmF/an-opinionated-guide-to-building-a-good-to-do-system",
+    "https://www.linkedin.com/posts/bilalchughtai_my-to-do-system-is-by-far-the-most-important-activity-7358635639925293056-R_Uf?utm_source=share&utm_medium=member_desktop&rcm=ACoAACy6rLMBE3sQAk8sLKQF2roS-gHr056HXSU",
+    "https://x.com/bilalchughtai_/status/1952867852224217591"
   ]
