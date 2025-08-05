@@ -3,7 +3,7 @@ My to-do system is by far the most important system I have for keeping my life o
 
 # Why care about having a good to-do system?
 
-Why should you care about having a good to-do system in the first place? A good to-do system, as I aluded to above, solves three distinct _problems_.
+Why should you care about having a good to-do system in the first place? A good to-do system, as I aluded to above, improves your productivity by solving three distinct _problems_.
 
 <ol type="a">
   <li><strong>Forgetting tasks</strong>. The event that most counterfactually led to me developing my current system was completely forgetting to follow up on a career opportunity; a potentially pretty costly mistake.</li>
@@ -11,13 +11,9 @@ Why should you care about having a good to-do system in the first place? A good 
   <li><strong>Bad prioritization</strong>. A good to-do system helps you more efficiently and correctly choose the what task to do next. It <a href="https://www.lesswrong.com/posts/4WLQvcgDWxeuFRymz/ai-and-wisdom-1-wisdom-amortised-optimisation-and-ai">amortises</a> some of the cost of planning.</li>
 </ol>
 
-In the remainder of this post, I discuss my high level philosophy behind good to-do systems, an opinionated set of general principles based on my experience iterating on mine over the years, demo my current system, and finally discuss some exceptional cases where I think it's actually okay (and personally do) defect somewhat from these principles. AIs tell me the below principles have significant overlap with ideas from David Allen's [Getting Things Done](https://en.wikipedia.org/wiki/Getting_Things_Done) and Cal Newport's [Deep Work](https://www.goodreads.com/book/show/25744928-deep-work), though I've never read either.
-
 # What makes a good to-do system?
 
-It's instructive to think about when we might use a to-do system before discussing how to build a good one.
-
-I find myself firing up my to-do system to do one of the four following _activities_:
+It's instructive to think about when we might use a to-do system before discussing how to build a good one. I find myself firing up my to-do system to do one of the four following _activities_:
 
 1. I think of some new task, and want to **add** it.
 2. I want to **plan** out my day or week, or figure out what to do next.
@@ -28,7 +24,7 @@ So, what makes a to-do system _good_? At minimum, it should solve _problems_ a-c
 
 ## Principles
 
-With that in mind, here are my concrete importance ordered principles for building a good to-do system.
+With that in mind, here are my concrete importance ordered principles for building a good to-do system. AIs tell me the below principles have significant overlap with ideas from David Allen's [Getting Things Done](https://en.wikipedia.org/wiki/Getting_Things_Done) and Cal Newport's [Deep Work](https://www.goodreads.com/book/show/25744928-deep-work), though I've never read either.
 
 **Adding tasks should be low friction**. If adding tasks is high friction, you will just not do it when your discipline levels are low or tiredness levels are high. Low friction in this context means "with few actions". So concretely, this means you should both be able to add the task and organize it easily. It is hard to get to a to-do system to literally zero friction, but getting any habit as close as possible to a [zero-effort](<https://www.benkuhn.net/zero/) habit will improve the probability you stick to it immensely. 
 
@@ -80,7 +76,7 @@ Below I've created a bunch of tasks in the "demo" project with various hopefully
 
 ![](img/todo/Pasted image 20250720232020.png)
 
-## Other components
+## My other systems
 
 The vast majority of my tasks make it into todoist and abide by the above principles. There are a few categories of exceptions.
 

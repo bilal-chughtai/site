@@ -60,7 +60,7 @@
         </li>
         
         <li class="toc-h2">
-            <a href="#section-4">Other components</a>
+            <a href="#section-4">My other systems</a>
         </li>
         
     </ul>
@@ -82,7 +82,7 @@
         
         <p>
             <time datetime="2025-08-03">2025-08-03</time>
-            &middot; 2.6k words
+            &middot; 2.5k words
             &middot; 9 minute read
         </p>
         <!-- <p class="post-summary"> <strong>Summary</strong>: </p> -->
@@ -111,7 +111,7 @@
                 </li>
                 
                 <li class="toc-h2">
-                    <a href="#section-4">Other components</a>
+                    <a href="#section-4">My other systems</a>
                 </li>
                 
             </ul>
@@ -129,16 +129,14 @@
 &lt;p&gt;In general, I think people systematically neglect spending time on workflow improvements. I expect in the AI era, where the rate at which new workflows become possible is increased, you should probably be spending even more time on workflow iteration than normal. Recently, I've been spending something like a day a week on improving workflows. &lt;a class=&quot;footnote-backref&quot; href=&quot;#fnref:3&quot; title=&quot;Jump back to footnote 3 in the text&quot;&gt;↩&lt;/a&gt;&lt;/p&gt;
 " href="#fn:3">3</a></sup> This post collates my (highly opinionated) advice on how to do so, from years of iteration fixing failures in my own systems.</p>
 <h1 id="section-0">Why care about having a good to-do system?</h1>
-<p>Why should you care about having a good to-do system in the first place? A good to-do system, as I aluded to above, solves three distinct <em>problems</em>.</p>
+<p>Why should you care about having a good to-do system in the first place? A good to-do system, as I aluded to above, improves your productivity by solving three distinct <em>problems</em>.</p>
 <ol type="a">
 <li><strong>Forgetting tasks</strong>. The event that most counterfactually led to me developing my current system was completely forgetting to follow up on a career opportunity; a potentially pretty costly mistake.</li>
 <li><strong>Mental clutter</strong>. Having to remember everything you need to do, even if in principle possible, is <em>also</em> costly, as retaining your entire to-do list in working memory will reduce the amount of focus and attention you can pay to the task you are currently working on. As someone who finds mental clutter pretty distracting, not having a good to-do system was historically particularly costly for me.</li>
 <li><strong>Bad prioritization</strong>. A good to-do system helps you more efficiently and correctly choose the what task to do next. It <a href="https://www.lesswrong.com/posts/4WLQvcgDWxeuFRymz/ai-and-wisdom-1-wisdom-amortised-optimisation-and-ai">amortises</a> some of the cost of planning.</li>
 </ol>
-<p>In the remainder of this post, I discuss my high level philosophy behind good to-do systems, an opinionated set of general principles based on my experience iterating on mine over the years, demo my current system, and finally discuss some exceptional cases where I think it's actually okay (and personally do) defect somewhat from these principles. AIs tell me the below principles have significant overlap with ideas from David Allen's <a href="https://en.wikipedia.org/wiki/Getting_Things_Done">Getting Things Done</a> and Cal Newport's <a href="https://www.goodreads.com/book/show/25744928-deep-work">Deep Work</a>, though I've never read either.</p>
 <h1 id="section-1">What makes a good to-do system?</h1>
-<p>It's instructive to think about when we might use a to-do system before discussing how to build a good one.</p>
-<p>I find myself firing up my to-do system to do one of the four following <em>activities</em>:</p>
+<p>It's instructive to think about when we might use a to-do system before discussing how to build a good one. I find myself firing up my to-do system to do one of the four following <em>activities</em>:</p>
 <ol>
 <li>I think of some new task, and want to <strong>add</strong> it.</li>
 <li>I want to <strong>plan</strong> out my day or week, or figure out what to do next.</li>
@@ -147,7 +145,7 @@
 </ol>
 <p>So, what makes a to-do system <em>good</em>? At minimum, it should solve <em>problems</em> a-c via letting you do <em>activities</em> 1-4 above. A further key property it should have is that of <strong>reducing cognitive load</strong> when thinking about tasks. If your system is somehow increasing it, you are doing something wrong, and should probably iterate to reduce that. The most common way systems of mine have failed historically is via insufficiently reducing cognitive load (and even sometimes increasing it!).</p>
 <h2 id="section-2">Principles</h2>
-<p>With that in mind, here are my concrete importance ordered principles for building a good to-do system.</p>
+<p>With that in mind, here are my concrete importance ordered principles for building a good to-do system. AIs tell me the below principles have significant overlap with ideas from David Allen's <a href="https://en.wikipedia.org/wiki/Getting_Things_Done">Getting Things Done</a> and Cal Newport's <a href="https://www.goodreads.com/book/show/25744928-deep-work">Deep Work</a>, though I've never read either.</p>
 <p><strong>Adding tasks should be low friction</strong>. If adding tasks is high friction, you will just not do it when your discipline levels are low or tiredness levels are high. Low friction in this context means "with few actions". So concretely, this means you should both be able to add the task and organize it easily. It is hard to get to a to-do system to literally zero friction, but getting any habit as close as possible to a <a href="&lt;https://www.benkuhn.net/zero/">zero-effort</a> habit will improve the probability you stick to it immensely. </p>
 <p><strong>It should be possible to add tasks as soon as you think of them, and check tasks off as complete as soon as you complete them.</strong> If you cannot, you will need to do one of the following. One option is to retain the new/completed task in working memory until some point you can access your system. This risks you either forgetting the task or cluttering your working memory. Another option is to maintain a "task cache" somewhere you do have instant access to, and then later sync said cache to the ground truth system. This is obviously risky and so will inevitably at some point break. Note that new tasks can be tasks to create tasks, e.g. "deal with X" can be quickly jot down, and then later refined.</p>
 <p><strong>All tasks should not be visible all of the time</strong>. In the high task regime especially, it is costly to be reminded of everything you ever need to do every time you want to add a new task, check off a task as complete, or figure out what to do next. Trust me, you do not want to be stressing or distracted by your tax return that is not due for another 8 months. <a href="https://www.benkuhn.net/attention/">Attention is your scarcest resource</a>, so most tasks should be hidden from you until you need or choose to see them. I think of this as a form of self-<a href="https://simonwillison.net/2025/Jun/27/context-engineering/">context engineering</a>, and also apply this principle in many other settings. For instance, when working on some task X, I try to close all irrelevant apps to stay maximally focussed. Using dedicated desktop apps as opposed to browser apps helps a bunch with this. For more tips, tricks and ideas for keeping focussed, see <a href="https://www.benkuhn.net/focustools/">here</a>.</p>
@@ -179,7 +177,7 @@
 <p><strong>Calendar sync.</strong> Todoist has a two-way calendar sync, so time boxed tasks will show up on my google calendar, and calendar events will show up in my todoist interface (I discuss above what I think of as a task and what I think of as a calendar event). You can also show all of your tasks for a particular day in your calendar, including those which don't have a specific time attached, but I find this chaotic so don't. It also has the nice feature that completed time boxed tasks show up with a ✔️ in my calendar. <img alt="" src="assets/Pasted image 20250629153532.png"/></p>
 <p><strong>More complex filters and views.</strong> I have a dedicated "work" project, and two associated filter views to separate todays work tasks from personal tasks. This is helpful because I often don't want to see personal stuff while at the office, or work stuff on a sunday night.</p>
 <p><img alt="" src="assets/Pasted image 20250720232020.png"/></p>
-<h2 id="section-4">Other components</h2>
+<h2 id="section-4">My other systems</h2>
 <p>The vast majority of my tasks make it into todoist and abide by the above principles. There are a few categories of exceptions.</p>
 <p>One general category of exception are cases where simplicity is sufficient so wins out.</p>
 <ul>
