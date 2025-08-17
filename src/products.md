@@ -4,7 +4,7 @@ _Last updated: 17th August 2025_
 
 # Software
 
-**[Obsidian](https://obsidian.md/)**. Powerful locally hosted notes markdown notes.
+**[Obsidian](https://obsidian.md/)**. Nice interface for writing locally hosted markdown notes.
 
 **[Arc Browser](https://arc.net/)**. Chrome on steroids.
 
