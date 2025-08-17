@@ -20,6 +20,18 @@ from typing import Any
 
 from latex_wrangle import LatexExtension
 
+# External links configuration
+EXTERNAL_LINKS = {
+    "strava": "https://www.strava.com/athletes/32291390",
+    "github": "https://github.com/bilal-chughtai",
+    "linkedin": "https://www.linkedin.com/in/bilalchughtai/",
+    "lesswrong": "https://www.lesswrong.com/users/bilalchughtai",
+    "twitter": "https://x.com/bilalchughtai_",
+    "instapaper": "https://www.instapaper.com/p/bilalchughtai",
+    "scholar": "https://scholar.google.com/citations?user=i-L98bwAAAAJ&hl=en",
+    "email": "mailto:brchughtaii@gmail.com",
+}
+
 
 class FootnoteDataAttributeExtension(Extension):
     def extendMarkdown(self, md):
@@ -370,10 +382,37 @@ def copy_css(templates_dir: str = "templates", out_dir: str = "out"):
         f.write(css)
 
 
+def generate_external_link_redirects(out_dir: str = "out"):
+    """Generate HTML redirect pages for external links."""
+    for link_name, target_url in EXTERNAL_LINKS.items():
+        link_dir = os.path.join(out_dir, link_name)
+        os.makedirs(link_dir, exist_ok=True)
+
+        # Create HTML redirect page
+        redirect_html = f"""<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Redirecting to {link_name.title()}</title>
+    <meta http-equiv="refresh" content="0; url={target_url}">
+    <link rel="canonical" href="{target_url}">
+    <script>window.location.href = "{target_url}";</script>
+</head>
+<body>
+    <p>Redirecting to <a href="{target_url}">{link_name.title()}</a>...</p>
+    <p>If you are not redirected automatically, <a href="{target_url}">click here</a>.</p>
+</body>
+</html>"""
+
+        with open(os.path.join(link_dir, "index.html"), "w", encoding="utf-8") as f:
+            f.write(redirect_html)
+
+
 def main():
     posts = load_posts()
     generate_html(posts)
     copy_css()
+    generate_external_link_redirects()
 
 
 def get_post_title(label: str, posts: list[Post]) -> str:
