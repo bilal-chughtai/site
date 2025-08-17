@@ -12,7 +12,7 @@ _Last updated: 17th August 2025_
 
 **[Cursor](https://www.cursor.com/)**. VSCode on steroids.
 
-**[Todoist](https://app.todoist.com/app/project/6W2gvXWXX4prqJ7G)**. Powerful personal task management.
+**[Todoist](https://app.todoist.com/app/project/6W2gvXWXX4prqJ7G)**. Powerful personal task management. [Here](/todo) is a blog post about my to-do system.
 
 **[Instapaper](https://www.instapaper.com/u)**. Read links later, and then catalogue them for future reference.
 
