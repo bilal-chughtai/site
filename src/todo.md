@@ -52,6 +52,8 @@ Before using todoist, I tried various other systems, in various different form f
 
 Here's what my todoist set up looks like, for inspiration. You probably shouldn't copy it exactly. I've iterated towards this over the course of years, and in general try to only add complexity when I'm certain it will be helpful. When I just started out, the total complexity was significantly lower.
 
+**Platform.** Todoist is available as a dedicated desktop app, as a mobile app, and as a web app. I can usually access todoist within seconds at all times of day. This is important for not having newly arising tasks cluttering my working memory until I can access my system.
+
 **Adding tasks.** One feature I find essential for reducing friction to add tasks is being able to create tasks entirely via natural language using my keyboard, instead of needing to click through various buttons. I do so as follows, by firing up this window via hitting "q" and then typing in the literal string seen below.
 
 ![](img/todo/Pasted image 20250629153747.png)

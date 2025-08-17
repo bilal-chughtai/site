@@ -33,10 +33,10 @@
       "https://www.lesswrong.com/posts/7LZHS4afrXCNuuGK9/book-summary-zero-to-one"
     ]
 
-- label: favourites
+- label: products
   title: "Product recommendations"
-  date: 2025-01-11
-  description: "A list of some of my favourite things."
+  date: 2025-08-17
+  description: "A list of some of my favourite products."
   math: false
   tags: ["productivity"]
 
