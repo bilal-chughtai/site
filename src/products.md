@@ -36,6 +36,8 @@ _Last updated: 17th August 2025_
 
 **[Hollyland LARK M2S](https://www.hollyland.com/product/lark-m2s)**. Discrete wireless microphone (for superwhispering/recording yourself talk).
 
+**[CalDigit Element5 Thunderbolt Hub](https://www.caldigit.com/thunderbolt-5-element-5-hub/)**. Many peripherals. One cable.
+
 **[Oura Ring Gen 3](https://ouraring.com/)**. Sleep tracking.
 
 **[Garmin Forerunner 165 Music](https://www.garmin.com/en-GB/p/1611937/pn/010-02863-31)**. Entry level running watch.
