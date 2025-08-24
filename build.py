@@ -193,10 +193,22 @@ def add_br_before_footnotes(html_content):
     return str(soup)
 
 
+def format_date_with_ordinal(date_obj):
+    """Format date with ordinal suffix (1st, 2nd, 3rd, etc.)"""
+    day = date_obj.day
+    if 4 <= day <= 20 or 24 <= day <= 30:
+        suffix = "th"
+    else:
+        suffix = {1: "st", 2: "nd", 3: "rd"}[day % 10]
+
+    return date_obj.strftime(f"%-d{suffix} %B %Y")
+
+
 def generate_html(
     posts: list[Post], templates_dir: str = "templates", out_dir: str = "out"
 ):
     jinja_env = Environment(loader=FileSystemLoader(templates_dir))
+    jinja_env.filters["format_date"] = format_date_with_ordinal
 
     process_images(posts, out_dir)
     context = prepare_common_context()
