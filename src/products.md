@@ -1,6 +1,6 @@
 _I have a high bar for products I use daily. Here are some products I researched deeply before buying and have first hand confirmed are great. Feel free to reach out if you want explanations for why any of these are as great as I claim._
 
-_Last updated: 17th August 2025_
+_Last updated: 5th September 2025_
 
 # Software
 
@@ -44,13 +44,19 @@ _Last updated: 17th August 2025_
 
 **[TaoTronics AP003 Air Purifier](https://housefresh.com/taotronics-ap003-review/)**. The best affordable air purifier money... could buy in mid 2024. Unfortunately discontinued. [Better air quality is the easiest way to not die](https://dynomight.net/air/).
 
-# Physical stuff
+# Clothing
 
 **[Runderwear Merino Wool Boxers](https://www.runderwear.co.uk/products/merino-boxers-multibuy-x3)**. Extremely comfy underwear that doesn't budge.
+
+**[Darn Tough 1466 Hiking Socks](https://darntough.uk/products/mens-merino-wool-hiker-micro-crew-cushioned-midweight-hiking-socks?variant=42648726929598)**. Plush merino wool socks. Lifetime warranty.
 
 **[Uniqlo](https://www.uniqlo.com/uk/en/)**. Great default clothes shop.
 
 **[Barefoot shoes](https://www.vivobarefoot.com/uk/primus-lite-iii-mens-ss22?colour=Bright%20White)**. Personal taste, but I'm a huge fan.
+
+# Other physical stuff
+
+**[Varier Plus](https://www.backinaction.co.uk/variable-plus-kneeling-chair-stock#tab_VariablePlusINSTOCK_VariablePlusINSTOCK_LightBrown)**. Nice chair if, like me, you can't sit still.
 
 **[North Face Surge Backpack](https://www.thenorthface.co.uk/en-gb/p/men-211701/surge-backpack-NF0A52SG)**. Obscenely well thought through backpack.
 
