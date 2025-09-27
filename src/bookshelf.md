@@ -1,4 +1,4 @@
-A log of all the books I've read since ~2021 in reverse chronological order. *Italics* indicate I only skimmed/partially read. Last updated: September 20th 2025.
+A log of all the books I've read since ~2021 in reverse chronological order. *Italics* indicate I only skimmed/partially read. Last updated: September 27th 2025.
 
 Suggestions always welcome.
 
@@ -6,6 +6,7 @@ Suggestions always welcome.
 
 - [The Time Machine](https://en.wikipedia.org/wiki/The_Time_Machine) (H. G. Wells, 1895)
 - [Brave New World](https://en.wikipedia.org/wiki/Brave_New_World) (Aldous Huxley, 1932)
+- [The Coaching Habit: Say Less, Ask More & Change The Way You Lead Forever](https://boxofcrayons.com/the-coaching-habit/) (Michael Bungay Stanier, 2016)
 - [Animal Farm](https://en.wikipedia.org/wiki/Animal_Farm) (George Orwell, 1945)
 - [The Metamorphosis](https://en.wikipedia.org/wiki/The_Metamorphosis) (Franz Kafka, 1915)
 - [The Little Prince](https://en.wikipedia.org/wiki/The_Little_Prince) (Antoine de Saint-Exupéry, 1943)
