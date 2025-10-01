@@ -394,6 +394,22 @@ def copy_css(templates_dir: str = "templates", out_dir: str = "out"):
         f.write(css)
 
 
+def copy_favicons(src_dir: str = "src", out_dir: str = "out"):
+    """Copy favicons directory to the output directory."""
+    src_favicons_dir = os.path.join(src_dir, "favicons")
+    dst_favicons_dir = os.path.join(out_dir, "favicons")
+
+    if os.path.exists(src_favicons_dir):
+        # Remove existing favicons directory if it exists
+        if os.path.exists(dst_favicons_dir):
+            shutil.rmtree(dst_favicons_dir)
+
+        # Copy the entire favicons directory
+        shutil.copytree(src_favicons_dir, dst_favicons_dir)
+    else:
+        print(f"Warning: Favicons directory not found: {src_favicons_dir}")
+
+
 def generate_external_link_redirects(out_dir: str = "out"):
     """Generate HTML redirect pages for external links."""
     for link_name, target_url in EXTERNAL_LINKS.items():
@@ -424,6 +440,7 @@ def main():
     posts = load_posts()
     generate_html(posts)
     copy_css()
+    copy_favicons()
     generate_external_link_redirects()
 
 
