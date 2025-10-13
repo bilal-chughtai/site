@@ -1,6 +1,7 @@
-_I have a high bar for products I use daily. Here are some products I researched deeply before buying and have first hand confirmed are great. Feel free to reach out if you want explanations for why any of these are as great as I claim._
+_Last updated: 4th October 2025_
 
-_Last updated: 5th September 2025_
+_I have a high bar for products I use daily. Here are some products I both researched deeply before buying and have first hand confirmed are fantastic. Feel free to reach out if you want explanations for why any of these are as great as I claim._
+
 
 # Software
 
@@ -30,19 +31,19 @@ _Last updated: 5th September 2025_
 
 # Tech
 
-**[Mac Pro](https://www.apple.com/uk/macbook-pro/)**. Do I even need to explain this one?
+**[Mac Pro](https://www.apple.com/uk/macbook-pro/)**. Do I even need to justify this one?
 
 **[Sony WH-1000XM6 Headphones](https://www.sony.co.uk/headphones/products/wh-1000xm6?sku=wh1000xm6s.ce7)**. Wireless noise cancelling headphones.
 
-**[Hollyland LARK M2S](https://www.hollyland.com/product/lark-m2s)**. Discrete wireless microphone (for superwhispering/recording yourself talk).
+**[Hollyland LARK M2S](https://www.hollyland.com/product/lark-m2s)**. Discrete wireless microphone (for AI voice to text in busy office environments).
 
-**[CalDigit Element5 Thunderbolt Hub](https://www.caldigit.com/thunderbolt-5-element-5-hub/)**. Many peripherals. One cable.
+**[CalDigit Element5 Thunderbolt Hub](https://www.caldigit.com/thunderbolt-5-element-5-hub/)**. Many peripherals with a single cable.
 
 **[Oura Ring Gen 3](https://ouraring.com/)**. Sleep tracking.
 
 **[Garmin Forerunner 165 Music](https://www.garmin.com/en-GB/p/1611937/pn/010-02863-31)**. Entry level running watch.
 
-**[TaoTronics AP003 Air Purifier](https://housefresh.com/taotronics-ap003-review/)**. The best affordable air purifier money... could buy in mid 2024. Unfortunately discontinued. [Better air quality is the easiest way to not die](https://dynomight.net/air/).
+**[TaoTronics AP003 Air Purifier](https://housefresh.com/taotronics-ap003-review/)**. The best affordable air purifier money... could buy in mid 2024. Unfortunately discontinued (so will be increasingly hard to find). [Better air quality is the easiest way to not die](https://dynomight.net/air/).
 
 # Clothing
 
@@ -50,23 +51,27 @@ _Last updated: 5th September 2025_
 
 **[Darn Tough 1466 Hiking Socks](https://darntough.uk/products/mens-merino-wool-hiker-micro-crew-cushioned-midweight-hiking-socks?variant=42648726929598)**. Plush merino wool socks. Lifetime warranty.
 
+**[Balega Running Socks](https://balega.co.uk/)**. Supportive running socks. I like 3 styles: Blister Resist, Hidden Comfort and Enduro. Here is a neat [table](https://m.media-amazon.com/images/S/aplus-media/vc/bfdbcc99-cb4d-491f-8cf9-b4dc9c8036f6.__CR0,0,970,600_PT0_SX970_V1___.jpg) explaining the differences.
+
 **[Uniqlo](https://www.uniqlo.com/uk/en/)**. Great default clothes shop.
 
-**[Barefoot shoes](https://www.vivobarefoot.com/uk/primus-lite-iii-mens-ss22?colour=Bright%20White)**. Personal taste, but I'm a huge fan.
+**[Barefoot shoes](https://www.vivobarefoot.com/uk/primus-lite-iii-mens-ss22?colour=Bright%20White)**. Some personal taste here, but I find them comfortable.
 
 # Other physical stuff
 
 **[Varier Plus](https://www.backinaction.co.uk/variable-plus-kneeling-chair-stock#tab_VariablePlusINSTOCK_VariablePlusINSTOCK_LightBrown)**. Nice chair if, like me, you can't sit still.
 
+**[Squatty Potty](https://amzn.eu/d/2vn5oFb)**. Unkink your colon while you poop.
+
 **[North Face Surge Backpack](https://www.thenorthface.co.uk/en-gb/p/men-211701/surge-backpack-NF0A52SG)**. Obscenely well thought through backpack.
 
 **[Bellroy Card Sleeve](https://bellroy.com/products/card-sleeve-wallet?color=ocean&material=leather&size=default#slide-0)**. Minimalist wallet.
 
-**[Hydroflask](https://www.hydroflask.com/gb/32-oz-wide-mouth/)**. Hydration.
+**[Hydroflask](https://www.hydroflask.com/gb/32-oz-wide-mouth/)**. Hydration. Get specifically this wide mouth 1L variant.
 
 **[NiteIze S-biner](https://www.niteize.co.uk/collections/s-biners-carabiners)**. Carry more things.
 
-**[CeraVe Cleanser](https://www.cerave.co.uk/skincare/cleansers/sa-smoothing-cleanser)**. Skincare matters.
+**[CeraVe Cleanser](https://www.cerave.co.uk/skincare/cleansers/sa-smoothing-cleanser)**. Skincare if you have an oily face.
 
 **[Loop Quiet 2](https://www.loopearplugs.com/products/quiet?variant=48262905594191)**. Reusable ear plugs.
 
@@ -76,6 +81,8 @@ _Last updated: 5th September 2025_
 
 **Hooks**. Things should have places. This reduces clutter and saves you time when finding them. Having that place be on your wall is an efficient use of space. I use [these](https://amzn.eu/d/8c4wyXn) and [this](https://www.amazon.co.uk/dp/B07W6SVDK7?th=1) but the exact brand is not important.
 
+**[Book Darts](https://www.lesswrong.com/posts/n6nsPzJWurKWKk2pA/somebody-invented-a-better-bookmark)**. Better bookmarks. If in the UK buy from [here](https://theliterarygiftshop.co.uk/products/book-darts-mixed-tin?variant=43067965800678).
+
 # Not products
 
-**Duplicates of things you use often**. Okay, not an item. Owning multiple of the same item (e.g. laptop chargers, water bottles, etc) means not having to remember to take things with you (e.g. from your home to office).
+**Duplicates of things you use often**. Okay, not an item. But owning multiple of the same item means not having to remember to take things with you, e.g. from your home to your office.

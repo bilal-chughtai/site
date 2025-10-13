@@ -30,6 +30,7 @@ EXTERNAL_LINKS = {
     "instapaper": "https://www.instapaper.com/p/bilalchughtai",
     "scholar": "https://scholar.google.com/citations?user=i-L98bwAAAAJ&hl=en",
     "email": "mailto:brchughtaii@gmail.com",
+    "hd-streamlit": "https://bilals-health-dashboard-personal.streamlit.app/",
 }
 
 
