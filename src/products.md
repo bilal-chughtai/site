@@ -1,6 +1,6 @@
-_Last updated: 4th October 2025_
+_I have a high bar for products I use daily. Here are some products I both researched deeply before buying and have first hand confirmed are fantastic. Feel free to reach out if you want justifications for why any of these are as great as I claim._
 
-_I have a high bar for products I use daily. Here are some products I both researched deeply before buying and have first hand confirmed are fantastic. Feel free to reach out if you want explanations for why any of these are as great as I claim._
+_Last updated: 4th October 2025_
 
 
 # Software
@@ -27,11 +27,17 @@ _I have a high bar for products I use daily. Here are some products I both resea
 
 **[Cronometer](https://cronometer.com/)**. Nutrition logging.
 
-**[Superwhisper](https://superwhisper.com/)**. AI powered speech to text. Mostly for fast prompting of language models.
+**[Wispr Flow](https://wisprflow.ai/)**. Fantastic AI powered speech to text.
+
+**[Superwhisper](https://superwhisper.com/)**. Good AI powered speech to text. Use over Wispr Flow only if you care about local inference for privacy reasons.
 
 # Tech
 
 **[Mac Pro](https://www.apple.com/uk/macbook-pro/)**. Do I even need to justify this one?
+
+**[MX Master 3S](https://www.logitech.com/en-gb/shop/p/mx-master-3s)**. Wireless mouse.
+
+**[Keychron Q1 Max Mechanical Keyboard](https://www.keychron.uk/products/keychron-q1-max-qmk-via-wireless-custom-mechanical-keyboard-iso-layout-collection?variant=46077851631786)**. Wireless mechanical keyboard. Solid build quality. Hotswappable switches.
 
 **[Sony WH-1000XM6 Headphones](https://www.sony.co.uk/headphones/products/wh-1000xm6?sku=wh1000xm6s.ce7)**. Wireless noise cancelling headphones.
 
@@ -44,6 +50,12 @@ _I have a high bar for products I use daily. Here are some products I both resea
 **[Garmin Forerunner 165 Music](https://www.garmin.com/en-GB/p/1611937/pn/010-02863-31)**. Entry level running watch.
 
 **[TaoTronics AP003 Air Purifier](https://housefresh.com/taotronics-ap003-review/)**. The best affordable air purifier money... could buy in mid 2024. Unfortunately discontinued (so will be increasingly hard to find). [Better air quality is the easiest way to not die](https://dynomight.net/air/).
+
+**[Minirig 4](https://minirigs.co.uk/speakers/bluetooth-minirig-4)**. Extremely loud portable bluetooth speaker. Also with zero latency aux passthrough.
+
+**[Google Nest Mini](https://store.google.com/gb/config/google_nest_mini?hl=en-GB&selections=eyJwcm9kdWN0RmFtaWx5IjoiWjI5dloyeGxYMjVsYzNSZmJXbHVhUT09In0%3D)**. A cheapish way to start voice controlling your home. Also a decent speaker.
+
+**[Smart Coloured Light Bulbs](https://amzn.eu/d/34xoGgx)**. Buy many. Set up automations so you minimally have to manually control your lights. I recommend bright white lights during the day, and dim red lights a few hours before bed. Note I don't have strong takes on brand. I use the linked ones and they are fine, but more thought could be put into it.
 
 # Clothing
 
@@ -79,7 +91,7 @@ _I have a high bar for products I use daily. Here are some products I both resea
 
 **[Doorframe Pullup Bar](https://amzn.eu/d/6gIDTSh)**. Easy to remove, sturdy, doesn't damage your doorframe, and elevates the bar a bit.
 
-**Hooks**. Things should have places. This reduces clutter and saves you time when finding them. Having that place be on your wall is an efficient use of space. I use [these](https://amzn.eu/d/8c4wyXn) and [this](https://www.amazon.co.uk/dp/B07W6SVDK7?th=1) but the exact brand is not important.
+**Hooks**. Things should have places. This reduces clutter and saves you time when finding things. Having that place be on your wall is an efficient use of space. I use [these](https://amzn.eu/d/8c4wyXn) and [this](https://www.amazon.co.uk/dp/B07W6SVDK7?th=1) but the exact brand is not important.
 
 **[Book Darts](https://www.lesswrong.com/posts/n6nsPzJWurKWKk2pA/somebody-invented-a-better-bookmark)**. Better bookmarks. If in the UK buy from [here](https://theliterarygiftshop.co.uk/products/book-darts-mixed-tin?variant=43067965800678).
 
