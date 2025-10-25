@@ -89,6 +89,8 @@ _Last updated: 4th October 2025_
 
 **[Manta Sleep Mask](https://mantasleep.uk/products/manta-sleep-mask)**. Darkness without the eye pressure.
 
+**[Blue Light Blocking Glasses](https://www.blockbluelight.co.uk/products/taylor-blue-blocking-glasses-black?_psq=nightfall+taylor&_v=1.0)**. Make the entire world red for a few hours before bed to promote melatonin production.
+
 **[Doorframe Pullup Bar](https://amzn.eu/d/6gIDTSh)**. Easy to remove, sturdy, doesn't damage your doorframe, and elevates the bar a bit.
 
 **Hooks**. Things should have places. This reduces clutter and saves you time when finding things. Having that place be on your wall is an efficient use of space. I use [these](https://amzn.eu/d/8c4wyXn) and [this](https://www.amazon.co.uk/dp/B07W6SVDK7?th=1) but the exact brand is not important.
