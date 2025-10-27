@@ -1,7 +1,7 @@
-Here are some products I use daily and like. There are typically two processes that lead to a product making it's way onto this list:
+Here are some products I use daily and like. Each product got here via one of the two following processes:
 
 1. Lots of research. Buying it. Using it. Liking it.
-2. Some research. Buying and trying many options. Settling on one. Using it. Liking it.
+2. Some research. Buying several options. Trying them all. Settling on one. Using it. Liking it.
 
 Last updated: 27th October 2025
 
