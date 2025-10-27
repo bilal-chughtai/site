@@ -1,6 +1,9 @@
-_I have a high bar for products I use daily. Here are some products I both researched deeply before buying and have first hand confirmed are fantastic. Feel free to reach out if you want justifications for why any of these are as great as I claim._
+Here are some products I use daily and like. There are typically two processes that lead to a product making it's way onto this list:
 
-_Last updated: 4th October 2025_
+1. Lots of research. Buying it. Using it. Liking it.
+2. Some research. Buying and trying many options. Settling on one. Using it. Liking it.
+
+Last updated: 27th October 2025
 
 
 # Software
@@ -68,6 +71,8 @@ _Last updated: 4th October 2025_
 **[Uniqlo](https://www.uniqlo.com/uk/en/)**. Great default clothes shop.
 
 **[Barefoot shoes](https://www.vivobarefoot.com/uk/primus-lite-iii-mens-ss22?colour=Bright%20White)**. Some personal taste here, but I find them comfortable.
+
+**[Primark Chunky Elastic Hair Ties](https://www.primark.com/en-gb/p/10pk-chunky-hair-elastics-black-991128693804)**. Cheap & strong hair ties. They do stretch out, but I tend to lose them around the time they get too loose. Buy several packs.
 
 # Other physical stuff
 
