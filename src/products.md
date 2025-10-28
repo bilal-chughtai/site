@@ -5,7 +5,6 @@ Here are some products I use daily and like. Each product got here via one of th
 
 Last updated: 27th October 2025
 
-
 # Software
 
 **[Obsidian](https://obsidian.md/)**. Nice interface for writing locally hosted markdown notes.
@@ -34,13 +33,15 @@ Last updated: 27th October 2025
 
 **[Superwhisper](https://superwhisper.com/)**. Good AI powered speech to text. Use over Wispr Flow only if you care about local inference for privacy reasons.
 
-# Tech
+# Office
+
+**[Varier Plus](https://www.backinaction.co.uk/variable-plus-kneeling-chair-stock#tab_VariablePlusINSTOCK_VariablePlusINSTOCK_LightBrown)**. Nice chair if, like me, you can't sit still.
 
 **[Mac Pro](https://www.apple.com/uk/macbook-pro/)**. Do I even need to justify this one?
 
 **[MX Master 3S](https://www.logitech.com/en-gb/shop/p/mx-master-3s)**. Wireless mouse.
 
-**[Keychron Q1 Max Mechanical Keyboard](https://www.keychron.uk/products/keychron-q1-max-qmk-via-wireless-custom-mechanical-keyboard-iso-layout-collection?variant=46077851631786)**. Wireless mechanical keyboard. Solid build quality. Hotswappable switches.
+**[Keychron Q1 Max Mechanical Keyboard](https://www.keychron.uk/products/keychron-q1-max-qmk-via-wireless-custom-mechanical-keyboard-iso-layout-collection?variant=460778516317phyl86)**. Wireless mechanical keyboard. Solid build quality. Hotswappable switches.
 
 **[Sony WH-1000XM6 Headphones](https://www.sony.co.uk/headphones/products/wh-1000xm6?sku=wh1000xm6s.ce7)**. Wireless noise cancelling headphones.
 
@@ -48,9 +49,19 @@ Last updated: 27th October 2025
 
 **[CalDigit Element5 Thunderbolt Hub](https://www.caldigit.com/thunderbolt-5-element-5-hub/)**. Many peripherals with a single cable.
 
+# Sleep
+
 **[Oura Ring Gen 3](https://ouraring.com/)**. Sleep tracking.
 
-**[Garmin Forerunner 165 Music](https://www.garmin.com/en-GB/p/1611937/pn/010-02863-31)**. Entry level running watch.
+**[Loop Quiet 2](https://www.loopearplugs.com/products/quiet?variant=48262905594191)**. Reusable ear plugs.
+
+**[Manta Sleep Mask](https://mantasleep.uk/products/manta-sleep-mask)**. Darkness without the eye pressure.
+
+**[Blue Light Blocking Glasses](https://www.blockbluelight.co.uk/products/taylor-blue-blocking-glasses-black?_psq=nightfall+taylor&_v=1.0)**. Make the entire world red for a few hours before bed to promote melatonin production. Lower quality, cheaper, and more red alternative [here](https://amzn.eu/d/0xLOevo). I use both.
+
+**[Smart Coloured Light Bulbs](https://amzn.eu/d/34xoGgx)**. Buy many. Set up automations so you minimally have to manually control your lights. I recommend bright white lights during the day, and dim red lights a few hours before bed. Note I don't have strong takes on brand. I use the linked ones and they are fine, but more thought could be put into it.
+
+# Home
 
 **[TaoTronics AP003 Air Purifier](https://housefresh.com/taotronics-ap003-review/)**. The best affordable air purifier money... could buy in mid 2024. Unfortunately discontinued (so will be increasingly hard to find). [Better air quality is the easiest way to not die](https://dynomight.net/air/).
 
@@ -58,7 +69,11 @@ Last updated: 27th October 2025
 
 **[Google Nest Mini](https://store.google.com/gb/config/google_nest_mini?hl=en-GB&selections=eyJwcm9kdWN0RmFtaWx5IjoiWjI5dloyeGxYMjVsYzNSZmJXbHVhUT09In0%3D)**. A cheapish way to start voice controlling your home. Also a decent speaker.
 
-**[Smart Coloured Light Bulbs](https://amzn.eu/d/34xoGgx)**. Buy many. Set up automations so you minimally have to manually control your lights. I recommend bright white lights during the day, and dim red lights a few hours before bed. Note I don't have strong takes on brand. I use the linked ones and they are fine, but more thought could be put into it.
+**Hooks**. Things should have places. This reduces clutter and saves you time when finding things. Having that place be on your wall is an efficient use of space. I use [these](https://amzn.eu/d/8c4wyXn) and [this](https://www.amazon.co.uk/dp/B07W6SVDK7?th=1) but the exact brand is not important.
+
+**[Squatty Potty](https://amzn.eu/d/2vn5oFb)**. Unkink your colon while you poop.
+
+**[Doorframe Pullup Bar](https://amzn.eu/d/6gIDTSh)**. Easy to remove, sturdy, doesn't damage your doorframe, and elevates the bar a bit.
 
 # Clothing
 
@@ -74,11 +89,9 @@ Last updated: 27th October 2025
 
 **[Primark Chunky Elastic Hair Ties](https://www.primark.com/en-gb/p/10pk-chunky-hair-elastics-black-991128693804)**. Cheap & strong hair ties. They do stretch out, but I tend to lose them around the time they get too loose. Buy several packs.
 
-# Other physical stuff
+# Misc
 
-**[Varier Plus](https://www.backinaction.co.uk/variable-plus-kneeling-chair-stock#tab_VariablePlusINSTOCK_VariablePlusINSTOCK_LightBrown)**. Nice chair if, like me, you can't sit still.
-
-**[Squatty Potty](https://amzn.eu/d/2vn5oFb)**. Unkink your colon while you poop.
+**[Garmin Forerunner 165 Music](https://www.garmin.com/en-GB/p/1611937/pn/010-02863-31)**. Entry level running watch.
 
 **[North Face Surge Backpack](https://www.thenorthface.co.uk/en-gb/p/men-211701/surge-backpack-NF0A52SG)**. Obscenely well thought through backpack.
 
@@ -90,15 +103,7 @@ Last updated: 27th October 2025
 
 **[CeraVe Cleanser](https://www.cerave.co.uk/skincare/cleansers/sa-smoothing-cleanser)**. Skincare if you have an oily face.
 
-**[Loop Quiet 2](https://www.loopearplugs.com/products/quiet?variant=48262905594191)**. Reusable ear plugs.
-
-**[Manta Sleep Mask](https://mantasleep.uk/products/manta-sleep-mask)**. Darkness without the eye pressure.
-
-**[Blue Light Blocking Glasses](https://www.blockbluelight.co.uk/products/taylor-blue-blocking-glasses-black?_psq=nightfall+taylor&_v=1.0)**. Make the entire world red for a few hours before bed to promote melatonin production.
-
-**[Doorframe Pullup Bar](https://amzn.eu/d/6gIDTSh)**. Easy to remove, sturdy, doesn't damage your doorframe, and elevates the bar a bit.
-
-**Hooks**. Things should have places. This reduces clutter and saves you time when finding things. Having that place be on your wall is an efficient use of space. I use [these](https://amzn.eu/d/8c4wyXn) and [this](https://www.amazon.co.uk/dp/B07W6SVDK7?th=1) but the exact brand is not important.
+**[Green Bell G-1305 Nail Cutter](https://amzn.eu/d/dKTlcul)**. Japanese made nail clippers.
 
 **[Book Darts](https://www.lesswrong.com/posts/n6nsPzJWurKWKk2pA/somebody-invented-a-better-bookmark)**. Better bookmarks. If in the UK buy from [here](https://theliterarygiftshop.co.uk/products/book-darts-mixed-tin?variant=43067965800678).
 
