@@ -25,9 +25,11 @@ Last updated: 27th October 2025
 
 **[Bitwarden](https://bitwarden.com/)**. Password manager.
 
-**[Claude 4.0 Sonnet](https://claude.ai/)**. Current preferred general purpose LLM.
+**[Claude 4.5 Sonnet](https://claude.ai/)**. Current preferred general purpose LLM.
 
 **[Cronometer](https://cronometer.com/)**. Nutrition logging.
+
+**[Airalo](https://www.airalo.com/)**. Easy eSIM for travel.
 
 **[Wispr Flow](https://wisprflow.ai/)**. Fantastic AI powered speech to text.
 
