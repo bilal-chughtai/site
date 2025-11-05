@@ -59,7 +59,7 @@ Last updated: 27th October 2025
 
 **[Manta Sleep Mask](https://mantasleep.uk/products/manta-sleep-mask)**. Darkness without the eye pressure.
 
-**[Blue Light Blocking Glasses](https://www.blockbluelight.co.uk/products/taylor-blue-blocking-glasses-black?_psq=nightfall+taylor&_v=1.0)**. Make the entire world red for a few hours before bed to promote melatonin production. Lower quality, cheaper, and more red alternative [here](https://amzn.eu/d/0xLOevo). I use both.
+**[Blue Light Blocking Glasses](https://www.blockbluelight.co.uk/products/taylor-blue-blocking-glasses-black?_psq=nightfall+taylor&_v=1.0)**. Make the entire world red for a few hours before bed to promote melatonin production. Lower quality, cheaper, and more red alternative [here](https://amzn.eu/d/0xLOevo). One advantage of the former over the latter is they offer prescription lenses. I use both.
 
 **[Smart Coloured Light Bulbs](https://amzn.eu/d/34xoGgx)**. Buy many. Set up automations so you minimally have to manually control your lights. I recommend bright white lights during the day, and dim red lights a few hours before bed. Note I don't have strong takes on brand. I use the linked ones and they are fine, but more thought could be put into it.
 
