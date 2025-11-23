@@ -35,6 +35,8 @@ Last updated: 27th October 2025
 
 **[Superwhisper](https://superwhisper.com/)**. Good AI powered speech to text. Use over Wispr Flow only if you care about local inference for privacy reasons.
 
+**[Runna](https://www.runna.com/)**. Personalised running plans.
+
 # Office
 
 **[Varier Plus](https://www.backinaction.co.uk/variable-plus-kneeling-chair-stock#tab_VariablePlusINSTOCK_VariablePlusINSTOCK_LightBrown)**. Nice chair if, like me, you can't sit still.
