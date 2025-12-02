@@ -83,6 +83,7 @@ class PostMeta:
         None  # a list of links to other places where this post has been published
     )
     word_count: int | None = None  # Word count of the post content
+    draft: bool = False  # whether this post is a draft (hidden from landing page)
 
 
 @dataclass
@@ -259,11 +260,14 @@ class PostGroupings:
 
 
 def create_post_groupings(posts: list[Post]) -> PostGroupings:
-    for post in posts:
+    # Filter out draft posts from landing page
+    published_posts = [post for post in posts if not post.meta.draft]
+
+    for post in published_posts:
         if len(post.meta.tags) == 0:
             post.meta.tags = ["[untagged]"]
 
-    sorted_posts = sorted(posts, key=lambda x: x.meta.date, reverse=True)
+    sorted_posts = sorted(published_posts, key=lambda x: x.meta.date, reverse=True)
 
     posts_by_year = []
     for year, year_posts in groupby(sorted_posts, key=lambda x: x.meta.date.year):
@@ -272,7 +276,7 @@ def create_post_groupings(posts: list[Post]) -> PostGroupings:
     # posts may have many tags!
     posts_by_tag = []
     tags = set()
-    for post in posts:
+    for post in published_posts:
         for tag in post.meta.tags:
             tags.add(tag)
     for tag in tags:
@@ -280,7 +284,7 @@ def create_post_groupings(posts: list[Post]) -> PostGroupings:
             {
                 "tag": tag,
                 "posts": sorted(
-                    [post for post in posts if tag in post.meta.tags],
+                    [post for post in published_posts if tag in post.meta.tags],
                     key=lambda x: x.meta.date,
                     reverse=True,
                 ),

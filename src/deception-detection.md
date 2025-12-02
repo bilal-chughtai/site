@@ -6,11 +6,11 @@ Abstract:
 
 We train probes using simple training data (from [RepE](https://arxiv.org/abs/2310.01405) paper) and techniques (logistic regression):
 
-![](img/dd/1.webp)
+![](img/deception-detection/1.webp)
 
 We test these probes in more complicated and realistic environments where Llama-3.3-70B responds deceptively:
 
-![](img/dd/2.webp)
+![](img/deception-detection/2.webp)
 
 The probe fires far less on alpaca responses unrelated to deception, indicating it may partially be a probe for “deception-related” text rather than “actually-deceptive” text.
 
@@ -18,7 +18,7 @@ We compare a variety of probing methods. Training on roleplaying scenarios and p
 
 As a black-box baseline we give GPT-4o the transcript and ask if Llama responded deceptively. Our probe performs comparably to this baseline, although we iterated more on the probe than the baseline.
 
-![](img/dd/3.webp)
+![](img/deception-detection/3.webp)
 
 
 While the probes are decent, they are imperfect. Some common failures:
@@ -27,7 +27,7 @@ While the probes are decent, they are imperfect. Some common failures:
 - The mean score being incorrect even if the per-token probe behavior is reasonable ([example 2](https://data.apolloresearch.ai/dd/instructed-pairs/roleplaying__plain/sample_270_deceptive.html)).
 - But other failures have no easy explanation, such as [example 3](https://data.apolloresearch.ai/dd/instructed-pairs/roleplaying__plain/sample_80_honest.html) below where the probe fires on an objectively-honest response.
 
-![](img/dd/4.webp)
+![](img/deception-detection/4.webp)
 
 We are excited about future work improving deception-probes. We are especially curious to see if probes work in more difficult settings where it’s not obvious from the transcript that the model is being deceptive–for example environments where models [alignment fake](https://arxiv.org/abs/2412.14093) or [sandbag](https://arxiv.org/abs/2412.04984) even without chain-of-thought.
 
