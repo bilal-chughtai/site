@@ -245,3 +245,10 @@
     "https://arxiv.org/abs/2511.22662",
   ]
   draft: true
+
+- label: lmi-updates
+  title: "LMI updates"
+  date: 2025-12-15
+  description: "Updates on our research philosophy and agenda."
+  math: false
+  tags: ["interpretability", "ai"]

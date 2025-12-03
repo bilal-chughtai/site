@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Updates on our research philosophy and agenda.">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+
+    <title>LMI updates - Bilal Chughtai</title>
+    
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NN7RTLBRKY"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-NN7RTLBRKY');
+</script>
+
+<body>
+    
+<header>
+    <nav>
+        <div class="site-name heading-font">Bilal Chughtai &mdash; <a href="../">home
+                page</a>
+        </div>
+    </nav>
+</header>
+
+    <div class="container">
+        <div class="column left">
+            <div class="sticky-div">
+                
+
+
+            </div>
+        </div>
+        <div class="column main">
+            <div class="collapsed-sidebar">
+                
+            </div>
+            <div class="content">
+                
+<article>
+    <h2 class="post-title">LMI updates</h2>
+    <div class="post-meta">
+        
+        <p>
+            <time datetime="2025-12-15">15th December 2025</time>
+            &middot; 82 words &middot; 0 minute read </p>
+                <!-- <p class="post-summary"> <strong>Summary</strong>: Updates on our research philosophy and agenda.</p> -->
+    </div>
+
+    
+
+    <div class="post-content">
+        <p>My team at GDM has written up a blog post outlining what our current high level research philosophy is, how we got here, and why we think it's an improvement over our previous philosophy -- we're calling it "pragmatic" interpretability: <a href="https://neelnanda.io/vision">neelnanda.io/vision</a></p>
+<p>We've also shared a list of concrete directions we are currently working on (along with theories of change) where we think interpretability techniques or mindsets have some comparative advantage over other methods, and might be uniquely well placed to contribute: <a href="https://neelnanda.io/agenda">neelnanda.io/agenda</a></p>
+    </div>
+    
+    <div class="footer">
+        
+        
+        
+    </div>
+</article>
+
+            </div>
+        </div>
+        <!--<div class="column right">
+            <div class="sticky-div">
+                
+            </div>
+        </div>-->
+    </div>
+    <footer></footer>
+
+    <!-- Footnote tooltip script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Create a single tooltip element
+            const tooltip = document.createElement('div');
+            tooltip.className = 'footnote-tooltip';
+            document.body.appendChild(tooltip);
+            let hideTimer;
+
+            function positionTooltip(ref) {
+                const rect = ref.getBoundingClientRect();
+                const scrollX = window.scrollX || window.pageXOffset;
+                const scrollY = window.scrollY || window.pageYOffset;
+                // Initial placement below the reference
+                let top = scrollY + rect.bottom + 8;
+                let left = scrollX + rect.left;
+                tooltip.style.top = top + 'px';
+                tooltip.style.left = left + 'px';
+                // Adjust if it overflows the right edge
+                const tt = tooltip.getBoundingClientRect();
+                const viewportWidth = document.documentElement.clientWidth;
+                if (tt.right > viewportWidth - 8) {
+                    const overflow = tt.right - (viewportWidth - 8);
+                    tooltip.style.left = (left - overflow) + 'px';
+                }
+                // Adjust if it overflows the left edge
+                if (tt.left < 8) {
+                    tooltip.style.left = (scrollX + 8) + 'px';
+                }
+            }
+
+            function showTooltip(ref) {
+                clearTimeout(hideTimer);
+                tooltip.innerHTML = ref.getAttribute('data-footnote');
+                tooltip.style.display = 'block';
+                positionTooltip(ref);
+            }
+
+            function hideTooltip() {
+                hideTimer = setTimeout(() => {
+                    tooltip.style.display = 'none';
+                }, 300); // 300ms delay before hiding
+            }
+
+            // Attach events to each footnote reference
+            document.querySelectorAll('a.footnote-ref').forEach(function (ref) {
+                ref.addEventListener('mouseenter', () => showTooltip(ref));
+                ref.addEventListener('mouseleave', hideTooltip);
+            });
+
+            // Keep tooltip open when hovering over it
+            tooltip.addEventListener('mouseenter', () => clearTimeout(hideTimer));
+            tooltip.addEventListener('mouseleave', hideTooltip);
+        });
+    </script>
+</body>
+
+</html>
