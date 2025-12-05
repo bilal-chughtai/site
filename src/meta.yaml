@@ -236,19 +236,21 @@
 
 - label: deception-difficulties
   title: "Difficulties in evaluating a deception detector for AIs"
-  date: 2025-12-01
-  description: "TODO"
+  date: 2025-12-05
+  description: "Label assignment is hard."
   math: false
   tags: ["interpretability", "ai", "paper"]
   coauthors: ["Lewis Smith", "Neel Nanda"]
   elsewhere: [
     "https://arxiv.org/abs/2511.22662",
+    "https://x.com/bilalchughtai_/status/1996310097287631333",
+    "https://www.lesswrong.com/posts/zmngpxsvGbotFeQca/paper-difficulties-with-evaluating-a-deception-detector-for",
+
   ]
-  draft: true
 
 - label: lmi-updates
-  title: "LMI updates"
-  date: 2025-12-15
+  title: "GDM mechanistic interpretability team updates"
+  date: 2025-12-01
   description: "Updates on our research philosophy and agenda."
   math: false
   tags: ["interpretability", "ai"]
