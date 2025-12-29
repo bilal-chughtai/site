@@ -39,6 +39,7 @@
   description: "A list of some of my favourite products."
   math: false
   tags: ["productivity"]
+  pinned: true
 
 
 - label: caps-lock
@@ -177,6 +178,7 @@
   description: "Things I've read."
   math: false
   tags: ["books"]
+  pinned: true
 
 - label: hd
   title: "My health dashboard"

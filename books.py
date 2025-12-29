@@ -134,10 +134,10 @@ def generate_bookshelf_markdown(books: list[Book], output_path: str | Path) -> N
 
     # Group books by year
     lines = [
-        f"A log of all the books I've read since ~2021 in reverse chronological order. *Italics* indicate I only skimmed/partially read. Last updated: {datetime.now().strftime('%B %d')}{datetime.now().strftime('%d').endswith('1') and 'st' or datetime.now().strftime('%d').endswith('2') and 'nd' or datetime.now().strftime('%d').endswith('3') and 'rd' or 'th'} {datetime.now().strftime('%Y')}.",
-        "",
-        "Suggestions always welcome.",
-        "",
+        "- A log of all the books and other long form content I've read since ~2021 in reverse chronological order.",
+        "- *Italics* indicate I only skimmed/partially read.",
+        f"- Last updated: {datetime.now().strftime('%B %d')}{datetime.now().strftime('%d').endswith('1') and 'st' or datetime.now().strftime('%d').endswith('2') and 'nd' or datetime.now().strftime('%d').endswith('3') and 'rd' or 'th'} {datetime.now().strftime('%Y')}.",
+        "- Suggestions always welcome.",
     ]
 
     # Add currently reading section at the top if there are any

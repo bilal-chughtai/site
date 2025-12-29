@@ -34,7 +34,6 @@
     <a href="https://www.lesswrong.com/users/bilalchughtai">lesswrong</a> //
     <a href="https://bilalchughtai.substack.com/">substack</a> //
     <a href="https://x.com/bilalchughtai_">twitter</a> //
-    <a href="https://www.instapaper.com/p/bilalchughtai">instapaper</a> //
     <a href="https://www.strava.com/athletes/32291390">strava</a> //
     <a href="https://www.last.fm/user/bilalchughtai">last.fm</a> //
     <a href="mailto:brchughtaii@gmail.com">email</a>
@@ -42,7 +41,7 @@
 
 
 
-<h2 id="section-2">Posts</h2>
+<h2 id="section-3">Posts</h2>
 <div class="tab-container">
     <input type="radio" id="tab1" name="tabs" checked>
     <input type="radio" id="tab2" name="tabs">
@@ -54,6 +53,14 @@
     </div>
 
     <div class="tab-content" id="chronological">
+        {% if pinned_posts %}
+        <p class="link-heading">Pinned</p>
+        <ul>
+            {% for post in pinned_posts %}
+            <li><a href="{{ post.meta.label }}">{{ post.meta.title }}</a></li>
+            {% endfor %}
+        </ul>
+        {% endif %}
         {% for year_group in posts_by_year %}
         <p class="link-heading">{{ year_group.year }}</p>
         <ul>

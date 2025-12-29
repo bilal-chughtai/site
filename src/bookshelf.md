@@ -1,9 +1,15 @@
-A log of all the books I've read since ~2021 in reverse chronological order. *Italics* indicate I only skimmed/partially read. Last updated: September 27th 2025.
+- A log of all the books I've read since ~2021 in reverse chronological order.
+- *Italics* indicate I only skimmed/partially read.
+- Last updated: December 29th 2025.
+- Suggestions always welcome.
+## Currently Reading
 
-Suggestions always welcome.
+- [Good Strategy, Bad Strategy: The Difference and Why it Matters](https://www.lesswrong.com/posts/4rSWMjW6MDWt28Qtc/review-good-strategy-bad-strategy) (Richard Rumelt, 2011)
 
 ## 2025
 
+- [BlueDot Biosecurity Course](https://bluedot.org/courses/biosecurity) (BlueDot Impact, 2025)
+- [Why I Write:  Essay Collection](https://www2.penguin.co.uk/books/55116/why-i-write-by-george-orwell/9780141019000) (George Orwell, 1946)
 - [The Time Machine](https://en.wikipedia.org/wiki/The_Time_Machine) (H. G. Wells, 1895)
 - [Brave New World](https://en.wikipedia.org/wiki/Brave_New_World) (Aldous Huxley, 1932)
 - [The Coaching Habit: Say Less, Ask More & Change The Way You Lead Forever](https://boxofcrayons.com/the-coaching-habit/) (Michael Bungay Stanier, 2016)

@@ -17,7 +17,7 @@ Last updated: 27th October 2025
 
 **[Todoist](https://app.todoist.com/app/project/6W2gvXWXX4prqJ7G)**. Powerful personal task management. [Here](/todo) is a blog post about my to-do system.
 
-**[Instapaper](https://www.instapaper.com/u)**. Read links later, and then catalogue them for future reference.
+**[Raindrop](https://raindrop.io/)**. Read links later, and then catalogue them for future reference.
 
 **[Remapped caps lock](https://www.lesswrong.com/posts/hPLvZsNZGsQSLfMee/remap-your-caps-lock-key)**. Navigate your mac even faster.
 
@@ -68,6 +68,8 @@ Last updated: 27th October 2025
 # Home
 
 **[TaoTronics AP003 Air Purifier](https://housefresh.com/taotronics-ap003-review/)**. The best affordable air purifier money... could buy in mid 2024. Unfortunately discontinued (so will be increasingly hard to find). [Better air quality is the easiest way to not die](https://dynomight.net/air/).
+
+**[Aranet 4](https://www.amazon.co.uk/Aranet4-Home-Temperature-Ink-Configuration/dp/B07YY7BH2W)**. High CO2 concentration affects productivity; this monitors it. Also monitors temperature and humidity.
 
 **[Minirig 4](https://minirigs.co.uk/speakers/bluetooth-minirig-4)**. Extremely loud portable bluetooth speaker. Also with zero latency aux passthrough.
 

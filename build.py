@@ -84,6 +84,9 @@ class PostMeta:
     )
     word_count: int | None = None  # Word count of the post content
     draft: bool = False  # whether this post is a draft (hidden from landing page)
+    pinned: bool = (
+        False  # whether this post should be pinned at the top of the landing page
+    )
 
 
 @dataclass
@@ -255,6 +258,7 @@ def prepare_common_context():
 
 @dataclass
 class PostGroupings:
+    pinned_posts: list[Post]
     posts_by_year: list[dict[str, list[Post]]]
     posts_by_tag: list[dict[str, list[Post]]]
 
@@ -263,11 +267,18 @@ def create_post_groupings(posts: list[Post]) -> PostGroupings:
     # Filter out draft posts from landing page
     published_posts = [post for post in posts if not post.meta.draft]
 
+    # Separate pinned posts
+    pinned_posts = [post for post in published_posts if post.meta.pinned]
+    pinned_posts = sorted(pinned_posts, key=lambda x: x.meta.date, reverse=True)
+
+    # Regular posts (excluding pinned ones)
+    regular_posts = [post for post in published_posts if not post.meta.pinned]
+
     for post in published_posts:
         if len(post.meta.tags) == 0:
             post.meta.tags = ["[untagged]"]
 
-    sorted_posts = sorted(published_posts, key=lambda x: x.meta.date, reverse=True)
+    sorted_posts = sorted(regular_posts, key=lambda x: x.meta.date, reverse=True)
 
     posts_by_year = []
     for year, year_posts in groupby(sorted_posts, key=lambda x: x.meta.date.year):
@@ -292,16 +303,14 @@ def create_post_groupings(posts: list[Post]) -> PostGroupings:
         )
     posts_by_tag.sort(key=lambda tag_di: len(tag_di["posts"]), reverse=True)
 
-    return PostGroupings(posts_by_year, posts_by_tag)
+    return PostGroupings(pinned_posts, posts_by_year, posts_by_tag)
 
 
 def generate_main_page(
     jinja_env: Environment, post_groupings: PostGroupings, context: dict, out_dir: str
 ):
     main_template = jinja_env.get_template("main.html")
-    main_content = render_main_content(
-        main_template, post_groupings.posts_by_year, context
-    )
+    main_content = render_main_content(main_template, post_groupings, context)
 
     write_to_file(os.path.join(out_dir, "index.html"), main_content)
 
@@ -314,10 +323,14 @@ def generate_main_page(
 
 
 def render_main_content(
-    jinja_template: Template, posts_by_year: list[dict[str, list[Post]]], context: dict
+    jinja_template: Template, post_groupings: PostGroupings, context: dict
 ):
     return jinja_template.render(
-        posts_by_year=posts_by_year, use_mathjax=False, is_index=True, **context
+        pinned_posts=post_groupings.pinned_posts,
+        posts_by_year=post_groupings.posts_by_year,
+        use_mathjax=False,
+        is_index=True,
+        **context,
     )
 
 
@@ -328,6 +341,7 @@ def render_main_content_with_toc(
     toc: list[dict[str, str]],
 ):
     return template.render(
+        pinned_posts=post_groupings.pinned_posts,
         posts_by_year=post_groupings.posts_by_year,
         posts_by_tag=post_groupings.posts_by_tag,
         use_mathjax=False,
