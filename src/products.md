@@ -3,7 +3,7 @@ Here are some products I use daily and like. Each product got here via one of th
 1. Lots of research. Buying it. Using it. Liking it.
 2. Some research. Buying several options. Trying them all. Settling on one. Using it. Liking it.
 
-Last updated: 27th October 2025
+Last updated: 29th December 2025
 
 # Software
 
