@@ -9,7 +9,7 @@
 ## 2025
 
 - [BlueDot Biosecurity Course](https://bluedot.org/courses/biosecurity) (BlueDot Impact, 2025)
-- [Why I Write:  Essay Collection](https://www2.penguin.co.uk/books/55116/why-i-write-by-george-orwell/9780141019000) (George Orwell, 1946)
+- [Why I Write:  Essay Collection](https://www.penguin.co.uk/books/55116/why-i-write-by-george-orwell/9780141019000) (George Orwell, 1946)
 - [The Time Machine](https://en.wikipedia.org/wiki/The_Time_Machine) (H. G. Wells, 1895)
 - [Brave New World](https://en.wikipedia.org/wiki/Brave_New_World) (Aldous Huxley, 1932)
 - [The Coaching Habit: Say Less, Ask More & Change The Way You Lead Forever](https://boxofcrayons.com/the-coaching-habit/) (Michael Bungay Stanier, 2016)
