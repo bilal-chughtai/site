@@ -1,7 +1,7 @@
-- A log of all the books I've read since ~2021 in reverse chronological order.
+- A log of all the books and other long form content I've read since ~2021 in reverse chronological order.
 - *Italics* indicate I only skimmed/partially read.
-- Last updated: December 29th 2025.
 - Suggestions always welcome.
+- Last updated: December 29th 2025.
 ## Currently Reading
 
 - [Good Strategy, Bad Strategy: The Difference and Why it Matters](https://www.lesswrong.com/posts/4rSWMjW6MDWt28Qtc/review-good-strategy-bad-strategy) (Richard Rumelt, 2011)
