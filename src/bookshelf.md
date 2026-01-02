@@ -8,7 +8,7 @@
 
 ## 2026
 
-- [A Christmass Carol](https://en.wikipedia.org/wiki/A_Christmas_Carol) (Charles Dickens, 1843)
+- [A Christmas Carol](https://en.wikipedia.org/wiki/A_Christmas_Carol) (Charles Dickens, 1843)
 
 ## 2025
 
