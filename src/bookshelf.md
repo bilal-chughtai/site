@@ -1,10 +1,14 @@
 - A log of all the books and other long form content I've read since ~2021 in reverse chronological order.
 - *Italics* indicate I only skimmed/partially read.
 - Suggestions always welcome.
-- Last updated: December 29th 2025.
+- Last updated: January 02nd 2026.
 ## Currently Reading
 
 - [Good Strategy, Bad Strategy: The Difference and Why it Matters](https://www.lesswrong.com/posts/4rSWMjW6MDWt28Qtc/review-good-strategy-bad-strategy) (Richard Rumelt, 2011)
+
+## 2026
+
+- [A Christmass Carol](https://en.wikipedia.org/wiki/A_Christmas_Carol) (Charles Dickens, 1843)
 
 ## 2025
 
