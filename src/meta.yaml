@@ -180,6 +180,13 @@
   tags: ["books"]
   pinned: true
 
+- label: busy
+  title: 'On being "busy"'
+  date: 2026-02-02
+  description: "What goes wrong when you try to do too much, and what I'm doing about it."
+  math: false
+  tags: ["productivity"]
+
 - label: hd
   title: "My health dashboard"
   date: 2025-06-15
