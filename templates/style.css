@@ -316,6 +316,7 @@ h3 { font-size: 1rem; }
 /* Show active tab content */
 #tab1:checked ~ #chronological,
 #tab2:checked ~ #type,
+#tab2:checked ~ #topic,
 #tab3:checked ~ #topic {
     display: block;
 }
@@ -324,19 +325,6 @@ h3 { font-size: 1rem; }
 #tab1:checked ~ .tab-buttons label[for="tab1"],
 #tab2:checked ~ .tab-buttons label[for="tab2"],
 #tab3:checked ~ .tab-buttons label[for="tab3"] {
-    border: 2px solid var(--theme-color-highlights);
-    color: var(--theme-color-highlights);
-    font-weight: bold;
-}
-
-/* Reading page tabs (Books / Online) */
-#reading-tab1:checked ~ #reading-books,
-#reading-tab2:checked ~ #reading-online {
-    display: block;
-}
-
-#reading-tab1:checked ~ .tab-buttons label[for="reading-tab1"],
-#reading-tab2:checked ~ .tab-buttons label[for="reading-tab2"] {
     border: 2px solid var(--theme-color-highlights);
     color: var(--theme-color-highlights);
     font-weight: bold;

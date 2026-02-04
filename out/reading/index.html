@@ -62,14 +62,14 @@
 
     <div class="post-content">
         <p><em>Last updated: February 4th 2026.</em></p>
-<div class="tab-container reading-tabs">
-<input checked="" id="reading-tab1" name="reading-tabs" type="radio"/>
-<input id="reading-tab2" name="reading-tabs" type="radio"/>
+<div class="tab-container">
+<input checked="" id="tab1" name="tabs" type="radio"/>
+<input id="tab2" name="tabs" type="radio"/>
 <div class="tab-buttons">
-<label class="tab-button" for="reading-tab1">Books</label>
-<label class="tab-button" for="reading-tab2">Online</label>
+<label class="tab-button" for="tab1">Books</label>
+<label class="tab-button" for="tab2">Online</label>
 </div>
-<div class="tab-content" id="reading-books">
+<div class="tab-content" id="chronological">
 <p class="link-heading">Currently Reading</p>
 <ul class="reading-list">
 <li><a href="https://www.lesswrong.com/posts/4rSWMjW6MDWt28Qtc/review-good-strategy-bad-strategy">Good Strategy, Bad Strategy: The Difference and Why it Matters</a> <small>(Richard Rumelt, 2011)</small></li>
@@ -127,7 +127,7 @@
 <li><a href="https://en.wikipedia.org/wiki/How_to_Win_Friends_and_Influence_People"><em>How to Win Friends and Influence People</em></a> <small>(Dale Carnegie, 1936)</small></li>
 </ul>
 </div>
-<div class="tab-content" id="reading-online">
+<div class="tab-content" id="topic">
 <p class="link-heading">February 2026</p>
 <ul class="reading-list">
 <li><a href="https://usefulfictions.substack.com/p/are-you-stuck-in-movie-logic">Are you stuck in movie logic?</a> <small>(usefulfictions.substack.com)</small></li>
@@ -198,7 +198,7 @@
 </div>
 <script>
 (function() {
-  var tabs = document.querySelectorAll('.reading-tabs input[name="reading-tabs"]');
+  var tabs = document.querySelectorAll('.tab-container input[name="tabs"]');
   if (tabs.length >= 2) {
     var idx = Math.random() < 0.5 ? 0 : 1;
     tabs[idx].checked = true;
