@@ -1,0 +1,146 @@
+*Last updated: February 4th 2026.*
+
+<div class="tab-container reading-tabs">
+<input type="radio" id="reading-tab1" name="reading-tabs">
+<input type="radio" id="reading-tab2" name="reading-tabs">
+<div class="tab-buttons">
+<label for="reading-tab1" class="tab-button">Books</label>
+<label for="reading-tab2" class="tab-button">Online</label>
+</div>
+<div class="tab-content" id="reading-books">
+<p class="link-heading">Currently Reading</p>
+<ul class="reading-list">
+<li><a href="https://www.lesswrong.com/posts/4rSWMjW6MDWt28Qtc/review-good-strategy-bad-strategy">Good Strategy, Bad Strategy: The Difference and Why it Matters</a> <small>(Richard Rumelt, 2011)</small></li>
+</ul>
+<p class="link-heading">2026</p>
+<ul class="reading-list">
+<li><a href="https://en.wikipedia.org/wiki/A_Christmas_Carol">A Christmas Carol</a> <small>(Charles Dickens, 1843)</small></li>
+</ul>
+<p class="link-heading">2025</p>
+<ul class="reading-list">
+<li><a href="https://bluedot.org/courses/biosecurity">BlueDot Biosecurity Course</a> <small>(BlueDot Impact, 2025)</small></li>
+<li><a href="https://www.penguin.co.uk/books/55116/why-i-write-by-george-orwell/9780141019000">Why I Write:  Essay Collection</a> <small>(George Orwell, 1946)</small></li>
+<li><a href="https://en.wikipedia.org/wiki/The_Time_Machine">The Time Machine</a> <small>(H. G. Wells, 1895)</small></li>
+<li><a href="https://en.wikipedia.org/wiki/Brave_New_World">Brave New World</a> <small>(Aldous Huxley, 1932)</small></li>
+<li><a href="https://boxofcrayons.com/the-coaching-habit/">The Coaching Habit: Say Less, Ask More &amp; Change The Way You Lead Forever</a> <small>(Michael Bungay Stanier, 2016)</small></li>
+<li><a href="https://en.wikipedia.org/wiki/Animal_Farm">Animal Farm</a> <small>(George Orwell, 1945)</small></li>
+<li><a href="https://en.wikipedia.org/wiki/The_Metamorphosis">The Metamorphosis</a> <small>(Franz Kafka, 1915)</small></li>
+<li><a href="https://en.wikipedia.org/wiki/The_Little_Prince">The Little Prince</a> <small>(Antoine de Saint-Exupéry, 1943)</small></li>
+<li><a href="https://en.wikipedia.org/wiki/Nineteen_Eighty-Four">1984</a> <small>(George Orwell, 1949)</small></li>
+<li><a href="https://www.readthesequences.com/Book-II-How-To-Actually-Change-Your-Mind">How to Actually Change Your Mind</a> <small>(Eliezer Yudkowsky, 2009)</small></li>
+<li><a href="https://equilibriabook.com/">Inadequate Equilibria: How and Why Civilizations Get Stuck</a> <small>(Eliezer Yudkowsky, 2017)</small></li>
+<li><a href="https://www.readthesequences.com/Book-I-Map-And-Territory">Map and Territory</a> <small>(Eliezer Yudkowsky, 2009)</small></li>
+<li><a href="https://calnewport.com/on-digital-minimalism/">Digital Minimalism: Choosing a Focused Life in a Noisy World</a> <small>(Cal Newport, 2019)</small></li>
+<li><a href="https://press.stripe.com/the-big-score"><em>The Big Score: The Billion Dollar Story of Silicon Valley</em></a> <small>(Michael S Malone, 1985)</small></li>
+<li><a href="https://yaqeeninstitute.org/read/books/quran-30-for-30-thematic-tafsir">Quran 30 for 30: Thematic Tasfir</a> <small>(Omar Suleiman & Ismail Kamdar, 2025)</small></li>
+<li><a href="https://press.uchicago.edu/ucp/books/book/chicago/F/bo3773600.html"><em>From Counterculture to Cyberculture: Stewart Brand, the Whole Earth Network, and the Rise of Digital Utopianism</em></a> <small>(Fred Turner, 2008)</small></li>
+<li><a href="https://en.wikipedia.org/wiki/Slouching_Towards_Bethlehem"><em>Slouching Towards Bethlehem</em></a> <small>(Joan Didion, 1968)</small></li>
+<li><a href="https://en.wikipedia.org/wiki/To_the_Finland_Station"><em>To the Finland Station: A Study in the Writing and Acting of History</em></a> <small>(Edmund Wilson, 1940)</small></li>
+<li><a href="https://en.wikipedia.org/wiki/Bury_the_Chains"><em>Bury the Chains: The British Struggle to Abolish Slavery</em></a> <small>(Adam Hochschild, 2005)</small></li>
+<li><a href="https://www.amazon.co.uk/How-World-Became-Rich-Historical/dp/1509540237"><em>How the World Became Rich: The Historical Origins of Economic Growth</em></a> <small>(Mark Koyama & Jared Rubin, 2022)</small></li>
+<li><a href="https://en.wikipedia.org/wiki/The_Jewel_House"><em>The Jewel House: Elizabethan London and the Scientific Revolution</em></a> <small>(Deborah Harkness, 2007)</small></li>
+<li><a href="https://www.amazon.co.uk/Final-Generation-Transformation-Classical-Heritage/dp/0520283708"><em>The Final Pagan Generation</em></a> <small>(Edward J. Watts, 2015)</small></li>
+<li><a href="https://en.wikipedia.org/wiki/The_Rise_of_Christianity"><em>The Rise of Christianity</em></a> <small>(Rodney Stark, 1996)</small></li>
+<li><a href="https://en.wikipedia.org/wiki/The_Kingdom_(Carr%C3%A8re_novel)"><em>The Kingdom</em></a> <small>(Emmanuel Carrère, 2014)</small></li>
+<li><a href="https://en.wikipedia.org/wiki/The_Structure_of_Scientific_Revolutions">The Structure of Scientific Revolutions</a> <small>(Thomas Kuhn, 1962)</small></li>
+</ul>
+<p class="link-heading">2024</p>
+<ul class="reading-list">
+<li><a href="https://en.wikipedia.org/wiki/Zero_to_One">Zero to One: Notes on Startups, or How to Build the Future</a> <small>(Peter Thiel & Blake Masters, 2014)</small> [my summary <a href="https://bilalchughtai.co.uk/zero-to-one/">here</a>]</li>
+<li><a href="https://hpmor.com/">Harry Potter and the Methods of Rationality</a> <small>(Eliezer Yudkowsky, 2015)</small></li>
+</ul>
+<p class="link-heading">2022</p>
+<ul class="reading-list">
+<li><a href="https://en.wikipedia.org/wiki/Superintelligence:_Paths,_Dangers,_Strategies">Superintelligence: Paths, Dangers, Strategies</a> <small>(Nick Bostrom, 2014)</small></li>
+<li><a href="https://brianchristian.org/algorithms-to-live-by/"><em>Algorithms to Live By: The Computer Science of Decisions</em></a> <small>(Brian Christian & Tom Griffiths, 2016)</small></li>
+<li><a href="https://en.wikipedia.org/wiki/The_Scout_Mindset"><em>The Scout Mindset: Why Some People See Things Clearly and Others Don&#x27;t</em></a> <small>(Julia Galef, 2021)</small></li>
+<li><a href="https://www.amazon.co.uk/Superforecasting-Science-Prediction-Philip-Tetlock/dp/1847947158">Superforecasting: The Art of Science and Prediction</a> <small>(Philip Tetlock & Dan Gardner, 2015)</small></li>
+<li><a href="https://en.wikipedia.org/wiki/Human_Compatible">Human Compatible: Artificial Intelligence and the Problem of Control</a> <small>(Stuart Russell, 2019)</small></li>
+<li><a href="https://www.effectivealtruism.org/doing-good-better">Doing Good Better: Effective Altruism and How You Can Make a Difference</a> <small>(William MacAskill, 2015)</small></li>
+</ul>
+<p class="link-heading">2021</p>
+<ul class="reading-list">
+<li><a href="https://en.wikipedia.org/wiki/The_Precipice:_Existential_Risk_and_the_Future_of_Humanity">The Precipice: Existential Risk and the Future of Humanity</a> <small>(Toby Ord, 2020)</small></li>
+<li><a href="https://en.wikipedia.org/wiki/Why_We_Sleep">Why We Sleep: The New Science of Sleep and Dreams</a> <small>(Matthew Walker, 2017)</small></li>
+<li><a href="https://en.wikipedia.org/wiki/How_to_Win_Friends_and_Influence_People"><em>How to Win Friends and Influence People</em></a> <small>(Dale Carnegie, 1936)</small></li>
+</ul>
+</div>
+<div class="tab-content" id="reading-online">
+<p class="link-heading">February 2026</p>
+<ul class="reading-list">
+<li><a href="https://usefulfictions.substack.com/p/are-you-stuck-in-movie-logic">Are you stuck in movie logic?</a> <small>(usefulfictions.substack.com)</small></li>
+<li><a href="https://usefulfictions.substack.com/p/rightness-is-a-prison?utm_source=profile&amp;utm_medium=reader2">Rightness is a prison</a> <small>(usefulfictions.substack.com)</small></li>
+<li><a href="https://usefulfictions.substack.com/p/how-to-increase-your-surface-area?utm_source=profile&amp;utm_medium=reader2">How to increase your surface area for luck</a> <small>(usefulfictions.substack.com)</small></li>
+<li><a href="https://usefulfictions.substack.com/p/tying-yourself-to-the-mast?utm_source=profile&amp;utm_medium=reader2">Tying yourself to the mast</a> <small>(usefulfictions.substack.com)</small></li>
+<li><a href="https://usefulfictions.substack.com/p/everyones-the-hero-of-their-own-story?utm_source=profile&amp;utm_medium=reader2">Everyone’s the hero of their own story</a> <small>(usefulfictions.substack.com)</small></li>
+<li><a href="https://usefulfictions.substack.com/p/how-to-instantly-be-better-at-anything?utm_source=profile&amp;utm_medium=reader2">How to instantly be better at things</a> <small>(usefulfictions.substack.com)</small></li>
+<li><a href="https://usefulfictions.substack.com/p/fuck-willpower?utm_source=profile&amp;utm_medium=reader2">Fuck willpower</a> <small>(usefulfictions.substack.com)</small></li>
+<li><a href="https://usefulfictions.substack.com/p/learn-to-love-the-moat-of-low-status?utm_source=profile&amp;utm_medium=reader2">Learn to love the Moat of Low Status</a> <small>(usefulfictions.substack.com)</small></li>
+<li><a href="https://usefulfictions.substack.com/p/are-you-a-jerk-or-a-liar?utm_source=profile&amp;utm_medium=reader2">Are you a jerk, or a liar?</a> <small>(usefulfictions.substack.com)</small></li>
+<li><a href="https://usefulfictions.substack.com/p/everyone-here-is-in-a-cult?utm_source=profile&amp;utm_medium=reader2">Everyone here is in a cult</a> <small>(usefulfictions.substack.com)</small></li>
+<li><a href="https://usefulfictions.substack.com/p/crossing-the-cringe-minefield?utm_source=profile&amp;utm_medium=reader2">Crossing the cringe minefield</a> <small>(usefulfictions.substack.com)</small></li>
+<li><a href="https://en.wikipedia.org/wiki/Barnum_effect">Barnum effect - Wikipedia</a> <small>(en.wikipedia.org)</small></li>
+<li><a href="https://usefulfictions.substack.com/p/37-things-people-love-about-sasha?utm_source=profile&amp;utm_medium=reader2">37 things people love about Sasha Chapin</a> <small>(usefulfictions.substack.com)</small></li>
+<li><a href="https://usefulfictions.substack.com/p/i-used-to-be-a-high-performing-robot">I used to be a high-performing robot</a> <small>(usefulfictions.substack.com)</small></li>
+<li><a href="https://usefulfictions.substack.com/p/there-are-nine-wolves-inside-of-you?utm_source=profile&amp;utm_medium=reader2">There are nine wolves inside of you</a> <small>(usefulfictions.substack.com)</small></li>
+<li><a href="https://usefulfictions.substack.com/p/maybe-youre-not-actually-trying">Maybe you’re not Actually Trying</a> <small>(usefulfictions.substack.com)</small></li>
+<li><a href="https://aisafetyfrontier.substack.com/p/paper-highlights-of-january-2026?utm_source=post-email-title&amp;publication_id=2802811&amp;post_id=186752340&amp;utm_campaign=email-post-title&amp;isFreemail=true&amp;r=1o9kun&amp;triedRedirect=true&amp;utm_medium=email">Paper Highlights of January 2026</a> <small>(aisafetyfrontier.substack.com)</small></li>
+<li><a href="https://www.asimov.press/p/nature?utm_source=post-email-title&amp;publication_id=76313&amp;post_id=182434504&amp;utm_campaign=email-post-title&amp;isFreemail=true&amp;r=1o9kun&amp;triedRedirect=true&amp;utm_medium=email">How Nature Became a &#x27;Prestige&#x27; Journal</a> <small>(asimov.press)</small></li>
+<li><a href="https://henryhmko.github.io/posts/tpu/tpu.html">TPU Deep Dive</a> <small>(henryhmko.github.io)</small></li>
+<li><a href="https://www.lesswrong.com/posts/HmXhnc3XaZnEwe8eM/opinionated-takes-on-meetups-organizing">Opinionated Takes on Meetups Organizing — LessWrong</a> <small>(lesswrong.com)</small></li>
+<li><a href="https://dynomight.net/novels/">Why read novels?</a> <small>(dynomight.net)</small></li>
+<li><a href="https://ericjmichaud.com/quanta/">On neural scaling and the quanta hypothesis</a> <small>(ericjmichaud.com)</small></li>
+<li><a href="https://www.lesswrong.com/posts/iEx2KjwFse749BYsD/features-aren-t-always-the-true-computational-primitives-of">“Features” aren’t always the true computational primitives of a model, but that might be fine anyways — LessWrong</a> <small>(lesswrong.com)</small></li>
+<li><a href="https://www.lesswrong.com/posts/9PiyWjoe9tajReF7v/the-hidden-cost-of-our-lies-to-ai">The Hidden Cost of Our Lies to AI — LessWrong</a> <small>(lesswrong.com)</small></li>
+<li><a href="https://blog.bluedot.org/p/field-strategy-playbook">A playbook for field strategy</a> <small>(blog.bluedot.org)</small></li>
+<li><a href="https://benbyfax.substack.com/p/aliveness">Aliveness and where to find it</a> <small>(benbyfax.substack.com)</small></li>
+<li><a href="https://joecarlsmith.substack.com/p/fake-thinking-and-real-thinking">Fake thinking and real thinking</a> <small>(joecarlsmith.substack.com)</small></li>
+</ul>
+<p class="link-heading">January 2026</p>
+<ul class="reading-list">
+<li><a href="https://www.lesswrong.com/posts/gpyqWzWYADWmLYLeX/how-ai-is-learning-to-think-in-secret">How AI Is Learning to Think in Secret — LessWrong</a> <small>(lesswrong.com)</small></li>
+<li><a href="https://www.youtube.com/watch?v=aR20FWCCjAs">Ilya Sutskever – We&#x27;re moving from the age of scaling to the age of research - YouTube</a> <small>(youtube.com)</small></li>
+<li><a href="https://www.lesswrong.com/posts/nJcuj4rtuefeTRFHp/can-we-safely-automate-alignment-research">Can we safely automate alignment research? — LessWrong</a> <small>(lesswrong.com)</small></li>
+<li><a href="https://samuelalbanie.substack.com/p/reflections-on-2025">Reflections on 2025</a> <small>(samuelalbanie.substack.com)</small></li>
+<li><a href="https://arxiv.org/abs/2601.10387">The Assistant Axis: Situating and Stabilizing the Default Persona...</a> <small>(arxiv.org)</small></li>
+<li><a href="https://www.youtube.com/watch?v=GQFhsCTkldA&amp;t=1687s">We Let an AI Talk To Another AI. Things Got Really Weird. | Kyle Fish, Anthropic - YouTube</a> <small>(youtube.com)</small></li>
+<li><a href="https://www.lesswrong.com/posts/epjuxGnSPof3GnMSL/alignment-remains-a-hard-unsolved-problem">Alignment remains a hard, unsolved problem — LessWrong</a> <small>(lesswrong.com)</small></li>
+<li><a href="https://sebastianfarquhar.com/essays/2025/04/22/on_agency/">On Agency</a> <small>(sebastianfarquhar.com)</small></li>
+<li><a href="https://www.youtube.com/watch?v=B54EQiuO1UU">Why Every Scientist That Wanted Mirror Bacteria Changed Their Mind - YouTube</a> <small>(youtube.com)</small></li>
+<li><a href="https://jsteinhardt.stat.berkeley.edu/blog/film-study">Film Study for Research</a> <small>(jsteinhardt.stat.berkeley.edu)</small></li>
+<li><a href="https://www.youtube.com/watch?v=jXtk68Kzmms&amp;t=6s">The Most Important Graph in AI Right Now | Beth Barnes, CEO of METR - YouTube</a> <small>(youtube.com)</small></li>
+<li><a href="https://aisafetyfrontier.substack.com/p/paper-highlights-of-december-2025">Paper Highlights of December 2025 - by Johannes Gasteiger</a> <small>(aisafetyfrontier.substack.com)</small></li>
+<li><a href="https://slatestarcodex.com/2017/03/16/book-review-seeing-like-a-state/">Book Review: Seeing Like A State</a> <small>(slatestarcodex.com)</small></li>
+<li><a href="https://www.youtube.com/watch?v=kWcPg8t1kJ4&amp;t=13s">Artificial meat is harder than artificial intelligence — Lewis Bollard - YouTube</a> <small>(youtube.com)</small></li>
+<li><a href="https://www.youtube.com/watch?v=pnfTRQo7_RI">AI-engineered diseases are coming. Here&#x27;s the plan to stop them. | Andrew Snyder-Beattie - YouTube</a> <small>(youtube.com)</small></li>
+<li><a href="https://www.lesswrong.com/posts/oZuJvSNuYk6busjqf/oversight-assistants-turning-compute-into-understanding">Oversight Assistants: Turning Compute into Understanding — LessWrong</a> <small>(lesswrong.com)</small></li>
+<li><a href="https://www.youtube.com/watch?v=iCz--zrD5CQ&amp;t=5464s">The Redwood Research podcast - YouTube</a> <small>(youtube.com)</small></li>
+<li><a href="https://blog.sentinel-team.org/p/us-attacks-venezuela-and-captures?utm_source=post-email-title&amp;publication_id=2852775&amp;post_id=183575649&amp;utm_campaign=email-post-title&amp;isFreemail=true&amp;r=1o9kun&amp;triedRedirect=true&amp;utm_medium=email">🟩 US attacks Venezuela and captures Maduro, threatens Iran, Mexico, Colombia and Denmark || Global Risks Weekly Roundup #1/2026</a> <small>(blog.sentinel-team.org)</small></li>
+<li><a href="https://www.lesswrong.com/posts/NYzYJ2WoB74E6uj9L/recent-llms-can-use-filler-tokens-or-problem-repeats-to">Recent LLMs can use filler tokens or problem repeats to improve (no-CoT) math performance — LessWrong</a> <small>(lesswrong.com)</small></li>
+<li><a href="https://www.lesswrong.com/posts/aYtrLhoZtCKZnfBvA/recent-llms-can-do-2-hop-and-3-hop-latent-no-cot-reasoning">Recent LLMs can do 2-hop and 3-hop latent (no-CoT) reasoning on natural facts — LessWrong</a> <small>(lesswrong.com)</small></li>
+<li><a href="https://www.arxiv.org/abs/2512.01222">Unsupervised decoding of encoded reasoning using language model...</a> <small>(arxiv.org)</small></li>
+</ul>
+<p class="link-heading">December 2025</p>
+<ul class="reading-list">
+<li><a href="https://www.lesswrong.com/posts/S5dnLsmRbj2JkLWvf/turning-20-in-the-probable-pre-apocalypse">Turning 20 in the probable pre-apocalypse — LessWrong</a> <small>(lesswrong.com)</small></li>
+<li><a href="https://www.lesswrong.com/posts/2HbgHwdygH6yeHKKq/why-not-just-train-for-interpretability">Why Not Just Train For Interpretability? — LessWrong</a> <small>(lesswrong.com)</small></li>
+<li><a href="https://usefulfictions.substack.com/p/how-to-be-more-agentic?utm_source=bluedot-impact">How to be more agentic</a> <small>(usefulfictions.substack.com)</small></li>
+<li><a href="https://www.neelnanda.io/blog/become-a-person-who-actually-does-things?utm_source=bluedot-impact">Mini Blog Post 3: Become a person who Actually Does Things — Neel Nanda</a> <small>(neelnanda.io)</small></li>
+<li><a href="https://transformer-circuits.pub/2025/introspection/index.html">Emergent Introspective Awareness in Large Language Models</a> <small>(transformer-circuits.pub)</small></li>
+<li><a href="https://archive.ph/zBZtM#selection-1401.0-1404.0">The UK Recovery Trial for Covid-19 treatments helped save a million l…</a> <small>(archive.ph)</small></li>
+<li><a href="https://asteriskmag.com/issues/04/from-warp-speed-to-100-days?utm_source=bluedot-impact">From Warp Speed to 100 Days—Asterisk</a> <small>(asteriskmag.com)</small></li>
+<li><a href="https://www.lesswrong.com/posts/FeaJcWkC6fuRAMsfp/the-behavioral-selection-model-for-predicting-ai-motivations-1">The behavioral selection model for predicting AI motivations — LessWrong</a> <small>(lesswrong.com)</small></li>
+<li><a href="https://strangecities.substack.com/p/so-youve-taken-over-the-world">So you’ve taken over the world - by Owen Cotton-Barratt</a> <small>(strangecities.substack.com)</small></li>
+</ul>
+</div>
+</div>
+
+<script>
+(function() {
+  var tabs = document.querySelectorAll('.reading-tabs input[name="reading-tabs"]');
+  if (tabs.length >= 2) {
+    var idx = Math.random() < 0.5 ? 0 : 1;
+    tabs[idx].checked = true;
+  }
+})();
+</script>

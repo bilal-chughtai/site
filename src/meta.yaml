@@ -172,12 +172,12 @@
     "https://www.linkedin.com/posts/bilalchughtai_im-excited-to-share-that-im-starting-a-activity-7306735125826850816-UJpi?utm_source=share&utm_medium=member_desktop&rcm=ACoAACy6rLMBE3sQAk8sLKQF2roS-gHr056HXSU"
   ]
 
-- label: bookshelf
-  title: "Bookshelf"
-  date: 2025-04-12
-  description: "Things I've read."
+- label: reading
+  title: "Things I've been reading"
+  date: 2026-02-04
+  description: "Books and things I've been reading online."
   math: false
-  tags: ["books"]
+  tags: ["books", "reading"]
   pinned: true
 
 - label: busy

@@ -1,9 +1,4 @@
-Here are some products I use daily and like. Each product got here via one of the two following processes:
-
-1. Lots of research. Buying it. Using it. Liking it.
-2. Some research. Buying several options. Trying them all. Settling on one. Using it. Liking it.
-
-Last updated: 29th December 2025
+_Last updated: 29th December 2025_
 
 # Software
 
@@ -39,7 +34,7 @@ Last updated: 29th December 2025
 
 # Office
 
-**[Varier Plus](https://www.backinaction.co.uk/variable-plus-kneeling-chair-stock#tab_VariablePlusINSTOCK_VariablePlusINSTOCK_LightBrown)**. Nice chair if, like me, you can't sit still.
+**[Varier Variable Plus](https://www.backinaction.co.uk/variable-plus-kneeling-chair-stock#tab_VariablePlusINSTOCK_VariablePlusINSTOCK_LightBrown)**. Nice chair if, like me, you can't sit still. The plus comes with a back which imo is a nice addition.
 
 **[Mac Pro](https://www.apple.com/uk/macbook-pro/)**. Do I even need to justify this one?
 
