@@ -316,9 +316,21 @@ h3 { font-size: 1rem; }
 /* Show active tab content */
 #tab1:checked ~ #chronological,
 #tab2:checked ~ #type,
-#tab2:checked ~ #topic,
 #tab3:checked ~ #topic {
     display: block;
+}
+
+/* Reading page tabs (Books / Online) - unique IDs to avoid main page conflict */
+.reading-tabs #reading-tab1:checked ~ #reading-books,
+.reading-tabs #reading-tab2:checked ~ #reading-online {
+    display: block;
+}
+
+.reading-tabs #reading-tab1:checked ~ .tab-buttons label[for="reading-tab1"],
+.reading-tabs #reading-tab2:checked ~ .tab-buttons label[for="reading-tab2"] {
+    border: 2px solid var(--theme-color-highlights);
+    color: var(--theme-color-highlights);
+    font-weight: bold;
 }
 
 /* Style for active tab button */

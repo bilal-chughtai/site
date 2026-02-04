@@ -229,24 +229,24 @@ def generate_reading_markdown(
 
     content = f"""*Last updated: {now.strftime("%B")} {day}{ordinal_suffix(day)} {now.year}.*
 
-<div class="tab-container">
-<input type="radio" id="tab1" name="tabs" checked>
-<input type="radio" id="tab2" name="tabs">
+<div class="tab-container reading-tabs">
+<input type="radio" id="reading-tab1" name="reading-tabs">
+<input type="radio" id="reading-tab2" name="reading-tabs" checked>
 <div class="tab-buttons">
-<label for="tab1" class="tab-button">Books</label>
-<label for="tab2" class="tab-button">Online</label>
+<label for="reading-tab1" class="tab-button">Books</label>
+<label for="reading-tab2" class="tab-button">Online</label>
 </div>
-<div class="tab-content" id="chronological">
+<div class="tab-content" id="reading-books">
 {books_html}
 </div>
-<div class="tab-content" id="topic">
+<div class="tab-content" id="reading-online">
 {online_html}
 </div>
 </div>
 
 <script>
 (function() {{
-  var tabs = document.querySelectorAll('.tab-container input[name="tabs"]');
+  var tabs = document.querySelectorAll('.reading-tabs input[name="reading-tabs"]');
   if (tabs.length >= 2) {{
     var idx = Math.random() < 0.5 ? 0 : 1;
     tabs[idx].checked = true;
