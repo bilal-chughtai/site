@@ -1,7 +1,7 @@
 *Last updated: February 4th 2026.*
 
 <div class="tab-container reading-tabs">
-<input type="radio" id="reading-tab1" name="reading-tabs">
+<input type="radio" id="reading-tab1" name="reading-tabs" checked>
 <input type="radio" id="reading-tab2" name="reading-tabs">
 <div class="tab-buttons">
 <label for="reading-tab1" class="tab-button">Books</label>
