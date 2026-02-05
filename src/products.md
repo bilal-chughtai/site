@@ -90,6 +90,8 @@ _Last updated: 29th December 2025_
 
 **[Primark Chunky Elastic Hair Ties](https://www.primark.com/en-gb/p/10pk-chunky-hair-elastics-black-991128693804)**. Cheap & strong hair ties. They do stretch out, but I tend to lose them around the time they get too loose. Buy several packs.
 
+**[North Face Men's eTip Gloves](https://www.thenorthface.com/en-gb/p/bags-and-equipment-211747/men-s-etip-gloves-NF0A4SHA)**. Touchscreen-compatible gloves.
+
 # Misc
 
 **[Garmin Forerunner 165 Music](https://www.garmin.com/en-GB/p/1611937/pn/010-02863-31)**. Entry level running watch.
@@ -105,6 +107,8 @@ _Last updated: 29th December 2025_
 **[CeraVe Cleanser](https://www.cerave.co.uk/skincare/cleansers/sa-smoothing-cleanser)**. Skincare if you have an oily face.
 
 **[Green Bell G-1305 Nail Cutter](https://amzn.eu/d/dKTlcul)**. Japanese made nail clippers.
+
+**[Oral-B iO 3 Electric Toothbrush](https://amzn.eu/d/0iIZGXY8)**. Electric toothbrush.
 
 **[Book Darts](https://www.lesswrong.com/posts/n6nsPzJWurKWKk2pA/somebody-invented-a-better-bookmark)**. Better bookmarks. If in the UK buy from [here](https://theliterarygiftshop.co.uk/products/book-darts-mixed-tin?variant=43067965800678).
 
