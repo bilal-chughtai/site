@@ -1,4 +1,4 @@
-*Last updated: February 4th 2026.*
+*Last updated: February 8th 2026.*
 
 <div class="tab-container reading-tabs">
 <input type="radio" id="reading-tab1" name="reading-tabs">
@@ -68,6 +68,17 @@
 <div class="tab-content" id="reading-online">
 <p class="link-heading">February 2026</p>
 <ul class="reading-list">
+<li><a href="https://www.lesswrong.com/posts/HQyWGE2BummDCc2Cx?commentId=aMZhcvZxokq5qmgnu">the case for CoT unfaithfulness is overstated — LessWrong</a> <small>(lesswrong.com)</small></li>
+<li><a href="https://blog.redwoodresearch.org/p/extending-control-evaluations-to">Extending control evaluations to non-scheming threats</a> <small>(blog.redwoodresearch.org)</small></li>
+<li><a href="https://www.lesswrong.com/posts/G9HdpyREaCbFJjKu5/it-is-reasonable-to-research-how-to-use-model-internals-in">It Is Reasonable To Research How To Use Model Internals In Training — LessWrong</a> <small>(lesswrong.com)</small></li>
+<li><a href="https://usefulfictions.substack.com/p/50-things-i-know?utm_source=profile&amp;utm_medium=reader2">50 things I know</a> <small>(usefulfictions.substack.com)</small></li>
+<li><a href="https://en.wikipedia.org/wiki/Berkson%27s_paradox">Berkson&#x27;s paradox - Wikipedia</a> <small>(en.wikipedia.org)</small></li>
+<li><a href="https://usefulfictions.substack.com/p/burnout-is-breaking-a-sacred-pact">Burnout is breaking a sacred pact</a> <small>(usefulfictions.substack.com)</small></li>
+<li><a href="https://aella.substack.com/p/bye-mom">bye, mom</a> <small>(aella.substack.com)</small></li>
+<li><a href="https://usefulfictions.substack.com/p/the-seam-through-the-center-of-things?utm_source=profile&amp;utm_medium=reader2">The seam through the center of things</a> <small>(usefulfictions.substack.com)</small></li>
+<li><a href="https://usefulfictions.substack.com/p/the-lies-i-used-to-tell-myself?utm_source=profile&amp;utm_medium=reader2">The lies I used to tell myself</a> <small>(usefulfictions.substack.com)</small></li>
+<li><a href="https://usefulfictions.substack.com/p/in-praise-of-quitting?utm_source=profile&amp;utm_medium=reader2">In praise of quitting</a> <small>(usefulfictions.substack.com)</small></li>
+<li><a href="https://substack.com/home/post/p-173007074">Aliveness and where to find it - by Ben James - Ben by Fax</a> <small>(substack.com)</small></li>
 <li><a href="https://usefulfictions.substack.com/p/are-you-stuck-in-movie-logic">Are you stuck in movie logic?</a> <small>(usefulfictions.substack.com)</small></li>
 <li><a href="https://usefulfictions.substack.com/p/rightness-is-a-prison?utm_source=profile&amp;utm_medium=reader2">Rightness is a prison</a> <small>(usefulfictions.substack.com)</small></li>
 <li><a href="https://usefulfictions.substack.com/p/how-to-increase-your-surface-area?utm_source=profile&amp;utm_medium=reader2">How to increase your surface area for luck</a> <small>(usefulfictions.substack.com)</small></li>

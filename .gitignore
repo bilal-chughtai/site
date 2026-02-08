@@ -1,5 +1,6 @@
 TEMP_*
 .reading_last_updated
+.reading_last_attempt
 src/.obsidian
 */.vscode/*
 .vscode
