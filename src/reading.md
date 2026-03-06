@@ -1,4 +1,4 @@
-*Last updated: February 8th 2026.*
+*Last updated: March 6th 2026.*
 
 <div class="tab-container reading-tabs">
 <input type="radio" id="reading-tab1" name="reading-tabs">
@@ -14,6 +14,7 @@
 </ul>
 <p class="link-heading">2026</p>
 <ul class="reading-list">
+<li><a href="https://ifanyonebuildsit.com/">If Anyone Builds It Everyone Dies:  Why Superhuman AI Would Kill Us All</a> <small>(Eliezer Yudkowsky and Nate Soares, 2026)</small></li>
 <li><a href="https://en.wikipedia.org/wiki/A_Christmas_Carol">A Christmas Carol</a> <small>(Charles Dickens, 1843)</small></li>
 </ul>
 <p class="link-heading">2025</p>
@@ -66,8 +67,74 @@
 </ul>
 </div>
 <div class="tab-content" id="reading-online">
+<p class="link-heading">March 2026</p>
+<ul class="reading-list">
+<li><a href="https://mindingourway.com/half-assing-it-with-everything-youve-got/">Half-assing it with everything you&#x27;ve got</a> <small>(mindingourway.com)</small></li>
+<li><a href="https://joecarlsmith.substack.com/p/ai-for-ai-safety">AI for AI safety</a> <small>(joecarlsmith.substack.com)</small></li>
+<li><a href="https://joecarlsmith.substack.com/p/paths-and-waystations-in-ai-safety">Paths and waystations in AI safety</a> <small>(joecarlsmith.substack.com)</small></li>
+<li><a href="https://joecarlsmith.substack.com/p/when-should-we-worry-about-ai-power">When should we worry about AI power-seeking?</a> <small>(joecarlsmith.substack.com)</small></li>
+<li><a href="https://www.planned-obsolescence.org/p/i-underestimated-ai-capabilities?publication_id=3069806&amp;utm_campaign=email-post-title&amp;r=1o9kun&amp;utm_medium=email">I underestimated AI capabilities (again) - by Ajeya Cotra</a> <small>(planned-obsolescence.org)</small></li>
+<li><a href="https://mindingourway.com/replacing-guilt/">Replacing guilt</a> <small>(mindingourway.com)</small></li>
+<li><a href="https://forum.effectivealtruism.org/posts/2veCceQkhjovCfdbg/you-re-not-burning-out-because-you-re-tired">You&#x27;re not burning out because you&#x27;re tired — EA Forum</a> <small>(forum.effectivealtruism.org)</small></li>
+<li><a href="https://catherinebrewer.substack.com/p/a-personal-take-on-why-and-why-not">A personal take on why (and why not) to work on AI safety at Open Philanthropy</a> <small>(catherinebrewer.substack.com)</small></li>
+<li><a href="https://blog.sentinel-team.org/p/us-and-israel-strike-iran-iran-retaliates?utm_source=post-email-title&amp;publication_id=2852775&amp;post_id=189679281&amp;utm_campaign=email-post-title&amp;isFreemail=true&amp;r=1o9kun&amp;triedRedirect=true&amp;utm_medium=email">🟡 US and Israel strike Iran, Iran retaliates against US allies, Anthropic designated a supply chain risk || Global Risks Weekly Roundup #9/2026</a> <small>(blog.sentinel-team.org)</small></li>
+</ul>
 <p class="link-heading">February 2026</p>
 <ul class="reading-list">
+<li><a href="https://www.lesswrong.com/posts/HQTueNS4mLaGy3BBL/here-s-to-the-polypropylene-makers">Here&#x27;s to the Polypropylene Makers — LessWrong</a> <small>(lesswrong.com)</small></li>
+<li><a href="https://joecarlsmith.com/2025/02/13/what-is-it-to-solve-the-alignment-problem">What is it to solve the alignment problem? - Joe Carlsmith</a> <small>(joecarlsmith.com)</small></li>
+<li><a href="https://joecarlsmith.com/2025/02/13/how-do-we-solve-the-alignment-problem">How do we solve the alignment problem? - Joe Carlsmith</a> <small>(joecarlsmith.com)</small></li>
+<li><a href="https://www.anthropic.com/news/statement-department-of-war">Statement from Dario Amodei on our discussions with the Department of War \ Anthropic</a> <small>(anthropic.com)</small></li>
+<li><a href="https://benbyfax.substack.com/p/dessert?publication_id=4121449&amp;utm_campaign=email-post-title&amp;r=1o9kun&amp;utm_medium=email">We hosted a dessert invention contest - by Ben James</a> <small>(benbyfax.substack.com)</small></li>
+<li><a href="https://alignment.anthropic.com/2026/psm/">The Persona Selection Model: Why AI Assistants might Behave like Humans</a> <small>(alignment.anthropic.com)</small></li>
+<li><a href="https://www.lesswrong.com/posts/Yz4YHncz2vwN4ksDA/the-ml-ontology-and-the-alignment-ontology">The ML ontology and the alignment ontology — LessWrong</a> <small>(lesswrong.com)</small></li>
+<li><a href="https://blog.sentinel-team.org/p/us-buildup-in-middle-east-continues">🟩 US buildup in Middle East continues, Russian vessel en route to Cuba, AI time horizons lengthen | Global Risks Weekly Roundup #8/2026</a> <small>(blog.sentinel-team.org)</small></li>
+<li><a href="https://milesbrundage.substack.com/p/were-in-triage-mode-for-ai-policy">We&#x27;re in Triage Mode for AI Policy - by Miles Brundage</a> <small>(milesbrundage.substack.com)</small></li>
+<li><a href="https://joecarlsmith.com/2025/05/21/the-stakes-of-ai-moral-status">The stakes of AI moral status - Joe Carlsmith</a> <small>(joecarlsmith.com)</small></li>
+<li><a href="https://www.lesswrong.com/posts/gLt7KJkhiEDwoPkae/three-positive-updates-i-made-about-technical-grantmaking-at">Three positive updates I made about technical grantmaking at Coefficient Giving (fka Open Phil) — LessWrong</a> <small>(lesswrong.com)</small></li>
+<li><a href="https://www.lesswrong.com/posts/BnFuHDueG9vRAYqLd/changing-the-world-for-the-worse">Changing the world for the worse — LessWrong</a> <small>(lesswrong.com)</small></li>
+<li><a href="https://forum.effectivealtruism.org/posts/CHQdcXjBudqq4QFk9/animal-welfare-in-1800?utm_source=forum_digest&amp;utm_medium=email&amp;utm_campaign=digest_278&amp;utm_source=EA+Forum+Digest&amp;utm_campaign=33fb927542-EMAIL_CAMPAIGN_2026_02_11_02_07&amp;utm_medium=email&amp;utm_term=0_-33fb927542-319152218">Animal welfare in 1800 — EA Forum</a> <small>(forum.effectivealtruism.org)</small></li>
+<li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4959137/">The Unilateralist’s Curse and the Case for a Principle of Conformity</a> <small>(pmc.ncbi.nlm.nih.gov)</small></li>
+<li><a href="https://slatestarcodex.com/2019/06/03/repost-epistemic-learned-helplessness/">[REPOST] Epistemic Learned Helplessness</a> <small>(slatestarcodex.com)</small></li>
+<li><a href="https://joecarlsmith.com/2021/03/14/against-neutrality-about-creating-happy-lives">Against neutrality about creating happy lives - Joe Carlsmith</a> <small>(joecarlsmith.com)</small></li>
+<li><a href="https://joecarlsmith.com/2021/01/18/actually-possible-thoughts-on-utopia">Actually possible: thoughts on Utopia - Joe Carlsmith</a> <small>(joecarlsmith.com)</small></li>
+<li><a href="https://coefficientgiving.org/funds/navigating-transformative-ai/request-for-proposals-improving-capability-evaluations/">Request for Proposals: Improving Capability Evaluations</a> <small>(coefficientgiving.org)</small></li>
+<li><a href="https://coefficientgiving.org/rfp-llm-impacts/">[Closed] Request for Proposals: Studying and Forecasting the Real-World Impacts of Systems Built from LLMs</a> <small>(coefficientgiving.org)</small></li>
+<li><a href="https://coefficientgiving.org/funds/navigating-transformative-ai/rfp-llm-benchmarks/">[Closed] Request for Proposals: Benchmarking LLM Agents on Consequential Real-World Tasks</a> <small>(coefficientgiving.org)</small></li>
+<li><a href="https://www.lesswrong.com/posts/26SHhxK2yYQbh7ors/research-directions-open-phil-wants-to-fund-in-technical-ai">Research directions Open Phil wants to fund in technical AI safety — LessWrong</a> <small>(lesswrong.com)</small></li>
+<li><a href="https://www.lesswrong.com/posts/wbJxRNxuezvsGFEWv/open-philanthropy-technical-ai-safety-rfp-usd40m-available">Open Philanthropy Technical AI Safety RFP - $40M Available Across 21 Research Areas — LessWrong</a> <small>(lesswrong.com)</small></li>
+<li><a href="https://forum.effectivealtruism.org/posts/SQSXfiByKat2YzpWu/new-roles-on-my-team-come-build-open-phil-s-technical-ai">New roles on my team: come build Open Phil&#x27;s technical AI safety program with me! — EA Forum</a> <small>(forum.effectivealtruism.org)</small></li>
+<li><a href="https://www.lesswrong.com/posts/oWN9fgYnFYJEWdAs9/comments-on-openphil-s-interpretability-rfp">Comments on OpenPhil&#x27;s Interpretability RFP — LessWrong</a> <small>(lesswrong.com)</small></li>
+<li><a href="https://joecarlsmith.com/2021/03/22/on-future-people-looking-back-at-21st-century-longtermism">On future people, looking back at 21st century longtermism - Joe Carlsmith</a> <small>(joecarlsmith.com)</small></li>
+<li><a href="https://joecarlsmith.com/2021/02/07/killing-the-ants">Killing the ants - Joe Carlsmith</a> <small>(joecarlsmith.com)</small></li>
+<li><a href="https://joecarlsmith.com/2020/12/06/thoughts-on-being-mortal">Thoughts on being mortal - Joe Carlsmith</a> <small>(joecarlsmith.com)</small></li>
+<li><a href="https://joecarlsmith.substack.com/p/on-clinging">On clinging - Joe Carlsmith&#x27;s Substack</a> <small>(joecarlsmith.substack.com)</small></li>
+<li><a href="https://www.planned-obsolescence.org/p/the-costs-of-caution">The costs of caution</a> <small>(planned-obsolescence.org)</small></li>
+<li><a href="https://joecarlsmith.com/2025/11/03/leaving-open-philanthropy-going-to-anthropic">Leaving Open Philanthropy, going to Anthropic - Joe Carlsmith</a> <small>(joecarlsmith.com)</small></li>
+<li><a href="https://www.youtube.com/watch?v=Z19UEZHJzAg">By 2050 we could get &quot;10,000 years of technological progress&quot;</a> <small>(youtube.com)</small></li>
+<li><a href="https://transformer-circuits.pub/2026/emotions/">Functional Representations of Emotion in a Large Language Model</a> <small>(transformer-circuits.pub)</small></li>
+<li><a href="https://www.lesswrong.com/posts/ZJZZEuPFKeEdkrRyf/why-we-should-expect-ruthless-sociopath-asi">Why we should expect ruthless sociopath ASI — LessWrong</a> <small>(lesswrong.com)</small></li>
+<li><a href="https://aella.substack.com/p/the-attempted-kidnapping-at-my-house">The attempted kidnapping at my house - by Aella</a> <small>(aella.substack.com)</small></li>
+<li><a href="https://www.lesswrong.com/posts/KrecrThEtC3B92GLE/a-multi-level-postmortem-of-how-our-whole-house-got-badly">A multi-level postmortem of how our whole house got badly poisoned — LessWrong</a> <small>(lesswrong.com)</small></li>
+<li><a href="https://www.lesswrong.com/posts/NMoNLfX3ihXSZJwqK/church-planting-when-venture-capital-finds-jesus">Church Planting: When Venture Capital Finds Jesus — LessWrong</a> <small>(lesswrong.com)</small></li>
+<li><a href="https://blog.sentinel-team.org/p/us-sends-second-aircraft-carrier?utm_source=post-email-title&amp;publication_id=2852775&amp;post_id=188168020&amp;utm_campaign=email-post-title&amp;isFreemail=true&amp;r=1o9kun&amp;triedRedirect=true&amp;utm_medium=email">🟩 US sends second aircraft carrier to Middle East, European nuclear deterrent discussed, pandemic preparedness deprioritized at NIAID | Global Risks Weekly Roundup #7/2026</a> <small>(blog.sentinel-team.org)</small></li>
+<li><a href="https://www.astralcodexten.com/p/you-have-only-x-years-to-escape-permanent">You Have Only X Years To Escape Permanent Moon Ownership</a> <small>(astralcodexten.com)</small></li>
+<li><a href="https://www.lesswrong.com/posts/5CZoEw7sjxnMrhgvx/aligning-to-virtues">Aligning to Virtues — LessWrong</a> <small>(lesswrong.com)</small></li>
+<li><a href="https://www.lesswrong.com/posts/FreZTE9Bc7reNnap7/life-at-the-frontlines-of-demographic-collapse">Life at the Frontlines of Demographic Collapse — LessWrong</a> <small>(lesswrong.com)</small></li>
+<li><a href="https://usefulfictions.substack.com/p/do-less">Do Less. - by Cate Hall - Useful Fictions</a> <small>(usefulfictions.substack.com)</small></li>
+<li><a href="https://www.lesswrong.com/posts/kRbbTpzKSpEdZ95LM/the-missing-genre-heroic-parenthood-you-can-have-kids-and">The Missing Genre: Heroic Parenthood - You can have kids and still punch the sun — LessWrong</a> <small>(lesswrong.com)</small></li>
+<li><a href="https://joannabregan.substack.com/p/toys-with-the-highest-play-time-and">Toys with the highest play-time and lowest clean-up-time</a> <small>(joannabregan.substack.com)</small></li>
+<li><a href="https://www.lesswrong.com/posts/CoeJkgz5zMHfngxAa/ending-parking-space-saving">Ending Parking Space Saving — LessWrong</a> <small>(lesswrong.com)</small></li>
+<li><a href="https://www.jenn.site/after-my-dad-died-we-found-the-love-letters/">after my dad died, we found the love letters</a> <small>(jenn.site)</small></li>
+<li><a href="https://www.jenn.site/my-dad-could-still-be-alive-but-hes-not/">my dad could still be alive, but he&#x27;s not.</a> <small>(jenn.site)</small></li>
+<li><a href="https://www.lesswrong.com/posts/DKH9Z4DyusEdJmXKB/making-every-researcher-seek-grants-is-a-broken-model">Making every researcher seek grants is a broken model — LessWrong</a> <small>(lesswrong.com)</small></li>
+<li><a href="https://blog.sentinel-team.org/p/anthropic-and-openai-release-new?publication_id=2852775&amp;utm_campaign=email-post-title&amp;r=1o9kun&amp;utm_medium=email">🟩 Anthropic and OpenAI release new models, US-Iran talks continue, illegal biolab in the US, nuclear arms treaty expires | Global Risks Weekly Roundup #6/2026</a> <small>(blog.sentinel-team.org)</small></li>
+<li><a href="https://www.forethought.org/research/design-sketches-angels-on-the-shoulder">Angels-on-the-Shoulder: 5 AI Tools for Better Decisions</a> <small>(forethought.org)</small></li>
+<li><a href="https://www.jernesto.com/articles/thinking_hard">I miss thinking hard.</a> <small>(jernesto.com)</small></li>
+<li><a href="https://www.alignment.org/blog/algzoo-uninterpreted-models-with-fewer-than-1-500-parameters/">AlgZoo: uninterpreted models with fewer than 1,500 parameters</a> <small>(alignment.org)</small></li>
+<li><a href="https://www.lesswrong.com/posts/faaoyve5ryY8E5M4r/eli-s-shortform-feed?commentId=sFzK43Spau8sDWv82">Eli&#x27;s shortform feed — LessWrong</a> <small>(lesswrong.com)</small></li>
+<li><a href="https://en.wikipedia.org/wiki/Jeremy_Bentham#Death_and_the_auto-icon">Jeremy Bentham - Wikipedia</a> <small>(en.wikipedia.org)</small></li>
+<li><a href="https://www.lesswrong.com/posts/4j6HJt8Exowmqp245/different-senses-in-which-two-ais-can-be-the-same">Different senses in which two AIs can be “the same” — LessWrong</a> <small>(lesswrong.com)</small></li>
 <li><a href="https://www.lesswrong.com/posts/HQyWGE2BummDCc2Cx?commentId=aMZhcvZxokq5qmgnu">the case for CoT unfaithfulness is overstated — LessWrong</a> <small>(lesswrong.com)</small></li>
 <li><a href="https://blog.redwoodresearch.org/p/extending-control-evaluations-to">Extending control evaluations to non-scheming threats</a> <small>(blog.redwoodresearch.org)</small></li>
 <li><a href="https://www.lesswrong.com/posts/G9HdpyREaCbFJjKu5/it-is-reasonable-to-research-how-to-use-model-internals-in">It Is Reasonable To Research How To Use Model Internals In Training — LessWrong</a> <small>(lesswrong.com)</small></li>
