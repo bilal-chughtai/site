@@ -86,7 +86,9 @@
     <div class="tab-content" id="chronological">
         
         <p class="link-heading">Pinned</p>
-        <ul>
+        <ul id="pinned-posts-list">
+            
+            <li><a href="races">Races</a></li>
             
             <li><a href="reading">Things I've been reading</a></li>
             
@@ -292,12 +294,12 @@
             
         </ul>
         
-        <p class="link-heading">books</p>
+        <p class="link-heading">sport</p>
         <ul>
             
-            <li><a href="reading">Things I've been reading</a></li>
+            <li><a href="races">Races</a></li>
             
-            <li><a href="zero-to-one">Book Summary: Zero to One</a></li>
+            <li><a href="cuplc">CUPLC website enhancements</a></li>
             
         </ul>
         
@@ -310,24 +312,12 @@
             
         </ul>
         
-        <p class="link-heading">startups</p>
+        <p class="link-heading">books</p>
         <ul>
+            
+            <li><a href="reading">Things I've been reading</a></li>
             
             <li><a href="zero-to-one">Book Summary: Zero to One</a></li>
-            
-        </ul>
-        
-        <p class="link-heading">sport</p>
-        <ul>
-            
-            <li><a href="cuplc">CUPLC website enhancements</a></li>
-            
-        </ul>
-        
-        <p class="link-heading">personal</p>
-        <ul>
-            
-            <li><a href="intellectual-progress-2024">Intellectual progress in 2024</a></li>
             
         </ul>
         
@@ -338,6 +328,20 @@
             
         </ul>
         
+        <p class="link-heading">running</p>
+        <ul>
+            
+            <li><a href="races">Races</a></li>
+            
+        </ul>
+        
+        <p class="link-heading">personal</p>
+        <ul>
+            
+            <li><a href="intellectual-progress-2024">Intellectual progress in 2024</a></li>
+            
+        </ul>
+        
         <p class="link-heading">reading</p>
         <ul>
             
@@ -345,8 +349,30 @@
             
         </ul>
         
+        <p class="link-heading">startups</p>
+        <ul>
+            
+            <li><a href="zero-to-one">Book Summary: Zero to One</a></li>
+            
+        </ul>
+        
     </div>
 </div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var ul = document.getElementById('pinned-posts-list');
+        if (!ul || ul.children.length < 2) return;
+        var items = Array.prototype.slice.call(ul.children);
+        for (var i = items.length - 1; i > 0; i--) {
+            var j = Math.floor(Math.random() * (i + 1));
+            var t = items[i];
+            items[i] = items[j];
+            items[j] = t;
+        }
+        items.forEach(function (li) { ul.appendChild(li); });
+    });
+</script>
 
 
             </div>

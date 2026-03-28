@@ -15,7 +15,7 @@
 {% endblock %}
 
 {% block left_column %}
-{% if toc %}
+{% if toc and not disable_sidebar %}
 <nav id="toc" class="table-of-contents">
     <hr class="toc-separator">
     <ul>
@@ -45,7 +45,7 @@
                 <!-- <p class="post-summary"> <strong>Summary</strong>: {{ post.meta.description }}</p> -->
     </div>
 
-    {% if toc %}
+    {% if toc and not disable_sidebar %}
     <div class="collapsed-sidebar">
         <nav id="collapsed-toc" class="table-of-contents">
             <hr class="toc-separator">
@@ -69,6 +69,24 @@
         .post-content img {
             width: 80%;
             height: auto;
+        }
+    </style>
+    {% endif %}
+    {% if post.meta.label == "races" %}
+    <style>
+        .post-content table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: var(--gap-md) 0;
+        }
+        .post-content th,
+        .post-content td {
+            border: 1px solid var(--theme-color-highlights);
+            padding: 0.45rem 0.65rem;
+            text-align: left;
+        }
+        .post-content thead th {
+            font-family: var(--sans-serif-font);
         }
     </style>
     {% endif %}

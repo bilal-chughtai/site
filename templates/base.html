@@ -41,7 +41,7 @@
     gtag('config', 'G-NN7RTLBRKY');
 </script>
 
-<body>
+<body{% if disable_sidebar or wider %} class="{% if disable_sidebar %}layout-no-sidebar{% endif %}{% if disable_sidebar and wider %} {% endif %}{% if wider %}layout-wider{% endif %}"{% endif %}>
     {% block header %}
     {% endblock %}
     <div class="container">

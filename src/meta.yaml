@@ -180,6 +180,16 @@
   tags: ["books", "reading"]
   pinned: true
 
+- label: races
+  title: "Races"
+  date: 2026-03-28
+  description: "Running races — past and upcoming."
+  math: false
+  tags: ["running", "sport"]
+  pinned: true
+  disable_sidebar: true
+  wider: true
+
 - label: busy
   title: 'On being "busy"'
   date: 2026-02-02

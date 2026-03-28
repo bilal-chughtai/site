@@ -2,6 +2,7 @@
     --container-max-width: 2000px;
     --sidebar-width: 350px;
     --main-content-max-width: 75ch;
+    --main-content-wide-max-width: 130ch;
     --background-color: #fdfdfd;
     --theme-color: rgb(140, 72, 229);
     --theme-color-dark: #33c;
@@ -101,6 +102,18 @@ header {
     justify-content: center;
 }
 
+body.layout-wider .column.main {
+    max-width: min(100%, var(--main-content-wide-max-width));
+}
+
+body.layout-no-sidebar .container {
+    padding-right: 0;
+}
+
+body.layout-no-sidebar .column.left {
+    display: none;
+}
+
 /* Add this new rule */
 img {
     max-width: 100%;
@@ -132,6 +145,10 @@ img {
         padding-right: var(--gap-md);
         max-width: min(100%, var(--main-content-max-width));
         margin: 0 auto; 
+    }
+
+    body.layout-wider .column.main {
+        max-width: min(100%, var(--main-content-wide-max-width));
     }
     .post-content {
         border-top: 0px !important;

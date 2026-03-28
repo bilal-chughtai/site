@@ -87,6 +87,8 @@ class PostMeta:
     pinned: bool = (
         False  # whether this post should be pinned at the top of the landing page
     )
+    disable_sidebar: bool = False  # hide left TOC column (wide viewports)
+    wider: bool = False  # use a wider main column (--main-content-wide-max-width)
 
 
 @dataclass
@@ -393,6 +395,8 @@ def render_post_content(
         use_mathjax=post.meta.math,
         is_index=False,
         toc=toc,
+        disable_sidebar=post.meta.disable_sidebar,
+        wider=post.meta.wider,
         get_post_title=lambda label: get_post_title(label, posts),
         get_domain=get_domain,
         **context,
