@@ -1,4 +1,4 @@
-Apparently I'm now a "runner". Here is a log of all my races. More details on my [strava](https://www.strava.com/athletes/32291390).
+I like running races. Here is a log of all my races. More details on my [strava](https://www.strava.com/athletes/32291390).
 
 ## Completed
 
