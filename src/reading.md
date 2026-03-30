@@ -1,4 +1,4 @@
-*Last updated: March 28th 2026.*
+*Last updated: March 30th 2026.*
 
 <div class="tab-container reading-tabs">
 <input type="radio" id="reading-tab1" name="reading-tabs">
@@ -69,6 +69,8 @@
 <div class="tab-content" id="reading-online">
 <p class="link-heading">March 2026</p>
 <ul class="reading-list">
+<li><a href="https://nablatheta.substack.com/p/know-your-insomnia-treatments?utm_source=post-email-title&amp;publication_id=595913&amp;post_id=192460629&amp;utm_campaign=email-post-title&amp;isFreemail=true&amp;r=1o9kun&amp;triedRedirect=true&amp;utm_medium=email">Know your insomnia treatments</a> <small>(nablatheta.substack.com)</small></li>
+<li><a href="https://www.lesswrong.com/posts/fRSz8gJMsSwp9xDZY/don-t-overdose-locally-beneficial-changes">Don&#x27;t Overdose Locally Beneficial Changes — LessWrong</a> <small>(lesswrong.com)</small></li>
 <li><a href="https://www.lesswrong.com/posts/xkFLbcknoDaJXsQiH/what-i-got-from-1-5-years-in-slightly-competitive-debate">What I Got From 1.5 Years In Slightly-Competitive Debate — LessWrong</a> <small>(lesswrong.com)</small></li>
 <li><a href="https://www.lesswrong.com/posts/8m6AM5qtPMjgTkEeD/my-journey-to-the-microwave-alternate-timeline">My journey to the microwave alternate timeline — LessWrong</a> <small>(lesswrong.com)</small></li>
 <li><a href="https://www.lesswrong.com/posts/objcAvKZKzfCGdedA/they-don-t-make-em-like-they-used-to">They don&#x27;t make &#x27;em like they used to — LessWrong</a> <small>(lesswrong.com)</small></li>
