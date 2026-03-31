@@ -42,7 +42,7 @@ This comes out to something like the following macros:
 
 # 3. Advice.
 
-You should eventually prepare in batch as time to prepare is sub-linear in number of batches, but initially it's [probably better](https://www.lesswrong.com/posts/NytNporGkzzvyxJZC/aim-for-single-piece-flow) to just make one batch at a time, while you're figuring out what you like. My usual protocol is to make two batches of overnight oats alongside one batch of yoghurt on-its-own to consume imminently, using up an entire 950g pot of fage. 
+You should eventually prepare in batch as time to prepare is sub-linear in number of servings, but initially it's [probably better](https://www.lesswrong.com/posts/NytNporGkzzvyxJZC/aim-for-single-piece-flow) to just make one serving at a time, while you're figuring out what you like. My usual protocol is to make two batches of overnight oats alongside one batch of yoghurt on-its-own to consume imminently, using up an entire 950g pot of fage. 
 
 ![Two batches of overnight oats](img/overnight-oats/batches.jpg)
 
