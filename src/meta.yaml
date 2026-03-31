@@ -190,6 +190,13 @@
   disable_sidebar: true
   wider: true
 
+- label: overnight-oats
+  title: "My overnight oat protocol"
+  date: 2026-03-31
+  description: "A high-protein overnight oats recipe I make 3-4 times a week."
+  math: false
+  tags: ["health", "food"]
+
 - label: busy
   title: 'On being "busy"'
   date: 2026-02-02

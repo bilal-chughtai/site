@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from dataclasses import dataclass
 from jinja2 import Environment, FileSystemLoader, Template
 import yaml
