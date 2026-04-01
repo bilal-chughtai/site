@@ -197,6 +197,13 @@
   math: false
   tags: ["health", "food"]
 
+- label: running
+  title: "Becoming a runner"
+  date: 2026-04-01
+  description: "Lessons learned from getting into running."
+  math: false
+  tags: ["running", "health", "personal"]
+
 - label: busy
   title: 'On being "busy"'
   date: 2026-02-02

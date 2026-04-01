@@ -1,4 +1,4 @@
-*Last updated: March 30th 2026.*
+*Last updated: April 1st 2026.*
 
 <div class="tab-container reading-tabs">
 <input type="radio" id="reading-tab1" name="reading-tabs">
@@ -10,10 +10,12 @@
 <div class="tab-content" id="reading-books">
 <p class="link-heading">Currently Reading</p>
 <ul class="reading-list">
+<li><a href="https://en.wikipedia.org/wiki/Klara_and_the_Sun">Klara and the Sun</a> <small>(Kazuo Ishiguro, 2021)</small></li>
 <li><a href="https://www.lesswrong.com/posts/4rSWMjW6MDWt28Qtc/review-good-strategy-bad-strategy">Good Strategy, Bad Strategy: The Difference and Why it Matters</a> <small>(Richard Rumelt, 2011)</small></li>
 </ul>
 <p class="link-heading">2026</p>
 <ul class="reading-list">
+<li><a href="https://maxharms.com/redheart">Red Heart</a> <small>(Max Harms, 2026)</small></li>
 <li><a href="https://ifanyonebuildsit.com/">If Anyone Builds It Everyone Dies:  Why Superhuman AI Would Kill Us All</a> <small>(Eliezer Yudkowsky and Nate Soares, 2026)</small></li>
 <li><a href="https://en.wikipedia.org/wiki/A_Christmas_Carol">A Christmas Carol</a> <small>(Charles Dickens, 1843)</small></li>
 </ul>
@@ -69,6 +71,7 @@
 <div class="tab-content" id="reading-online">
 <p class="link-heading">March 2026</p>
 <ul class="reading-list">
+<li><a href="https://blog.sentinel-team.org/p/iranian-steel-and-nuclear-plants?utm_source=post-email-title&amp;publication_id=2852775&amp;post_id=192636156&amp;utm_campaign=email-post-title&amp;isFreemail=true&amp;r=1o9kun&amp;triedRedirect=true&amp;utm_medium=email">🟡 Iranian steel and nuclear plants bombed, Houthi attacks begin, AI solves open problem in mathematics || Global Risks Weekly Roundup #13/2026</a> <small>(blog.sentinel-team.org)</small></li>
 <li><a href="https://nablatheta.substack.com/p/know-your-insomnia-treatments?utm_source=post-email-title&amp;publication_id=595913&amp;post_id=192460629&amp;utm_campaign=email-post-title&amp;isFreemail=true&amp;r=1o9kun&amp;triedRedirect=true&amp;utm_medium=email">Know your insomnia treatments</a> <small>(nablatheta.substack.com)</small></li>
 <li><a href="https://www.lesswrong.com/posts/fRSz8gJMsSwp9xDZY/don-t-overdose-locally-beneficial-changes">Don&#x27;t Overdose Locally Beneficial Changes — LessWrong</a> <small>(lesswrong.com)</small></li>
 <li><a href="https://www.lesswrong.com/posts/xkFLbcknoDaJXsQiH/what-i-got-from-1-5-years-in-slightly-competitive-debate">What I Got From 1.5 Years In Slightly-Competitive Debate — LessWrong</a> <small>(lesswrong.com)</small></li>
