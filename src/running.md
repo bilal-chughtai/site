@@ -2,7 +2,7 @@
 
 I've not always been a runner. I distinctly remember being so bad at running as a child that I would get lapped in 800m track races at school by the fastest kids. I'm now a decent runner (here are my [qualifications](https://bilalchughtai.co.uk/races/)). Getting into running has been one of the best decisions I've made in the past year, and running is now one of my all time favourite obsessions. Here are some lessons from the road. I expect people who either want to get in to running or are currently in the process of doing so might benefit most from this post.
 
-## 1. Why run?
+# 1. Why run?
 
 Here are some reasons I run.
 
@@ -32,7 +32,7 @@ Running is also a great way to explore new places - when I travel to some new pl
 
 **Solo.** Running is a sport that can be done solo. This reduces coordination cost. It also makes it easy to squeeze in around other things going on in my day. But running also *can* be social - I'll go on 1-2 runs with friends in an average week (of my 4 runs), and enjoy this balance.
 
-## 2. Building a sustainable running habit
+# 2. Building a sustainable running habit
 
 It took me 3 distinct attempts to get into running. Here are some things I learned in my first few months of my (successful) most recent attempt.
 
@@ -44,7 +44,7 @@ It took me 3 distinct attempts to get into running. Here are some things I learn
 
 **Buy a running watch.** As a new runner, you both won't be very calibrated on what pace you are running, and also won't have that clear an idea of how long you can run at any particular pace. A running watch will train you in both of these skills, through showing you a live pace on your wrist. I use a [Garmin](https://www.garmin.com/en-GB/p/1611937/pn/010-02863-31/). Your existing smartwatch is probably sufficient if you have one.
 
-## 3. Improving
+# 3. Improving
 
 Once you're running consistently, you can start thinking more carefully about improving.
 
@@ -71,7 +71,7 @@ This does require some prerequisite level of fitness - it's hard to push your vo
 
 ![Weight chart during training](img/running/weight-chart.png)
 
-## 4. My future
+# 4. Running and my future
 
 **Long term plans.** I'm still quite excited about running and expect to keep pushing my running for the foreseeable future. I've not yet failed to hit a PB when I've attempted to, but know this day will soon come. I expect my enjoyment correlates at least a bit with progress, so I'll eventually find running less fun than I do today. But I don't see myself ever stopping running completely - I just don't see any other more fun and flexible form of cardio, and think some form of cardio is necessary given how much I value my health.
 
