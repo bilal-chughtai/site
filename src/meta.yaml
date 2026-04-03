@@ -207,11 +207,10 @@
 - label: cake
   title: "My vegan cake recipe"
   date: 2026-04-03
-  description: "A vegan cake recipe I bake weekly."
+  description: "A vegan cake recipe I've recently been baking weekly."
   math: false
   tags: ["food"]
   coauthors: ["Tanglewest Douglas"]
-  draft: true
 
 - label: busy
   title: 'On being "busy"'
