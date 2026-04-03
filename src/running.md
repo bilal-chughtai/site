@@ -8,7 +8,7 @@ Here are some reasons I run.
 
 **Meaning.** I personally get a lot of meaning from the process of improving and optimizing things. Running (much like my previous sport of choice - powerlifting), is pretty amenable to optimization, so is highly appealing to people with a personality like mine. There are great proxy metrics of success (e.g. estimates of VO2-max, 5k time), which are cheap to measure and correlate well with the actual thing you care about. These and other progress metrics give you great feedback loops that tell you whether what you're doing is working or not.
 
-**Health**. Beyond direct health effects from the activity itself, I think running gets some credit for other ways in which I try to be healthy. Because I care quite a lot about improving at running, this forces me to care about my recovery; I should be eating well and I should be sleeping well to elicit maximal running performance. Having a reasonable body composition is also incentivised by running, and a dimension I've made a bunch of progress on simultaneously getting into running, in part directly motivated by running performance.
+**Health.** Beyond direct health effects from the activity itself, I think running gets some credit for other ways in which I try to be healthy. Because I care quite a lot about improving at running, this forces me to care about my recovery; I should be eating well and I should be sleeping well to elicit maximal running performance. Having a reasonable body composition is also incentivised by running, and a dimension I've made a bunch of progress on simultaneously getting into running, in part directly motivated by running performance.
 
 **Exploration.** A thing I didn't predict ahead of time is that running is fantastic for exploring, which is a pretty strong benefit if you value novelty as much as I do. Despite living in London for basically my entire life, I've probably seen more of London by foot over the past year through running than in the previous 24 years combined. Here is a [heatmap](https://www.statshunters.com/heatmap#c=51.509597,-0.064201&z=12) of all my London running.
 
@@ -20,11 +20,13 @@ Running is also a great way to explore new places - when I travel to some new pl
 
 **Utility.** I used to not be very cardiovascularly fit. I didn't use to back myself to run if my life depended on it. I wouldn't even run to catch a bus, both because I wasn't comfortable running, so wasn't calibrated on how hard I could run, and because I would reliably end up a sweaty, wheezing mess by the end of it. I now regularly run places for utility -- I'll run 100m to catch a bus, I'll run around my office to be on time for a meeting and I'll sometimes even run several kilometres in regular clothes just to get places.
 
+**Cognitive rest.** My internal experience while running is of zoning out completely. As a chronic ruminator, this is pretty valuable to me, and not something that I've managed to replicate with other activities. I am attending some to my immediate surroundings and bodily feelings, but very little to my internal monologue or even to music being blasted through my ears.
+
 **Carry over to other non running activities.** I am much more able to do and enjoy non-running things that utilize my body than I used to. I expect hiking would be far less fun if I were less fit. Here is a photo of me from a recent Dolomites trip:
 
 ![Dolomites hike photo](img/running/dolomites.jpg)
 
-**Mood**. Exercise in general [seems to be great](https://www.bmj.com/content/384/bmj-2023-075847) for improving one's mood.
+**Mood.** Exercise in general [seems to be great](https://www.bmj.com/content/384/bmj-2023-075847) for improving one's mood. Cardio seems to be particularly effective for this.
 
 **Location invariance.** You can run literally anywhere. This is useful in normal life, but especially useful when away from home - my running doesn't have to take a hit if I'm away for a few days. Other forms of exercise might.
 
