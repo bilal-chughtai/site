@@ -32,6 +32,11 @@
 
 {% block content %}
 <article>
+    {% if post.meta.draft %}
+    <div class="draft-disclaimer" role="alert">
+        <strong>Draft</strong> This is an unpublished post, please do not share further.
+    </div>
+    {% endif %}
     <h2 class="post-title">{{ post.meta.title }}</h2>
     <div class="post-meta">
         {% if post.meta.coauthors %}

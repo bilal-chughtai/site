@@ -195,14 +195,22 @@
   date: 2026-03-31
   description: "A high-protein overnight oats recipe I make 3-4 times a week."
   math: false
-  tags: ["health", "food"]
+  tags: ["food"]
 
 - label: running
   title: "Becoming a runner"
   date: 2026-04-01
   description: "Lessons learned from getting into running."
   math: false
-  tags: ["running", "health", "personal"]
+  tags: ["health", "personal"]
+
+- label: cake
+  title: "My vegan cake recipe"
+  date: 2026-04-03
+  description: "A vegan cake recipe I bake weekly."
+  math: false
+  tags: ["food"]
+  draft: true
 
 - label: busy
   title: 'On being "busy"'

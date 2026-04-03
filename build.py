@@ -135,32 +135,44 @@ def load_posts(path: str = "src") -> list[Post]:
     return posts
 
 
-def collect_images(content):
-    """Extract image references from markdown content."""
-    image_pattern = r"!\[.*?\]\((.*?)\)"
-    return re.findall(image_pattern, content)
+def collect_post_assets(content: str) -> list[str]:
+    """Extract asset paths from markdown images and HTML media <source src="..."> tags."""
+    refs: list[str] = []
+    refs.extend(re.findall(r"!\[.*?\]\((.*?)\)", content))
+    refs.extend(
+        re.findall(
+            r'<source\s+[^>]*src="(img/[^"]+)"',
+            content,
+            flags=re.IGNORECASE,
+        )
+    )
+    seen: set[str] = set()
+    ordered: list[str] = []
+    for r in refs:
+        if r not in seen:
+            seen.add(r)
+            ordered.append(r)
+    return ordered
 
 
-def copy_images(post, images, out_dir):
-    """Copy images to post-specific asset folder and update references."""
+def copy_images(post, asset_paths, out_dir):
+    """Copy post assets to post-specific folder and update references in content."""
     post_assets_dir = os.path.join(out_dir, post.meta.label, "assets")
     os.makedirs(post_assets_dir, exist_ok=True)
 
-    for img_path in images:
-        src_path = os.path.join("src", img_path)
-        dst_path = os.path.join(post_assets_dir, os.path.basename(img_path))
+    for asset_rel in asset_paths:
+        src_path = os.path.join("src", asset_rel)
+        dst_path = os.path.join(post_assets_dir, os.path.basename(asset_rel))
         shutil.copy2(src_path, dst_path)
 
-        # Update image reference in content
-        relative_path = os.path.join("assets", os.path.basename(img_path))
-        post.content = post.content.replace(img_path, relative_path)
+        relative_path = os.path.join("assets", os.path.basename(asset_rel))
+        post.content = post.content.replace(asset_rel, relative_path)
 
 
 def process_images(posts, out_dir):
-    """Process images for all posts."""
+    """Process images and other linked assets for all posts."""
     for post in posts:
-        images = collect_images(post.content)
-        copy_images(post, images, out_dir)
+        copy_images(post, collect_post_assets(post.content), out_dir)
 
 
 def generate_toc(html_content: str, include_h1: bool = True):

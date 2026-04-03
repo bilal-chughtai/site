@@ -242,6 +242,30 @@ hr.toc-separator {
     text-decoration: underline;
 }
 
+.draft-disclaimer {
+    margin: 0 0 var(--gap-lg);
+    padding: var(--gap-md) var(--gap-lg);
+    font-family: var(--sans-serif-font);
+    font-size: 1.15rem;
+    line-height: 1.45;
+    color: #8b0000;
+    background: #ffe4e4;
+    border: 4px solid #c00;
+    border-radius: 6px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.draft-disclaimer strong {
+    display: block;
+    margin-bottom: 0.35rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #b00000;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
 .post-title {
     text-align: center;
     font-family: var(--sans-serif-font);
