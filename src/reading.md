@@ -1,4 +1,4 @@
-*Last updated: April 6th 2026.*
+*Last updated: April 11th 2026.*
 
 <div class="tab-container reading-tabs">
 <input type="radio" id="reading-tab1" name="reading-tabs">
@@ -71,6 +71,14 @@
 <div class="tab-content" id="reading-online">
 <p class="link-heading">April 2026</p>
 <ul class="reading-list">
+<li><a href="https://benjamintodd.substack.com/p/how-can-an-ordinary-person-prepare?utm_campaign=e0effaeb7e-Research+newsletter+10+April+2026&amp;utm_term=0_43bc1ae55c-680825b8ae-352545330">How can an ordinary person prepare for AGI?</a> <small>(benjamintodd.substack.com)</small></li>
+<li><a href="https://www.lesswrong.com/posts/d8bZFuYba4KPtzzRY/anthropic-s-pause-is-the-most-expensive-alarm-in-corporate">Anthropic&#x27;s Pause is the Most Expensive Alarm in Corporate History [Fiction] — LessWrong</a> <small>(lesswrong.com)</small></li>
+<li><a href="https://www.lesswrong.com/posts/hefTFru3bCw2NkpKS/have-we-already-lost-part-2-reasons-for-doom">Have we already lost? Part 2: Reasons for Doom — LessWrong</a> <small>(lesswrong.com)</small></li>
+<li><a href="https://en.wikipedia.org/wiki/Betteridge%27s_law_of_headlines">Betteridge&#x27;s law of headlines - Wikipedia</a> <small>(en.wikipedia.org)</small></li>
+<li><a href="https://dynomight.substack.com/p/drinking">I quit drinking for a year - DYNOMIGHT INTERNET NEWSLETTER</a> <small>(dynomight.substack.com)</small></li>
+<li><a href="https://www.lesswrong.com/posts/vefsxkGWkEMmDcZ7v/the-effects-of-caffeine-consumption-do-not-decay-with-a-5">The effects of caffeine consumption do not decay with a ~5 hour half-life — LessWrong</a> <small>(lesswrong.com)</small></li>
+<li><a href="https://www.lesswrong.com/posts/qcJ7eWQtREyKwwGEk/the-hard-part-isn-t-noticing-when-papers-are-bad-it-s">The hard part isn&#x27;t noticing when papers are bad, it&#x27;s deciding what to do afterwards — LessWrong</a> <small>(lesswrong.com)</small></li>
+<li><a href="https://blog.redwoodresearch.org/p/my-picture-of-the-present-in-ai?utm_source=post-email-title&amp;publication_id=2318730&amp;post_id=193427072&amp;utm_campaign=email-post-title&amp;isFreemail=true&amp;r=1o9kun&amp;triedRedirect=true&amp;utm_medium=email">My picture of the present in AI</a> <small>(blog.redwoodresearch.org)</small></li>
 <li><a href="https://blog.ninapanickssery.com/p/10-pieces-of-advice-for-children?publication_id=1692721&amp;utm_campaign=email-post-title&amp;r=1o9kun&amp;utm_medium=email">10 pieces of advice for children - Nina Panickssery</a> <small>(blog.ninapanickssery.com)</small></li>
 <li><a href="https://www.erica-hu.com/p/on-the-road">On the Road - by Erica Hu - trekking</a> <small>(erica-hu.com)</small></li>
 <li><a href="https://www.lesswrong.com/posts/CzoiqGzpShprcv2Jd/some-things-i-noticed-while-larping-as-a-grantmaker">Some things I noticed while LARPing as a grantmaker — LessWrong</a> <small>(lesswrong.com)</small></li>
