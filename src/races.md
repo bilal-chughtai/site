@@ -20,3 +20,4 @@ I like running races. Here is a log of all my races. More details on my [strava]
 | 12 Jul 2026 | Saucony London 10k | Central London | 10 km |
 | 13 Sep 2026 | Richmond Half Marathon | Richmond, London | Half Marathon |
 | 27 Sep 2026 | Vitality London 10k | Central London | 10 km |
+| 21 Feb 2027 | Seville Marathon | Seville, Spain | Marathon |
