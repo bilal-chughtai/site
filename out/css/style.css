@@ -141,6 +141,17 @@ img {
     font-family: var(--sans-serif-font);
 }
 
+@media (max-width: 1450px) {
+    .post-content table {
+        display: block;
+        overflow-x: auto;
+        margin-left: 0;
+        transform: none;
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
 .collapsed-sidebar {
     display: none;
     background-color: var(--background-color);
