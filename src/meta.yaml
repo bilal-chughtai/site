@@ -308,7 +308,7 @@
     ]
 
 - label: completed-tasks
-  title: "Letting completed tasks linger"
+  title: "Letting tasks linger"
   date: 2026-04-26
   description: "Why I changed my mind on hiding completed tasks."
   math: false
