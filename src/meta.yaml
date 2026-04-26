@@ -313,3 +313,12 @@
   description: "Why I changed my mind on hiding completed tasks."
   math: false
   tags: ["productivity"]
+
+- label: headphones
+  title: "My headphone collection"
+  date: 2026-04-26
+  description: "Why a self-described minimalist owns four pairs of headphones."
+  math: false
+  tags: ["personal"]
+  disable_sidebar: true
+  wider: true

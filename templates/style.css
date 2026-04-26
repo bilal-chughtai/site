@@ -122,6 +122,21 @@ img {
     margin: var(--gap-md) auto;
 }
 
+.post-content table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: var(--gap-md) 0;
+}
+.post-content th,
+.post-content td {
+    border: 1px solid var(--theme-color-highlights);
+    padding: 0.45rem 0.65rem;
+    text-align: left;
+}
+.post-content thead th {
+    font-family: var(--sans-serif-font);
+}
+
 .collapsed-sidebar {
     display: none;
     background-color: var(--background-color);

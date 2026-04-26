@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Aggregating all of my health data into a single dashboard.">
+        content="Why a self-described minimalist owns four pairs of headphones.">
     <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
 
-    <title>My health dashboard - Bilal Chughtai</title>
+    <title>My headphone collection - Bilal Chughtai</title>
     
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -24,7 +24,7 @@
     gtag('config', 'G-NN7RTLBRKY');
 </script>
 
-<body>
+<body class="layout-no-sidebar layout-wider">
     
 <header>
     <nav>
@@ -50,50 +50,73 @@
                 
 <article>
     
-    <h2 class="post-title">My health dashboard</h2>
+    <h2 class="post-title">My headphone collection</h2>
     <div class="post-meta">
         
         <p>
-            <time datetime="2025-06-15">15th June 2025</time>
-            &middot; 350 words &middot; 2 minute read </p>
-                <!-- <p class="post-summary"> <strong>Summary</strong>: Aggregating all of my health data into a single dashboard.</p> -->
+            <time datetime="2026-04-26">26th April 2026</time>
+            &middot; 228 words &middot; 1 minute read </p>
+                <!-- <p class="post-summary"> <strong>Summary</strong>: Why a self-described minimalist owns four pairs of headphones.</p> -->
     </div>
 
     
 
     <div class="post-content">
-        <p>I use a bunch of different apps and wearables to track various health metrics. To name a few:</p>
-<ul>
-<li><a href="https://cronometer.com/#diary">Cronometer</a> for logging my nutrition.</li>
-<li><a href="https://ouraring.com/">Oura</a> for logging my sleep and recovery metrics.</li>
-<li><a href="https://www.strava.com/dashboard">Strava</a> / <a href="https://www.garmin.com/en-GB/">Garmin</a> for logging my runs.</li>
-<li>A Google Sheet to log my bodyweight and days I lift.</li>
-</ul>
-<p>I suspect as time goes on I'll continue to gradually accumulate health (and possibly other) data in various further services.</p>
-<p>Having my data scattered across various different services was far from ideal.</p>
-<ul>
-<li>It meant having to check many different apps regularly to stay on top of things, which was so high friction it often meant I would just not.</li>
-<li>It meant having to learn to click through many different UIs to find the information I needed.</li>
-<li>It made spotting correlations and trends, especially across different services,  harder.</li>
-<li>It left me beholden to the data visualisation skill and taste of various app developers.</li>
-</ul>
-<p>I wanted a single, consistent interface, over which I had complete control. I couldn't find an off the shelf software solution that fit my needs. I suspect none exists. The closest I found was <a href="https://exist.io/">exist.io</a> but this lacked support for some of my data, and didn't seem as flexible and future proof as building my own solution.</p>
-<p><br/></p>
-<hr/>
-<p><br/></p>
-<p>So I built my own tool. It's pretty simple - it pings the APIs (or uses more cursed ways of backing data out from the less developer friendly apps...) of various services regularly, saves the data on S3, and has a frontend that can display the data in various ways. It's currently a little bit of a vibe coded mess and overfit to my use case but reach out if you're interested in using it / adding additional apps.</p>
-<ul>
-<li>Code here: <a href="https://github.com/bilal-chughtai/health_dashboard">https://github.com/bilal-chughtai/health_dashboard</a>.</li>
-<li>Frontend here: <a href="https://bilals-health-dashboard-public.streamlit.app/">https://bilals-health-dashboard-public.streamlit.app/</a> (you might need to hit "wake me up" to restart the app).</li>
-</ul>
-<p><br/></p>
-<hr/>
-<p><br/>
-Screenshots below. All of this data is fake, thanks Claude for generating surprisingly decent synthetic data here.</p>
-<p><img alt="" src="assets/Pasted image 20250615131659.png"/>
-<img alt="" src="assets/Pasted image 20250615131713.png"/>
-<img alt="" src="assets/Pasted image 20250615131758.png"/>
-<img alt="" src="assets/Pasted image 20250615131620.png"/></p>
+        <p>I lean minimalist. Everything I own must <em>pay rent</em>, in terms of storage space, mental clutter, faff in moving it whenever I next end up moving, etc. I pretty regularly realise some item I own isn't paying rent, and evict it.</p>
+<p>As such, I was surprised to see that I had ended up with 4 different pairs of headphones. Here they are:</p>
+<p><img alt="" src="assets/all.png"/></p>
+<p>With more thought, it made sense. Each pair earns its slot by being best-in-class in some dimension that I care about. Here is a table justifying this claim:</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Product</th>
+<th>Bulk</th>
+<th>Noise cancellation</th>
+<th>Ability to hear surroundings</th>
+<th>Audio latency</th>
+<th>Use cases</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>In-ear, wireless</td>
+<td><a href="https://www.jabra.com/en-GB/supportpages/jabra-elite-8-active?sku=100-99160701-98">Jabra Elite 8 Active</a></td>
+<td><strong>Low</strong></td>
+<td>Medium</td>
+<td>Medium</td>
+<td>High</td>
+<td>Out without a bag (low bulk means easy to stuff in pocket); the gym (low bulk means low sweat).</td>
+</tr>
+<tr>
+<td>Over-ear, wireless</td>
+<td><a href="https://www.sony.co.uk/headphones/products/wh-1000xm6">Sony WH-1000XM6</a></td>
+<td>High</td>
+<td><strong>High</strong></td>
+<td>Medium</td>
+<td>High</td>
+<td>Loud offices, loud flights (high noise cancellation).</td>
+</tr>
+<tr>
+<td>Open-ear, bone conduction, wireless</td>
+<td><a href="https://uk.shokz.com/products/openrun-pro2?variant=50009478037837">Shokz OpenRun Pro 2</a></td>
+<td>Medium</td>
+<td>Low</td>
+<td><strong>High</strong></td>
+<td>High</td>
+<td>Running on roads, cycling (high ability to hear surroundings).</td>
+</tr>
+<tr>
+<td>On-ear, wired</td>
+<td><a href="https://www.sennheiser.com/en-us/catalog/products/headphones/hd-25/hd-25-506909">Sennheiser HD 25</a></td>
+<td>High</td>
+<td>Medium</td>
+<td>Low</td>
+<td><strong>Low</strong></td>
+<td>DJing (low audio latency is important for beat matching).</td>
+</tr>
+</tbody>
+</table>
     </div>
     
 <div class="footer">

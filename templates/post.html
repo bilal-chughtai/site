@@ -77,25 +77,7 @@
         }
     </style>
     {% endif %}
-    {% if post.meta.label == "races" %}
-    <style>
-        .post-content table {
-            border-collapse: collapse;
-            width: 100%;
-            margin: var(--gap-md) 0;
-        }
-        .post-content th,
-        .post-content td {
-            border: 1px solid var(--theme-color-highlights);
-            padding: 0.45rem 0.65rem;
-            text-align: left;
-        }
-        .post-content thead th {
-            font-family: var(--sans-serif-font);
-        }
-    </style>
-    {% endif %}
-    <div class="footer">
+<div class="footer">
         {% if post.meta.sequel %}
         <p>Next: <a href="../{{ post.meta.sequel }}/">{{ get_post_title(post.meta.sequel) }}</a></p>
         {% endif %}
