@@ -306,3 +306,10 @@
     [
       "https://blog.dewierwan.com/p/sleep"
     ]
+
+- label: completed-tasks
+  title: "Letting completed tasks linger"
+  date: 2026-04-26
+  description: "Why I changed my mind on hiding completed tasks."
+  math: false
+  tags: ["productivity"]

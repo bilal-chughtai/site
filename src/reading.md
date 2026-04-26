@@ -1,4 +1,4 @@
-*Last updated: April 18th 2026.*
+*Last updated: April 26th 2026.*
 
 <div class="tab-container reading-tabs">
 <input type="radio" id="reading-tab1" name="reading-tabs">
@@ -71,6 +71,17 @@
 <div class="tab-content" id="reading-online">
 <p class="link-heading">April 2026</p>
 <ul class="reading-list">
+<li><a href="https://us2.campaign-archive.com/?e=4d70a632d4&amp;u=aba12f58bbe8075560abdc5b7&amp;id=8cfd29d06f">AI safety: your skills are more relevant than you think</a> <small>(us2.campaign-archive.com)</small></li>
+<li><a href="https://manifund.substack.com/p/manifunds-falcon-fund?utm_source=post-email-title&amp;publication_id=1491799&amp;post_id=195394760&amp;utm_campaign=email-post-title&amp;isFreemail=true&amp;r=1o9kun&amp;triedRedirect=true&amp;utm_medium=email">Manifund&#x27;s Falcon Fund</a> <small>(manifund.substack.com)</small></li>
+<li><a href="https://www.lesswrong.com/posts/3bs27nZQuEcKhXf7q/vllm-lens-fast-interpretability-tooling-that-scales-to">vLLM-Lens: Fast Interpretability Tooling That Scales to Trillion-Parameter Models — LessWrong</a> <small>(lesswrong.com)</small></li>
+<li><a href="https://www.jefftk.com/p/your-supplies-probably-wont-be-stolen-in-a-disaster">Your Supplies Probably Won&#x27;t Be Stolen in a Disaster — LessWrong</a> <small>(jefftk.com)</small></li>
+<li><a href="https://www.lesswrong.com/posts/MqgwHJ93pJpaeHXs6/posts-i-don-t-have-time-to-write">Posts I don&#x27;t have time to write — LessWrong</a> <small>(lesswrong.com)</small></li>
+<li><a href="https://www.lesswrong.com/posts/bxdwSZYxKmPBres6w/10-non-boring-ways-i-ve-used-ai-in-the-last-month">10 non-boring ways I&#x27;ve used AI in the last month — LessWrong</a> <small>(lesswrong.com)</small></li>
+<li><a href="https://www.jefftk.com/p/automated-deanonymization-is-here">Automated Deanonymization is Here — LessWrong</a> <small>(jefftk.com)</small></li>
+<li><a href="https://www.lesswrong.com/posts/G5eiJWtZAmNqaoJMx/informal-leadership-structures-and-ai-safety">Informal Leadership Structures and AI Safety — LessWrong</a> <small>(lesswrong.com)</small></li>
+<li><a href="https://blog.sentinel-team.org/p/us-seizes-iranian-cargo-ship-iran">🟡 US seizes Iranian cargo ship, Iran-US peace talks uncertain, cyberattack estimates || Global Risks Weekly Roundup #16/2026</a> <small>(blog.sentinel-team.org)</small></li>
+<li><a href="https://www.lesswrong.com/posts/GNjDC6jtjr2iiE45i/quality-matters-most-when-stakes-are-highest">Quality Matters Most When Stakes are Highest — LessWrong</a> <small>(lesswrong.com)</small></li>
+<li><a href="https://www.lesswrong.com/posts/KRLGxCaqdgrotyB8z/there-are-only-four-skills-design-technical-management-and">There are only four skills: design, technical, management and physical — LessWrong</a> <small>(lesswrong.com)</small></li>
 <li><a href="https://www.lesswrong.com/posts/opXWijs73rqhr7ohS/if-you-ve-never-bought-a-tool-you-didn-t-need-you-re-not">If You&#x27;ve Never Bought a Tool You Didn&#x27;t Need, You&#x27;re Not Buying Enough Tools — LessWrong</a> <small>(lesswrong.com)</small></li>
 <li><a href="https://www.lesswrong.com/posts/9akzizDLe5EMBri3N/why-i-m-less-of-a-shill-for-related-work-sections">Why I&#x27;m Less of a Shill for Related Work Sections — LessWrong</a> <small>(lesswrong.com)</small></li>
 <li><a href="https://forum.effectivealtruism.org/posts/9FPxMET3W4wewwSyf/the-ai-people-have-been-right-a-lot">The AI people have been right a lot — EA Forum</a> <small>(forum.effectivealtruism.org)</small></li>

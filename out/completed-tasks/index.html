@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Why I changed my mind on hiding completed tasks.">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+
+    <title>Letting completed tasks linger - Bilal Chughtai</title>
+    
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NN7RTLBRKY"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-NN7RTLBRKY');
+</script>
+
+<body>
+    
+<header>
+    <nav>
+        <div class="site-name heading-font">Bilal Chughtai &mdash; <a href="../">home
+                page</a>
+        </div>
+    </nav>
+</header>
+
+    <div class="container">
+        <div class="column left">
+            <div class="sticky-div">
+                
+
+
+            </div>
+        </div>
+        <div class="column main">
+            <div class="collapsed-sidebar">
+                
+            </div>
+            <div class="content">
+                
+<article>
+    
+    <h2 class="post-title">Letting completed tasks linger</h2>
+    <div class="post-meta">
+        
+        <p>
+            <time datetime="2026-04-26">26th April 2026</time>
+            &middot; 280 words &middot; 1 minute read </p>
+                <!-- <p class="post-summary"> <strong>Summary</strong>: Why I changed my mind on hiding completed tasks.</p> -->
+    </div>
+
+    
+
+    <div class="post-content">
+        <p>I try hard to avoid "cognitive clutter". Having things on my mind that don't need to be is very costly; it takes up precious working memory and reduces how effective I am at achieving my goals. A manifestation of this is that I view completed tasks as clutter that should rapidly vanish from my attention set. I implicitly discuss this point in my previous post on <a href="https://bilalchughtai.co.uk/todo/">my to-do system</a>.</p>
+<p>However, I've recently discovered a consideration that has swayed my opinion here. I get a lot out of "feeling productive". If I end my day and can really viscerally feel that I've gotten a lot done, I will feel a lot better about my day. In contrast, if I instantly evict completed tasks from my memory, I will systematically end my days with an underestimate of how productive I have really been, and feel somewhat worse about myself.</p>
+<p>After noticing this, I've implemented the following two workflow changes.</p>
+<ol>
+<li>In todoist (my to do app), I've enabled the setting to not hide completed tasks in the day view. This lets me see them until the end of that day.</li>
+<li>I'm using todoist less and using lists of markdown checkboxes for tasks for my more coherent projects more. These don't automatically vanish. I discuss this workflow in my post on <a href="(https://bilalchughtai.co.uk/todo/).">to-do systems</a>. I still use todoist for most other things.</li>
+</ol>
+<p>Overall, this has been a solid incremental improvement to my mood, and as such also for my productivity. I think I was wrong to previously instantly pop completed tasks from my attention set, and wouldn't be surprised if something closer to my updated way of working is better for others too.</p>
+    </div>
+    
+    
+    <div class="footer">
+        
+        
+        
+    </div>
+</article>
+
+            </div>
+        </div>
+        <!--<div class="column right">
+            <div class="sticky-div">
+                
+            </div>
+        </div>-->
+    </div>
+    <footer></footer>
+
+    <!-- Footnote tooltip script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Create a single tooltip element
+            const tooltip = document.createElement('div');
+            tooltip.className = 'footnote-tooltip';
+            document.body.appendChild(tooltip);
+            let hideTimer;
+
+            function positionTooltip(ref) {
+                const rect = ref.getBoundingClientRect();
+                const scrollX = window.scrollX || window.pageXOffset;
+                const scrollY = window.scrollY || window.pageYOffset;
+                // Initial placement below the reference
+                let top = scrollY + rect.bottom + 8;
+                let left = scrollX + rect.left;
+                tooltip.style.top = top + 'px';
+                tooltip.style.left = left + 'px';
+                // Adjust if it overflows the right edge
+                const tt = tooltip.getBoundingClientRect();
+                const viewportWidth = document.documentElement.clientWidth;
+                if (tt.right > viewportWidth - 8) {
+                    const overflow = tt.right - (viewportWidth - 8);
+                    tooltip.style.left = (left - overflow) + 'px';
+                }
+                // Adjust if it overflows the left edge
+                if (tt.left < 8) {
+                    tooltip.style.left = (scrollX + 8) + 'px';
+                }
+            }
+
+            function showTooltip(ref) {
+                clearTimeout(hideTimer);
+                tooltip.innerHTML = ref.getAttribute('data-footnote');
+                tooltip.style.display = 'block';
+                positionTooltip(ref);
+            }
+
+            function hideTooltip() {
+                hideTimer = setTimeout(() => {
+                    tooltip.style.display = 'none';
+                }, 300); // 300ms delay before hiding
+            }
+
+            // Attach events to each footnote reference
+            document.querySelectorAll('a.footnote-ref').forEach(function (ref) {
+                ref.addEventListener('mouseenter', () => showTooltip(ref));
+                ref.addEventListener('mouseleave', hideTooltip);
+            });
+
+            // Keep tooltip open when hovering over it
+            tooltip.addEventListener('mouseenter', () => clearTimeout(hideTimer));
+            tooltip.addEventListener('mouseleave', hideTooltip);
+        });
+    </script>
+</body>
+
+</html>
