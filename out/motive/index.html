@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sahil's Bachelor Party — Crete</title>
+<style>
+  :root {
+    --sea: #0077b6;
+    --sea-light: #48cae4;
+    --sand: #fef9e7;
+    --sun: #ffb703;
+    --sunset: #fb8500;
+    --olive: #606c38;
+    --ink: #1d3557;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background:
+      radial-gradient(ellipse at top, var(--sea-light) 0%, var(--sea) 60%, var(--ink) 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+    color: var(--ink);
+    padding: 40px 20px;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 50px;
+    color: white;
+  }
+
+  header h1 {
+    font-size: 3em;
+    font-weight: 800;
+    letter-spacing: -1px;
+    text-shadow: 0 2px 20px rgba(0,0,0,0.3);
+  }
+
+  header .sub {
+    font-size: 1.2em;
+    margin-top: 10px;
+    opacity: 0.9;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+  }
+
+  header .dates {
+    margin-top: 16px;
+    display: inline-block;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 0.95em;
+  }
+
+  .weather {
+    max-width: 1200px;
+    margin: 0 auto 30px;
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 18px 22px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    flex-wrap: wrap;
+  }
+
+  .weather .icon {
+    font-size: 2.4em;
+    line-height: 1;
+  }
+
+  .weather .label {
+    font-size: 0.72em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: 0.85;
+  }
+
+  .weather .stats {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    flex: 1;
+  }
+
+  .weather .stat {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .weather .stat .num {
+    font-size: 1.4em;
+    font-weight: 700;
+  }
+
+  .weather .stat .desc {
+    font-size: 0.78em;
+    opacity: 0.85;
+    margin-top: 2px;
+  }
+
+  /* MAP */
+  .map-section {
+    max-width: 1200px;
+    margin: 0 auto 30px;
+    background: var(--sand);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.25);
+    position: relative;
+  }
+
+  .map-section .map-header {
+    padding: 14px 20px;
+    background: linear-gradient(135deg, var(--sea), var(--sea-light));
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .map-section .map-header .title {
+    font-weight: 700;
+    font-size: 1.1em;
+  }
+
+  .map-section .map-header .sub {
+    font-size: 0.8em;
+    opacity: 0.9;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .map-section iframe {
+    display: block;
+    width: 100%;
+    height: 380px;
+    border: 0;
+  }
+
+  .map-section .pin-note {
+    padding: 10px 20px;
+    font-size: 0.85em;
+    color: #5a6c80;
+    text-align: center;
+    background: rgba(29, 53, 87, 0.04);
+  }
+
+  /* PACKING LIST */
+  .packing {
+    max-width: 1200px;
+    margin: 50px auto 0;
+    background: var(--sand);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.25);
+  }
+
+  .packing > h2 {
+    padding: 18px 22px;
+    background: linear-gradient(135deg, var(--ink), #2a4a73);
+    color: white;
+    font-size: 1.3em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .packing > h2 .sub {
+    font-size: 0.65em;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0.85;
+    margin-left: auto;
+  }
+
+  .packing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 1px;
+    background: rgba(29, 53, 87, 0.10);
+  }
+
+  .pack-cat {
+    background: var(--sand);
+    padding: 18px 22px;
+  }
+
+  .pack-cat h3 {
+    font-size: 0.95em;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--ink);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .pack-cat ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .pack-cat li {
+    padding: 5px 0;
+    font-size: 0.92em;
+    color: #2a4a73;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    line-height: 1.4;
+  }
+
+  .pack-cat li::before {
+    content: "☐";
+    color: var(--sea);
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  .options-list {
+    margin-top: 6px;
+    padding-left: 0;
+    list-style: none;
+  }
+
+  .options-list li {
+    font-size: 0.78em;
+    color: #5a6c80;
+    padding: 2px 0 2px 14px;
+    position: relative;
+    line-height: 1.4;
+  }
+
+  .options-list li::before {
+    content: "•";
+    position: absolute;
+    left: 2px;
+    color: var(--sea);
+  }
+
+  .timeline {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 24px;
+  }
+
+  .day {
+    background: var(--sand);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.25);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease;
+  }
+
+  .day:hover { transform: translateY(-4px); }
+
+  .day-header {
+    padding: 18px 20px;
+    color: white;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .day-1 .day-header { background: linear-gradient(135deg, var(--sun), var(--sunset)); }
+  .day-2 .day-header { background: linear-gradient(135deg, var(--sea), var(--sea-light)); }
+  .day-3 .day-header { background: linear-gradient(135deg, var(--olive), #a4ac86); }
+  .day-4 .day-header { background: linear-gradient(135deg, var(--sunset), #d62828); }
+
+  .day-header .label {
+    font-size: 0.75em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: 0.85;
+  }
+
+  .day-header .name {
+    font-size: 1.4em;
+    margin-top: 2px;
+  }
+
+  .day-header .date {
+    font-size: 0.85em;
+    opacity: 0.9;
+    margin-top: 2px;
+  }
+
+  .day-header .emoji { font-size: 2em; }
+
+  .events {
+    padding: 6px 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .slot {
+    padding: 14px 20px;
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    border-bottom: 1px solid rgba(29, 53, 87, 0.08);
+  }
+
+  .slot:last-child { border-bottom: none; }
+
+  .slot .when {
+    flex-shrink: 0;
+    width: 78px;
+    text-align: center;
+  }
+
+  .slot .when .period {
+    font-size: 0.7em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #5a6c80;
+    font-weight: 600;
+  }
+
+  .slot .when .time {
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    font-size: 0.78em;
+    color: var(--ink);
+    margin-top: 3px;
+    font-weight: 600;
+  }
+
+  .slot .body { flex: 1; }
+
+  .slot .icon {
+    font-size: 1.3em;
+    margin-right: 6px;
+  }
+
+  .slot .title {
+    font-weight: 600;
+    font-size: 0.98em;
+    line-height: 1.3;
+  }
+
+  .slot .detail {
+    font-size: 0.82em;
+    color: #5a6c80;
+    margin-top: 4px;
+    line-height: 1.4;
+  }
+
+  .pill {
+    display: inline-block;
+    background: var(--ink);
+    color: white;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 0.7em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-left: 4px;
+    vertical-align: middle;
+  }
+
+  /* slot accents by period */
+  .period-morning   { background: linear-gradient(90deg, rgba(255,183,3,0.10), transparent); }
+  .period-afternoon { background: linear-gradient(90deg, rgba(72,202,228,0.10), transparent); }
+  .period-evening   { background: linear-gradient(90deg, rgba(251,133,0,0.10), transparent); }
+  .period-night     { background: linear-gradient(90deg, rgba(29,53,87,0.10), transparent); }
+
+  .rhythm {
+    text-align: center;
+    margin: 50px auto 30px;
+    color: rgba(255,255,255,0.85);
+    font-size: 0.9em;
+  }
+
+  .rhythm .legend {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 12px;
+  }
+
+  .rhythm .legend span {
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    padding: 6px 14px;
+    border-radius: 14px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🥂 Sahil's Bachelor Party 🇬🇷</h1>
+  <div class="sub">Nana Golden Beach · Crete</div>
+  <div class="dates">Thu 30 Apr → Sun 3 May 2026 · LGW ✈ HER</div>
+</header>
+
+<div class="weather">
+  <div class="icon">☀️</div>
+  <div class="stats">
+    <div class="stat">
+      <span class="label">Forecast</span>
+      <span class="num">Mild & Sunny</span>
+      <span class="desc">Late Apr / early May in Heraklion</span>
+    </div>
+    <div class="stat">
+      <span class="label">Daytime</span>
+      <span class="num">~20–24°C</span>
+      <span class="desc">8–9.5 hrs sunshine</span>
+    </div>
+    <div class="stat">
+      <span class="label">Evenings</span>
+      <span class="num">~13–17°C</span>
+      <span class="desc">Cool — bring a light jacket 🧥</span>
+    </div>
+    <div class="stat">
+      <span class="label">Rain</span>
+      <span class="num">Low</span>
+      <span class="desc">~5 rain days in April · drier in May</span>
+    </div>
+  </div>
+</div>
+
+<div class="map-section">
+  <div class="map-header">
+    <div>
+      <div class="title">📍 Nana Golden Beach</div>
+      <div class="sub">Anissaras · Hersonissos · Crete</div>
+    </div>
+  </div>
+  <iframe
+    src="https://www.openstreetmap.org/export/embed.html?bbox=25.20%2C35.25%2C25.55%2C35.40&amp;layer=mapnik&amp;marker=35.3215%2C25.4040"
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+  <div class="pin-note">📌 Pin marks our base — drinks, beach &amp; bed for 4 nights</div>
+</div>
+
+<div class="timeline">
+
+  <!-- DAY 1 -->
+  <div class="day day-1">
+    <div class="day-header">
+      <div>
+        <div class="label">Day 1 · Thu</div>
+        <div class="name">Arrival</div>
+        <div class="date">30 Apr</div>
+      </div>
+      <div class="emoji">🛬</div>
+    </div>
+    <div class="events">
+      <div class="slot period-afternoon">
+        <div class="when">
+          <div class="period">Afternoon</div>
+          <div class="time">13:45</div>
+        </div>
+        <div class="body">
+          <div class="title"><span class="icon">🛄</span>Arrive at LGW</div>
+          <div class="detail">3 hrs before take-off — bag drop, security, pints</div>
+        </div>
+      </div>
+      <div class="slot period-evening">
+        <div class="when">
+          <div class="period">Evening</div>
+          <div class="time">16:45<br>↓<br>22:45</div>
+        </div>
+        <div class="body">
+          <div class="title"><span class="icon">✈️</span>Fly LGW → HER</div>
+          <div class="detail">EasyJet <span class="pill">EZY 8217</span></div>
+        </div>
+      </div>
+      <div class="slot period-night">
+        <div class="when">
+          <div class="period">Night</div>
+          <div class="time">23:15<br>↓<br>23:45</div>
+        </div>
+        <div class="body">
+          <div class="title"><span class="icon">🚐</span>Transfer to resort</div>
+          <div class="detail">Airport → Nana Golden Beach</div>
+        </div>
+      </div>
+      <div class="slot period-night">
+        <div class="when">
+          <div class="period">Night</div>
+          <div class="time">late</div>
+        </div>
+        <div class="body">
+          <div class="title"><span class="icon">🍹</span>Settle in</div>
+          <div class="detail">First drinks at the resort bar</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 2 -->
+  <div class="day day-2">
+    <div class="day-header">
+      <div>
+        <div class="label">Day 2 · Fri</div>
+        <div class="name">Full Send</div>
+        <div class="date">1 May</div>
+      </div>
+      <div class="emoji">🏖️</div>
+    </div>
+    <div class="events">
+      <div class="slot period-morning">
+        <div class="when"><div class="period">Morning</div></div>
+        <div class="body">
+          <div class="title"><span class="icon">⚽</span>Sport</div>
+          <div class="detail">Football · Padel · Archery · Tennis</div>
+        </div>
+      </div>
+      <div class="slot period-afternoon">
+        <div class="when"><div class="period">Afternoon</div></div>
+        <div class="body">
+          <div class="title"><span class="icon">❓</span>TBD</div>
+          <div class="detail">Plans pending — options:</div>
+          <ul class="options-list">
+            <li>⚽ More sports</li>
+            <li>🏖️ Beach</li>
+            <li>🌊 Waterpark</li>
+            <li>💆 Spa</li>
+            <li>🗺️ Excursion</li>
+          </ul>
+        </div>
+      </div>
+      <div class="slot period-evening">
+        <div class="when"><div class="period">Evening</div></div>
+        <div class="body">
+          <div class="title"><span class="icon">🛋️</span>Chill</div>
+          <div class="detail">Options:</div>
+          <ul class="options-list">
+            <li>🎲 Board games (Articulate · Mafia · Paranoia)</li>
+            <li>🍻 Pres in Sahil's room</li>
+            <li>🎶 Bar / lounge hang</li>
+            <li>🍕 Late dinner</li>
+          </ul>
+        </div>
+      </div>
+      <div class="slot period-night">
+        <div class="when"><div class="period">Night</div></div>
+        <div class="body">
+          <div class="title"><span class="icon">🌙</span>Optional evening activity</div>
+          <div class="detail">Anemos live music · club · whatever the vibe calls for</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 3 -->
+  <div class="day day-3">
+    <div class="day-header">
+      <div>
+        <div class="label">Day 3 · Sat</div>
+        <div class="name">Round Two</div>
+        <div class="date">2 May</div>
+      </div>
+      <div class="emoji">🌞</div>
+    </div>
+    <div class="events">
+      <div class="slot period-morning">
+        <div class="when"><div class="period">Morning</div></div>
+        <div class="body">
+          <div class="title"><span class="icon">🏹</span>Sport</div>
+          <div class="detail">Football · Padel · Archery · Tennis</div>
+        </div>
+      </div>
+      <div class="slot period-afternoon">
+        <div class="when"><div class="period">Afternoon</div></div>
+        <div class="body">
+          <div class="title"><span class="icon">❓</span>TBD</div>
+          <div class="detail">Plans pending — options:</div>
+          <ul class="options-list">
+            <li>⚽ More sports</li>
+            <li>🏖️ Beach</li>
+            <li>🌊 Waterpark</li>
+            <li>💆 Spa</li>
+            <li>🗺️ Excursion</li>
+          </ul>
+        </div>
+      </div>
+      <div class="slot period-evening">
+        <div class="when"><div class="period">Evening</div></div>
+        <div class="body">
+          <div class="title"><span class="icon">🛋️</span>Chill</div>
+          <div class="detail">Options:</div>
+          <ul class="options-list">
+            <li>🎲 Board games (Articulate · Mafia · Paranoia)</li>
+            <li>🍻 Pres in Sahil's room</li>
+            <li>🎶 Bar / lounge hang</li>
+            <li>🍕 Late dinner</li>
+          </ul>
+        </div>
+      </div>
+      <div class="slot period-night">
+        <div class="when"><div class="period">Night</div></div>
+        <div class="body">
+          <div class="title"><span class="icon">🌙</span>Optional evening activity</div>
+          <div class="detail">Anemos live music · club · whatever the vibe calls for</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 4 -->
+  <div class="day day-4">
+    <div class="day-header">
+      <div>
+        <div class="label">Day 4 · Sun</div>
+        <div class="name">Departure</div>
+        <div class="date">3 May</div>
+      </div>
+      <div class="emoji">🛫</div>
+    </div>
+    <div class="events">
+      <div class="slot period-morning">
+        <div class="when"><div class="period">Morning</div></div>
+        <div class="body">
+          <div class="title"><span class="icon">🎾</span>Sport</div>
+          <div class="detail">Football · Padel · Archery · Tennis</div>
+        </div>
+      </div>
+      <div class="slot period-afternoon">
+        <div class="when"><div class="period">Afternoon</div></div>
+        <div class="body">
+          <div class="title"><span class="icon">❓</span>TBD</div>
+          <div class="detail">Plans pending — options:</div>
+          <ul class="options-list">
+            <li>⚽ More sports</li>
+            <li>🏖️ Beach</li>
+            <li>🌊 Waterpark</li>
+            <li>💆 Spa</li>
+            <li>🗺️ Excursion</li>
+          </ul>
+        </div>
+      </div>
+      <div class="slot period-evening">
+        <div class="when">
+          <div class="period">Evening</div>
+          <div class="time">~20:30</div>
+        </div>
+        <div class="body">
+          <div class="title"><span class="icon">🚐</span>Travel to airport</div>
+          <div class="detail">Leave Nana ~20:30 → HER ~21:00 (≈2.5 hr buffer)</div>
+        </div>
+      </div>
+      <div class="slot period-night">
+        <div class="when">
+          <div class="period">Night</div>
+          <div class="time">23:35<br>↓<br>01:35</div>
+        </div>
+        <div class="body">
+          <div class="title"><span class="icon">✈️</span>Fly HER → LGW</div>
+          <div class="detail">EasyJet <span class="pill">EZY 8218</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="rhythm">
+  <div>Daily rhythm: <strong>Sport → TBD → Chill → Optional night out</strong></div>
+  <div class="legend">
+    <span>🌅 Morning · Sport</span>
+    <span>☀️ Afternoon · TBD</span>
+    <span>🌆 Evening · Chill</span>
+    <span>🌙 Night · Optional</span>
+  </div>
+</div>
+
+<div class="packing">
+  <h2>🧳 Suggested Packing List <span class="sub">Pack smart, party hard</span></h2>
+  <div class="packing-grid">
+
+    <div class="pack-cat">
+      <h3>📄 Essentials</h3>
+      <ul>
+        <li>Passport</li>
+        <li>Boarding passes / EZY app</li>
+        <li>GHIC / travel insurance</li>
+        <li>Wallet · cards</li>
+        <li>Phone + UK→EU adapter</li>
+        <li>Charger</li>
+      </ul>
+    </div>
+
+    <div class="pack-cat">
+      <h3>☀️ Beach &amp; Pool</h3>
+      <ul>
+        <li>Swim shorts</li>
+        <li>Sunglasses</li>
+        <li>Sunscreen</li>
+        <li>Cap</li>
+        <li>Flip-flops</li>
+      </ul>
+    </div>
+
+    <div class="pack-cat">
+      <h3>⚽ Sport Kit</h3>
+      <ul>
+        <li>Trainers</li>
+        <li>Football boots</li>
+        <li>Shorts + tee</li>
+        <li>Socks</li>
+      </ul>
+    </div>
+
+    <div class="pack-cat">
+      <h3>🪩 Going Out</h3>
+      <ul>
+        <li>Smart-casual shirt</li>
+        <li>Chinos / smart shorts</li>
+        <li>Trainers</li>
+        <li>Light jacket</li>
+      </ul>
+    </div>
+
+    <div class="pack-cat">
+      <h3>🧴 Toiletries</h3>
+      <ul>
+        <li>Toothbrush + paste</li>
+        <li>Deodorant</li>
+        <li>Shower gel</li>
+        <li>Razor</li>
+        <li>Paracetamol</li>
+      </ul>
+    </div>
+
+    <div class="pack-cat">
+      <h3>🎲 Group Stash</h3>
+      <ul>
+        <li>Board games</li>
+        <li>Bluetooth speaker</li>
+        <li>Playing cards</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

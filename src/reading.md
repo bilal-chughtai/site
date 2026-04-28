@@ -1,4 +1,4 @@
-*Last updated: April 26th 2026.*
+*Last updated: April 28th 2026.*
 
 <div class="tab-container reading-tabs">
 <input type="radio" id="reading-tab1" name="reading-tabs">
@@ -71,6 +71,8 @@
 <div class="tab-content" id="reading-online">
 <p class="link-heading">April 2026</p>
 <ul class="reading-list">
+<li><a href="https://blog.sentinel-team.org/p/us-iran-peace-talks-called-off-unauthorized?utm_source=post-email-title&amp;publication_id=2852775&amp;post_id=195652361&amp;utm_campaign=email-post-title&amp;isFreemail=true&amp;r=1o9kun&amp;triedRedirect=true&amp;utm_medium=email">🟡 US-Iran peace talks called off, unauthorized access to Claude Mythos, shots fired at Trump dinner, El Niño coming || Global Risks Weekly Roundup #17/2026</a> <small>(blog.sentinel-team.org)</small></li>
+<li><a href="https://blog.redwoodresearch.org/p/ai-companies-should-publish-security?utm_source=post-email-title&amp;publication_id=2318730&amp;post_id=195587376&amp;utm_campaign=email-post-title&amp;isFreemail=true&amp;r=1o9kun&amp;triedRedirect=true&amp;utm_medium=email">AI companies should publish security assessments</a> <small>(blog.redwoodresearch.org)</small></li>
 <li><a href="https://us2.campaign-archive.com/?e=4d70a632d4&amp;u=aba12f58bbe8075560abdc5b7&amp;id=8cfd29d06f">AI safety: your skills are more relevant than you think</a> <small>(us2.campaign-archive.com)</small></li>
 <li><a href="https://manifund.substack.com/p/manifunds-falcon-fund?utm_source=post-email-title&amp;publication_id=1491799&amp;post_id=195394760&amp;utm_campaign=email-post-title&amp;isFreemail=true&amp;r=1o9kun&amp;triedRedirect=true&amp;utm_medium=email">Manifund&#x27;s Falcon Fund</a> <small>(manifund.substack.com)</small></li>
 <li><a href="https://www.lesswrong.com/posts/3bs27nZQuEcKhXf7q/vllm-lens-fast-interpretability-tooling-that-scales-to">vLLM-Lens: Fast Interpretability Tooling That Scales to Trillion-Parameter Models — LessWrong</a> <small>(lesswrong.com)</small></li>

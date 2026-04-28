@@ -447,6 +447,26 @@ def copy_favicons(src_dir: str = "src", out_dir: str = "out"):
         print(f"Warning: Favicons directory not found: {src_favicons_dir}")
 
 
+def copy_static_pages(src_dir: str = "src", out_dir: str = "out"):
+    """Copy hand-authored static HTML pages from src/static/ into out/.
+
+    Each subdirectory becomes a top-level route (e.g. src/static/motive/
+    -> out/motive/). Files are copied verbatim — no template wrapping.
+    """
+    static_dir = os.path.join(src_dir, "static")
+    if not os.path.exists(static_dir):
+        return
+    for entry in sorted(os.listdir(static_dir)):
+        src_path = os.path.join(static_dir, entry)
+        dst_path = os.path.join(out_dir, entry)
+        if os.path.isdir(src_path):
+            if os.path.exists(dst_path):
+                shutil.rmtree(dst_path)
+            shutil.copytree(src_path, dst_path)
+        else:
+            shutil.copy2(src_path, dst_path)
+
+
 def generate_external_link_redirects(out_dir: str = "out"):
     """Generate HTML redirect pages for external links."""
     for link_name, target_url in EXTERNAL_LINKS.items():
@@ -478,6 +498,7 @@ def main():
     generate_html(posts)
     copy_css()
     copy_favicons()
+    copy_static_pages()
     generate_external_link_redirects()
 
 
