@@ -1,4 +1,4 @@
-*Last updated: April 28th 2026.*
+*Last updated: May 4th 2026.*
 
 <div class="tab-container reading-tabs">
 <input type="radio" id="reading-tab1" name="reading-tabs">
@@ -69,8 +69,19 @@
 </ul>
 </div>
 <div class="tab-content" id="reading-online">
+<p class="link-heading">May 2026</p>
+<ul class="reading-list">
+<li><a href="https://www.lesswrong.com/posts/r3PKfvKCjy6jok4qm/dairy-cows-make-their-misery-expensive-but-their-calves-can">Dairy cows make their misery expensive (but their calves can’t) — LessWrong</a> <small>(lesswrong.com)</small></li>
+<li><a href="https://sashachapin.substack.com/p/you-can-judge-a-book-by-its-cover?publication_id=78415&amp;utm_campaign=email-post-title&amp;r=1o9kun&amp;utm_medium=email">You can judge a book by its cover - by Sasha Chapin</a> <small>(sashachapin.substack.com)</small></li>
+<li><a href="https://www.lesswrong.com/posts/PMc65HgRFvBimEpmJ/legible-vs-illegible-ai-safety-problems">Legible vs. Illegible AI Safety Problems — LessWrong</a> <small>(lesswrong.com)</small></li>
+<li><a href="https://strangecities.substack.com/p/some-days-soon?utm_source=post-email-title&amp;publication_id=2695785&amp;post_id=193475261&amp;utm_campaign=email-post-title&amp;isFreemail=true&amp;r=1o9kun&amp;triedRedirect=true&amp;utm_medium=email">Some Days Soon</a> <small>(strangecities.substack.com)</small></li>
+<li><a href="https://www.planned-obsolescence.org/p/science-and-speculation">Science and speculation - by Ajeya Cotra</a> <small>(planned-obsolescence.org)</small></li>
+<li><a href="https://www.sympatheticopposition.com/p/how-and-why-to-be-ladylike-for-women">how and why to be ladylike (for women with autism)</a> <small>(sympatheticopposition.com)</small></li>
+<li><a href="https://www.lesswrong.com/posts/znbfRXHq285nS7NAh/the-terrarium">The Terrarium — LessWrong</a> <small>(lesswrong.com)</small></li>
+</ul>
 <p class="link-heading">April 2026</p>
 <ul class="reading-list">
+<li><a href="https://dynomight.substack.com/p/painkillers">The mystery in the medicine cabinet</a> <small>(dynomight.substack.com)</small></li>
 <li><a href="https://blog.sentinel-team.org/p/us-iran-peace-talks-called-off-unauthorized?utm_source=post-email-title&amp;publication_id=2852775&amp;post_id=195652361&amp;utm_campaign=email-post-title&amp;isFreemail=true&amp;r=1o9kun&amp;triedRedirect=true&amp;utm_medium=email">🟡 US-Iran peace talks called off, unauthorized access to Claude Mythos, shots fired at Trump dinner, El Niño coming || Global Risks Weekly Roundup #17/2026</a> <small>(blog.sentinel-team.org)</small></li>
 <li><a href="https://blog.redwoodresearch.org/p/ai-companies-should-publish-security?utm_source=post-email-title&amp;publication_id=2318730&amp;post_id=195587376&amp;utm_campaign=email-post-title&amp;isFreemail=true&amp;r=1o9kun&amp;triedRedirect=true&amp;utm_medium=email">AI companies should publish security assessments</a> <small>(blog.redwoodresearch.org)</small></li>
 <li><a href="https://us2.campaign-archive.com/?e=4d70a632d4&amp;u=aba12f58bbe8075560abdc5b7&amp;id=8cfd29d06f">AI safety: your skills are more relevant than you think</a> <small>(us2.campaign-archive.com)</small></li>
