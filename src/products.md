@@ -1,4 +1,18 @@
-_Last updated: 29th December 2025_
+_Last updated: 4th May 2026_
+
+# Every Day Carry
+
+**[North Face Surge Backpack](https://www.thenorthface.co.uk/en-gb/p/men-211701/surge-backpack-NF0A52SG)**. Obscenely well thought through backpack.
+
+**[Bellroy Venture Ready Sling](https://bellroy.com/products/venture-ready-sling?color=fog&material=dura_polyester_recycled#slide-0)**. Sling bag for when a backpack is overkill.
+
+**[Bellroy Card Sleeve](https://bellroy.com/products/card-sleeve-wallet?color=ocean&material=leather&size=default#slide-0)**. Minimalist wallet.
+
+**[Hydroflask](https://www.hydroflask.com/gb/32-oz-wide-mouth/)**. Hydration. Get specifically this wide mouth 1L variant.
+
+**[NiteIze S-biner](https://www.niteize.co.uk/collections/s-biners-carabiners)**. Carry more things.
+
+**[Book Darts](https://www.lesswrong.com/posts/n6nsPzJWurKWKk2pA/somebody-invented-a-better-bookmark)**. Better bookmarks. If in the UK buy from [here](https://theliterarygiftshop.co.uk/products/book-darts-mixed-tin?variant=43067965800678).
 
 # Software
 
@@ -20,8 +34,6 @@ _Last updated: 29th December 2025_
 
 **[Bitwarden](https://bitwarden.com/)**. Password manager.
 
-**[Claude 4.5 Sonnet](https://claude.ai/)**. Current preferred general purpose LLM.
-
 **[Cronometer](https://cronometer.com/)**. Nutrition logging.
 
 **[Airalo](https://www.airalo.com/)**. Easy eSIM for travel.
@@ -31,6 +43,8 @@ _Last updated: 29th December 2025_
 **[Superwhisper](https://superwhisper.com/)**. Good AI powered speech to text. Use over Wispr Flow only if you care about local inference for privacy reasons.
 
 **[Runna](https://www.runna.com/)**. Personalised running plans.
+
+**[Granola](https://www.granola.ai/)**. Meeting summaries.
 
 # Office
 
@@ -58,7 +72,7 @@ _Last updated: 29th December 2025_
 
 **[Blue Light Blocking Glasses](https://www.blockbluelight.co.uk/products/taylor-blue-blocking-glasses-black?_psq=nightfall+taylor&_v=1.0)**. Make the entire world red for a few hours before bed to promote melatonin production. Lower quality, cheaper, and more red alternative [here](https://amzn.eu/d/0xLOevo). One advantage of the former over the latter is they offer prescription lenses. I use both.
 
-**[Smart Coloured Light Bulbs](https://amzn.eu/d/34xoGgx)**. Buy many. Set up automations so you minimally have to manually control your lights. I recommend bright white lights during the day, and dim red lights a few hours before bed. Note I don't have strong takes on brand. I use the linked ones and they are fine, but more thought could be put into it.
+**[Smart Coloured Light Bulbs](https://www.amazon.co.uk/dp/B0F61RP61W)**. Buy many. Set up automations so you minimally have to manually control your lights. I recommend bright white lights during the day, and dim red lights a few hours before bed. Note I don't have strong takes on brand. I use the linked ones and they are fine, but more thought could be put into it.
 
 # Home
 
@@ -92,25 +106,27 @@ _Last updated: 29th December 2025_
 
 **[North Face Men's eTip Gloves](https://www.thenorthface.com/en-gb/p/bags-and-equipment-211747/men-s-etip-gloves-NF0A4SHA)**. Touchscreen-compatible gloves.
 
-# Misc
+# Running
 
 **[Garmin Forerunner 165 Music](https://www.garmin.com/en-GB/p/1611937/pn/010-02863-31)**. Entry level running watch.
 
-**[North Face Surge Backpack](https://www.thenorthface.co.uk/en-gb/p/men-211701/surge-backpack-NF0A52SG)**. Obscenely well thought through backpack.
+**[Lululemon Pace Breaker Lined Short 5"](https://www.lululemon.co.uk/en-gb/p/pace-breaker-lined-short-5%22/prod11400108.html?dwvar_prod11400108_color=68839)**. Comfortable running shorts with a built-in liner.
 
-**[Bellroy Card Sleeve](https://bellroy.com/products/card-sleeve-wallet?color=ocean&material=leather&size=default#slide-0)**. Minimalist wallet.
+**[Shokz OpenRun Pro 2](https://uk.shokz.com/products/openrun-pro2?variant=50009478037837)**. Open-ear bone conduction headphones. Hear traffic and surroundings while running on roads or cycling. More in my [headphones post](/headphones).
 
-**[Hydroflask](https://www.hydroflask.com/gb/32-oz-wide-mouth/)**. Hydration. Get specifically this wide mouth 1L variant.
+# Bike
 
-**[NiteIze S-biner](https://www.niteize.co.uk/collections/s-biners-carabiners)**. Carry more things.
+**[Decathlon Triban RC 500 Disc](https://www.decathlon.co.uk/p/road-bike-triban-rc-500-disc-brake-black/308097/c71m8554410)**. Solid entry level road bike.
+
+**[ROCKBROS Bike Bell](https://www.amazon.co.uk/dp/B06XK461M8)**. Loud, minimal bike bell.
+
+# Hygiene
 
 **[CeraVe Cleanser](https://www.cerave.co.uk/skincare/cleansers/sa-smoothing-cleanser)**. Skincare if you have an oily face.
 
 **[Green Bell G-1305 Nail Cutter](https://amzn.eu/d/dKTlcul)**. Japanese made nail clippers.
 
 **[Oral-B iO 3 Electric Toothbrush](https://amzn.eu/d/0iIZGXY8)**. Electric toothbrush.
-
-**[Book Darts](https://www.lesswrong.com/posts/n6nsPzJWurKWKk2pA/somebody-invented-a-better-bookmark)**. Better bookmarks. If in the UK buy from [here](https://theliterarygiftshop.co.uk/products/book-darts-mixed-tin?variant=43067965800678).
 
 # Not products
 

@@ -237,7 +237,6 @@ class Book:
     title: str
     subtitle: str
     author: str
-    start_date: datetime
     end_date: Optional[datetime] = None
     partial: bool = False
     link: str = ""
@@ -295,7 +294,6 @@ def load_books(path: Union[str, Path]) -> list[Book]:
             additional_text = row["Additional Text"] or None
             partial = row["Partial"].lower() == "true"
             notes = row["Notes"].lower() == "true"
-            start_date = datetime.strptime(row["Start Date"], "%Y-%m-%d")
             end_date = None
             if row["End Date"].strip():
                 end_date = datetime.strptime(row["End Date"], "%Y-%m-%d")
@@ -304,7 +302,6 @@ def load_books(path: Union[str, Path]) -> list[Book]:
                 title=row["Title"],
                 subtitle=row["Subtitle"],
                 author=row["Author"],
-                start_date=start_date,
                 end_date=end_date,
                 partial=partial,
                 link=row["Link"],
@@ -385,7 +382,7 @@ def generate_reading_markdown(
         completed, key=lambda b: (b.end_date, b.row_order), reverse=True
     )
     sorted_reading = sorted(
-        currently_reading, key=lambda b: (b.start_date, b.row_order), reverse=True
+        currently_reading, key=lambda b: b.row_order, reverse=True
     )
 
     books_lines = []
