@@ -321,3 +321,10 @@
   math: false
   tags: ["personal"]
   disable_sidebar: true
+
+- label: resort
+  title: "Resort holidays are okay, actually"
+  date: 2026-05-08
+  description: "Why I updated positively on resort holidays."
+  math: false
+  tags: ["personal"]

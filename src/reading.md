@@ -1,4 +1,4 @@
-*Last updated: May 6th 2026.*
+*Last updated: May 7th 2026.*
 
 <div class="tab-container reading-tabs">
 <input type="radio" id="reading-tab1" name="reading-tabs">
@@ -71,6 +71,8 @@
 <div class="tab-content" id="reading-online">
 <p class="link-heading">May 2026</p>
 <ul class="reading-list">
+<li><a href="https://www.lesswrong.com/posts/CThrv4TfvpZa4y5uG/behave-according-to-your-actual-utility-function">Behave according to your actual utility function — LessWrong</a> <small>(lesswrong.com)</small></li>
+<li><a href="https://www.lesswrong.com/posts/qRZLEBmNtT6LBuFsE/it-s-nice-of-you-to-worry-about-me-but-i-really-do-have-a">It&#x27;s nice of you to worry about me, but I really do have a life — LessWrong</a> <small>(lesswrong.com)</small></li>
 <li><a href="https://www.lesswrong.com/posts/eW7knx6zPSKzFc8iK/x-risk-themed">x-risk-themed — LessWrong</a> <small>(lesswrong.com)</small></li>
 <li><a href="https://aisafetyfrontier.substack.com/p/paper-highlights-of-april-2026?utm_source=post-email-title&amp;publication_id=2802811&amp;post_id=196647417&amp;utm_campaign=email-post-title&amp;isFreemail=true&amp;r=1o9kun&amp;triedRedirect=true&amp;utm_medium=email">Paper Highlights of April 2026</a> <small>(aisafetyfrontier.substack.com)</small></li>
 <li><a href="https://benjamintodd.substack.com/p/is-ai-accelerating?publication_id=2577442&amp;utm_campaign=email-post-title&amp;r=1o9kun&amp;utm_medium=email">Are the last 3 months the start of an AI acceleration?</a> <small>(benjamintodd.substack.com)</small></li>
