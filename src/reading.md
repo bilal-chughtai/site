@@ -1,4 +1,4 @@
-*Last updated: May 7th 2026.*
+*Last updated: May 15th 2026.*
 
 <div class="tab-container reading-tabs">
 <input type="radio" id="reading-tab1" name="reading-tabs">
@@ -71,6 +71,28 @@
 <div class="tab-content" id="reading-online">
 <p class="link-heading">May 2026</p>
 <ul class="reading-list">
+<li><a href="https://naml.us/post/reflections-on-aisi/">Reflections on AISI | naml.us</a> <small>(naml.us)</small></li>
+<li><a href="https://substack.com/home/post/p-180887762">Writing is one of the best ways to learn. We’re building something to help you learn faster - here’s how to get involved!</a> <small>(substack.com)</small></li>
+<li><a href="https://slatestarcodex.com/2018/09/25/the-tails-coming-apart-as-metaphor-for-life/">The Tails Coming Apart As Metaphor For Life</a> <small>(slatestarcodex.com)</small></li>
+<li><a href="https://terrytao.wordpress.com/about/anonymity-and-the-internet/">Anonymity and the internet</a> <small>(terrytao.wordpress.com)</small></li>
+<li><a href="https://www.planned-obsolescence.org/p/six-milestones-for-ai-automation?utm_source=post-email-title&amp;publication_id=3069806&amp;post_id=193047342&amp;utm_campaign=email-post-title&amp;isFreemail=true&amp;r=1o9kun&amp;triedRedirect=true&amp;utm_medium=email">Six milestones for AI automation</a> <small>(planned-obsolescence.org)</small></li>
+<li><a href="https://www.forethought.org/research/concrete-projects-in-agi-preparedness">Concrete Projects in AGI Preparedness</a> <small>(forethought.org)</small></li>
+<li><a href="https://www.forethought.org/research/ai-tools-for-existential-security">AI Tools for Existential Security</a> <small>(forethought.org)</small></li>
+<li><a href="https://blog.redwoodresearch.org/p/if-mythos-actually-made-anthropic?utm_source=post-email-title&amp;publication_id=2318730&amp;post_id=193848684&amp;utm_campaign=email-post-title&amp;isFreemail=true&amp;r=1o9kun&amp;triedRedirect=true&amp;utm_medium=email">If Mythos actually made Anthropic employees 4x more productive, I would radically shorten my timelines</a> <small>(blog.redwoodresearch.org)</small></li>
+<li><a href="https://epochai.substack.com/p/the-economics-of-superstar-ai-researchers">The economics of superstar AI researchers - by Anson Ho</a> <small>(epochai.substack.com)</small></li>
+<li><a href="https://www.forethought.org/research/ai-for-ai-for-epistemics">AI for AI for Epistemics</a> <small>(forethought.org)</small></li>
+<li><a href="https://www.lesswrong.com/posts/6p4kv8uxYvLcimGGi/you-re-always-stressed-your-mind-is-always-busy-you-never">You’re always stressed, your mind is always busy, you never have enough time — LessWrong</a> <small>(lesswrong.com)</small></li>
+<li><a href="https://aisafetyfrontier.substack.com/p/paper-highlights-of-february-and?utm_source=post-email-title&amp;publication_id=2802811&amp;post_id=193116151&amp;utm_campaign=email-post-title&amp;isFreemail=true&amp;r=1o9kun&amp;triedRedirect=true&amp;utm_medium=email">Paper Highlights of February &amp; March 2026</a> <small>(aisafetyfrontier.substack.com)</small></li>
+<li><a href="https://bengoldhaber.substack.com/p/the-ball">The Ball</a> <small>(bengoldhaber.substack.com)</small></li>
+<li><a href="https://coefficientgiving.org/research/reasoning-transparency/">Reasoning Transparency</a> <small>(coefficientgiving.org)</small></li>
+<li><a href="https://www.forethought.org/research/ai-impacts-on-epistemics-the-good-the-bad-and-the-ugly">AI and Epistemics: The Good, Bad and Ugly</a> <small>(forethought.org)</small></li>
+<li><a href="https://dynomight.substack.com/p/slides?utm_source=post-email-title&amp;publication_id=327510&amp;post_id=197528991&amp;utm_campaign=email-post-title&amp;isFreemail=true&amp;r=1o9kun&amp;triedRedirect=true&amp;utm_medium=email">What&#x27;s with all the slide decks?</a> <small>(dynomight.substack.com)</small></li>
+<li><a href="https://www.pathwaysai.org/p/thoughts-on-the-openai-foundation">Thoughts on the OpenAI Foundation - by Herbie Bradley</a> <small>(pathwaysai.org)</small></li>
+<li><a href="https://blog.sentinel-team.org/p/us-iran-stalemate-continues-putin?publication_id=2852775&amp;utm_campaign=email-post-title&amp;r=1o9kun&amp;utm_medium=email">🟡 US-Iran stalemate continues, Putin says Ukraine war may come to an end, White House considers AI executive order || Global Risks Weekly Roundup #19/2026</a> <small>(blog.sentinel-team.org)</small></li>
+<li><a href="https://blog.redwoodresearch.org/p/how-useful-is-the-information-you">How useful is the information you get from working inside an AI company?</a> <small>(blog.redwoodresearch.org)</small></li>
+<li><a href="https://www.lesswrong.com/posts/FxHzT6jeTRhbkzSX3/the-darwinian-honeymoon-why-i-am-not-as-impressed-by-human-1">The Darwinian Honeymoon - Why I am not as impressed by human progress as I used to be — LessWrong</a> <small>(lesswrong.com)</small></li>
+<li><a href="https://www.lesswrong.com/posts/rgXQuG8KXtxugSG6H/what-i-did-in-the-hedonium-shockwave-by-emma-age-six-and-a">What I did in the hedonium shockwave, by Emma, age six and a half — LessWrong</a> <small>(lesswrong.com)</small></li>
+<li><a href="https://www.lesswrong.com/posts/nR3DkyivzF4ve97oM/how-go-players-disempower-themselves-to-ai">How Go Players Disempower Themselves to AI — LessWrong</a> <small>(lesswrong.com)</small></li>
 <li><a href="https://www.lesswrong.com/posts/CThrv4TfvpZa4y5uG/behave-according-to-your-actual-utility-function">Behave according to your actual utility function — LessWrong</a> <small>(lesswrong.com)</small></li>
 <li><a href="https://www.lesswrong.com/posts/qRZLEBmNtT6LBuFsE/it-s-nice-of-you-to-worry-about-me-but-i-really-do-have-a">It&#x27;s nice of you to worry about me, but I really do have a life — LessWrong</a> <small>(lesswrong.com)</small></li>
 <li><a href="https://www.lesswrong.com/posts/eW7knx6zPSKzFc8iK/x-risk-themed">x-risk-themed — LessWrong</a> <small>(lesswrong.com)</small></li>
