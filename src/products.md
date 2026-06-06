@@ -12,6 +12,8 @@ _Last updated: 4th May 2026_
 
 **[NiteIze S-biner](https://www.niteize.co.uk/collections/s-biners-carabiners)**. Carry more things.
 
+**[Pill Box](https://www.amazon.co.uk/dp/B0BW3WNVCX)**. Double layer, 10 compartment pill organiser. Good for carrying supplements and medication.
+
 **[Book Darts](https://www.lesswrong.com/posts/n6nsPzJWurKWKk2pA/somebody-invented-a-better-bookmark)**. Better bookmarks. If in the UK buy from [here](https://theliterarygiftshop.co.uk/products/book-darts-mixed-tin?variant=43067965800678).
 
 # Software
@@ -127,6 +129,8 @@ _Last updated: 4th May 2026_
 **[Green Bell G-1305 Nail Cutter](https://amzn.eu/d/dKTlcul)**. Japanese made nail clippers.
 
 **[Oral-B iO 3 Electric Toothbrush](https://amzn.eu/d/0iIZGXY8)**. Electric toothbrush.
+
+**[Colgate Total Active Prevention Toothpaste](https://www.amazon.co.uk/dp/B0F39MY2TH)**. Good toothpaste.
 
 # Not products
 
