@@ -328,3 +328,10 @@
   description: "Why I updated positively on resort holidays."
   math: false
   tags: ["personal"]
+
+- label: preferences
+  title: "Chesterton's preferences"
+  date: 2026-06-06
+  description: "How dating made me realise my models of what I look for in people were incomplete in ways I couldn't see."
+  math: true
+  tags: ["personal"]
