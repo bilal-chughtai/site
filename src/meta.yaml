@@ -339,7 +339,7 @@
 - label: photos
   title: "Photo journal"
   date: 2026-06-14
-  description: "A scrapbook of recent life, a few photos a month."
+  description: "I reinvented instagram."
   math: false
   tags: ["personal"]
   pinned: true
