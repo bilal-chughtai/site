@@ -132,6 +132,20 @@ img {
     transform: translateX(-50%);
 }
 
+/* Wide scatter by default; swap to the 2-column layout on narrow screens. */
+.photo-collage--narrow {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    .photo-collage--wide {
+        display: none;
+    }
+    .photo-collage--narrow {
+        display: block;
+    }
+}
+
 .photo-card {
     position: absolute;
     margin: 0;

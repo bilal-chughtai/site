@@ -114,7 +114,9 @@ def _max_obscured(boxes: list, areas: list[float]) -> float:
     return worst
 
 
-def _scatter_layout(aspects: list[float], seed: str) -> tuple[list[dict], float]:
+def _scatter_layout(
+    aspects: list[float], seed: str, cols: int | None = None
+) -> tuple[list[dict], float]:
     """Place photos in a deterministic tilted scatter (no row alignment).
 
     Photos are laid out on a jittered grid with gaps so they don't overlap;
@@ -123,12 +125,14 @@ def _scatter_layout(aspects: list[float], seed: str) -> tuple[list[dict], float]
     left/top/width as percentages and a rotation, plus the stage aspect ratio.
     """
     n = len(aspects)
-    if n <= 2:
-        cols = max(1, n)
-    elif n <= 6:
-        cols = 3
-    else:
-        cols = 4
+    if cols is None:
+        if n <= 2:
+            cols = max(1, n)
+        elif n <= 6:
+            cols = 3
+        else:
+            cols = 4
+    cols = max(1, min(cols, n))
 
     cell_w = STAGE_W / cols
     rows = -(-n // cols)  # ceil
@@ -246,22 +250,18 @@ def build() -> None:
             thumbs.append(f"{ref_base}/{stem}.thumb.jpg")
             aspects.append(h / w)
 
-        cards, stage_ratio = _scatter_layout(aspects, seed=month_dir)
-
         lines.append(f"## {_month_label(month_dir)}")
         lines.append("")
-        lines.append(
-            f'<div class="photo-collage" style="aspect-ratio: {stage_ratio};">'
+        # Two layouts: the default wide scatter, and a 2-column version shown on
+        # narrow screens (CSS swaps them) so photos stay large on mobile.
+        wide_cards, wide_ratio = _scatter_layout(aspects, seed=month_dir)
+        narrow_cards, narrow_ratio = _scatter_layout(
+            aspects, seed=f"{month_dir}-narrow", cols=2
         )
-        for thumb, full, card in zip(thumbs, fulls, cards):
-            lines.append(
-                '  <figure class="photo-card" style="'
-                f'left: {card["left"]}%; top: {card["top"]}%; '
-                f'width: {card["width"]}%; --rot: {card["rot"]}deg;">'
-                f'<img src="{thumb}" data-full="{full}" loading="lazy" alt="">'
-                "</figure>"
-            )
-        lines.append("</div>")
+        lines += _collage_div("photo-collage--wide", wide_cards, wide_ratio, thumbs, fulls)
+        lines += _collage_div(
+            "photo-collage--narrow", narrow_cards, narrow_ratio, thumbs, fulls
+        )
         lines.append("")
 
     lines.append(LIGHTBOX_HTML)
@@ -270,6 +270,23 @@ def build() -> None:
     _prune_web(expected)
 
     _write(OUT_MD, "\n".join(lines) + "\n")
+
+
+def _collage_div(
+    cls: str, cards: list[dict], stage_ratio: float, thumbs: list[str], fulls: list[str]
+) -> list[str]:
+    """Render one collage container (a positioned scatter) as markdown lines."""
+    out = [f'<div class="photo-collage {cls}" style="aspect-ratio: {stage_ratio};">']
+    for thumb, full, card in zip(thumbs, fulls, cards):
+        out.append(
+            '  <figure class="photo-card" style="'
+            f'left: {card["left"]}%; top: {card["top"]}%; '
+            f'width: {card["width"]}%; --rot: {card["rot"]}deg;">'
+            f'<img src="{thumb}" data-full="{full}" loading="lazy" alt="">'
+            "</figure>"
+        )
+    out.append("</div>")
+    return out
 
 
 def _prune_web(expected: set[str]) -> None:
