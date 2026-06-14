@@ -158,6 +158,13 @@ def collect_post_assets(content: str) -> list[str]:
             flags=re.IGNORECASE,
         )
     )
+    refs.extend(
+        re.findall(
+            r'<img\s+[^>]*data-full="(img/[^"]+)"',
+            content,
+            flags=re.IGNORECASE,
+        )
+    )
     seen: set[str] = set()
     ordered: list[str] = []
     for r in refs:
@@ -170,6 +177,9 @@ def collect_post_assets(content: str) -> list[str]:
 def copy_images(post, asset_paths, out_dir):
     """Copy post assets to post-specific folder and update references in content."""
     post_assets_dir = os.path.join(out_dir, post.meta.label, "assets")
+    # Rebuild from scratch so renamed/removed source images don't leave orphans.
+    if os.path.exists(post_assets_dir):
+        shutil.rmtree(post_assets_dir)
     os.makedirs(post_assets_dir, exist_ok=True)
 
     for asset_rel in asset_paths:

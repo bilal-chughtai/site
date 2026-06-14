@@ -28,11 +28,14 @@ from PIL import Image, ImageOps
 # Where originals live and where generated web copies go.
 SRC_ROOT = "src/img/photo-journal"
 WEB_SUBDIR = "web"  # generated copies: src/img/photo-journal/web/<month>/
-OUT_MD = "src/photo-journal.md"
+OUT_MD = "src/photos.md"  # must match the post `label` in meta.yaml
 
-# Longest edge (px) for web copies and JPEG quality.
-MAX_EDGE = 1600
-JPEG_QUALITY = 82
+# Two sizes per photo: a small thumbnail shown in the collage, and a larger
+# "full" version loaded only when a photo is clicked open (the lightbox zoom).
+FULL_EDGE = 1600
+FULL_QUALITY = 82
+THUMB_EDGE = 600
+THUMB_QUALITY = 78
 
 # Scatter layout, computed in arbitrary units (W wide) then emitted as
 # percentages so the whole collage scales responsively.
@@ -59,7 +62,9 @@ def _month_label(month_dir: str) -> str:
     return datetime.strptime(month_dir, "%Y-%m").strftime("%B %Y")
 
 
-def _ensure_web_copy(src_path: str, dst_path: str) -> tuple[int, int]:
+def _ensure_web_copy(
+    src_path: str, dst_path: str, max_edge: int, quality: int
+) -> tuple[int, int]:
     """Resize/compress an original into a web JPEG (cached); return its (w, h)."""
     if not (
         os.path.exists(dst_path)
@@ -68,11 +73,9 @@ def _ensure_web_copy(src_path: str, dst_path: str) -> tuple[int, int]:
         with Image.open(src_path) as im:
             im = ImageOps.exif_transpose(im)  # honour camera orientation
             im = im.convert("RGB")
-            im.thumbnail((MAX_EDGE, MAX_EDGE), Image.LANCZOS)
+            im.thumbnail((max_edge, max_edge), Image.LANCZOS)
             os.makedirs(os.path.dirname(dst_path), exist_ok=True)
-            im.save(
-                dst_path, "JPEG", quality=JPEG_QUALITY, optimize=True, progressive=True
-            )
+            im.save(dst_path, "JPEG", quality=quality, optimize=True, progressive=True)
     with Image.open(dst_path) as im:
         return im.size
 
@@ -222,17 +225,25 @@ def build() -> None:
         _write(OUT_MD, "\n".join(lines) + "\n")
         return
 
+    expected: set[str] = set()  # web files we still want; everything else is pruned
+
     # Newest month first.
     for month_dir, files in sorted(months, reverse=True):
-        refs = []
+        thumbs, fulls = [], []
         aspects = []
+        web_dir = os.path.join(SRC_ROOT, WEB_SUBDIR, month_dir)
+        ref_base = f"img/photo-journal/{WEB_SUBDIR}/{month_dir}"
         for filename in files:
             stem = os.path.splitext(filename)[0]
-            web_name = f"{stem}.jpg"
             src_path = os.path.join(SRC_ROOT, month_dir, filename)
-            web_path = os.path.join(SRC_ROOT, WEB_SUBDIR, month_dir, web_name)
-            w, h = _ensure_web_copy(src_path, web_path)
-            refs.append(f"img/photo-journal/{WEB_SUBDIR}/{month_dir}/{web_name}")
+            full_path = os.path.join(web_dir, f"{stem}.jpg")
+            thumb_path = os.path.join(web_dir, f"{stem}.thumb.jpg")
+            w, h = _ensure_web_copy(src_path, full_path, FULL_EDGE, FULL_QUALITY)
+            _ensure_web_copy(src_path, thumb_path, THUMB_EDGE, THUMB_QUALITY)
+            expected.add(os.path.abspath(full_path))
+            expected.add(os.path.abspath(thumb_path))
+            fulls.append(f"{ref_base}/{stem}.jpg")
+            thumbs.append(f"{ref_base}/{stem}.thumb.jpg")
             aspects.append(h / w)
 
         cards, stage_ratio = _scatter_layout(aspects, seed=month_dir)
@@ -242,12 +253,13 @@ def build() -> None:
         lines.append(
             f'<div class="photo-collage" style="aspect-ratio: {stage_ratio};">'
         )
-        for ref, card in zip(refs, cards):
+        for thumb, full, card in zip(thumbs, fulls, cards):
             lines.append(
                 '  <figure class="photo-card" style="'
                 f'left: {card["left"]}%; top: {card["top"]}%; '
                 f'width: {card["width"]}%; --rot: {card["rot"]}deg;">'
-                f'<img src="{ref}" loading="lazy" alt=""></figure>'
+                f'<img src="{thumb}" data-full="{full}" loading="lazy" alt="">'
+                "</figure>"
             )
         lines.append("</div>")
         lines.append("")
@@ -255,7 +267,27 @@ def build() -> None:
     lines.append(LIGHTBOX_HTML)
     lines.append("")
 
+    _prune_web(expected)
+
     _write(OUT_MD, "\n".join(lines) + "\n")
+
+
+def _prune_web(expected: set[str]) -> None:
+    """Delete generated web files (and empty month dirs) that are no longer used,
+    so curated-out / renamed photos don't linger in the cache or the build."""
+    web_root = os.path.join(SRC_ROOT, WEB_SUBDIR)
+    if not os.path.isdir(web_root):
+        return
+    for month_name in os.listdir(web_root):
+        month_path = os.path.join(web_root, month_name)
+        if not os.path.isdir(month_path):
+            continue
+        for f in os.listdir(month_path):
+            fp = os.path.join(month_path, f)
+            if os.path.isfile(fp) and os.path.abspath(fp) not in expected:
+                os.remove(fp)
+        if not os.listdir(month_path):
+            os.rmdir(month_path)
 
 
 # Click-to-zoom overlay. Self-contained so no template change is needed.
@@ -273,7 +305,7 @@ LIGHTBOX_HTML = """<div class="photo-lightbox" id="photo-lightbox" aria-hidden="
   }
   document.querySelectorAll('.photo-collage .photo-card img').forEach(function (img) {
     img.addEventListener('click', function () {
-      full.src = img.currentSrc || img.src;
+      full.src = img.getAttribute('data-full') || img.currentSrc || img.src;
       box.classList.add('open');
       box.setAttribute('aria-hidden', 'false');
     });

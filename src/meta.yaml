@@ -336,8 +336,8 @@
   math: true
   tags: ["personal"]
 
-- label: photo-journal
-  title: "Photos"
+- label: photos
+  title: "Photo journal"
   date: 2026-06-14
   description: "A scrapbook of recent life, a few photos a month."
   math: false
