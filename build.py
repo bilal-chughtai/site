@@ -21,6 +21,7 @@ import xml.etree.ElementTree as ET
 from typing import Any
 
 from latex_wrangle import LatexExtension
+import photo_journal
 
 # External links configuration
 EXTERNAL_LINKS = {
@@ -92,6 +93,9 @@ class PostMeta:
     )
     disable_sidebar: bool = False  # hide left TOC column (wide viewports)
     wider: bool = False  # use a wider main column (--main-content-wide-max-width)
+    hide_word_count: bool = (
+        False  # hide the word count / read time (e.g. for image-only pages)
+    )
 
 
 @dataclass
@@ -143,6 +147,13 @@ def collect_post_assets(content: str) -> list[str]:
     refs.extend(
         re.findall(
             r'<source\s+[^>]*src="(img/[^"]+)"',
+            content,
+            flags=re.IGNORECASE,
+        )
+    )
+    refs.extend(
+        re.findall(
+            r'<img\s+[^>]*src="(img/[^"]+)"',
             content,
             flags=re.IGNORECASE,
         )
@@ -495,6 +506,7 @@ def generate_external_link_redirects(out_dir: str = "out"):
 
 
 def main():
+    photo_journal.build()
     posts = load_posts()
     generate_html(posts)
     copy_css()

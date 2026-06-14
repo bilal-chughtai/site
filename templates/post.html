@@ -44,9 +44,10 @@
         {% endif %}
         <p>
             <time datetime="{{ post.meta.date }}">{{ post.meta.date | format_date }}</time>
-            &middot; {% if post.meta.word_count < 1000 %}{{ post.meta.word_count }} words{% else %}{{
+            {% if not post.meta.hide_word_count %}&middot; {% if post.meta.word_count < 1000 %}{{ post.meta.word_count }}
+                words{% else %}{{
                 (post.meta.word_count / 1000) | round(1) }}k words{% endif %} &middot; {{ (post.meta.word_count / 200) |
-                round | int }} minute read </p>
+                round | int }} minute read {% endif %}</p>
                 <!-- <p class="post-summary"> <strong>Summary</strong>: {{ post.meta.description }}</p> -->
     </div>
 

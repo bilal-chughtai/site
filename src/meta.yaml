@@ -335,3 +335,14 @@
   description: "How dating made me realise my models of what I look for in people were incomplete in ways I couldn't see."
   math: true
   tags: ["personal"]
+
+- label: photo-journal
+  title: "Photo journal"
+  date: 2026-06-14
+  description: "A scrapbook of recent life, a few photos a month."
+  math: false
+  tags: ["personal"]
+  pinned: true
+  wider: true
+  disable_sidebar: true
+  hide_word_count: true
