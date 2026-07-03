@@ -21,6 +21,7 @@ from __future__ import annotations
 import math
 import os
 import random
+import re
 from datetime import datetime
 
 from PIL import Image, ImageOps
@@ -60,6 +61,36 @@ def _is_month_dir(name: str) -> bool:
 def _month_label(month_dir: str) -> str:
     """2026-06 -> 'June 2026'."""
     return datetime.strptime(month_dir, "%Y-%m").strftime("%B %Y")
+
+
+# Timestamps embedded in common filenames: PXL_20260618_091331437,
+# IMG-20260601-WA0009, "Screenshot 2026-06-14 at 12.10.43", 2026-06-14, ...
+_FILENAME_TS = re.compile(
+    r"(20\d{2})[-_]?(\d{2})[-_]?(\d{2})(?:[-_ at.]+(\d{2})[._]?(\d{2})[._]?(\d{2}))?"
+)
+
+
+def _date_taken(src_path: str) -> str:
+    """Sort key 'YYYYMMDDHHMMSS' for when a photo was taken.
+
+    Prefers EXIF DateTimeOriginal, then a timestamp embedded in the filename,
+    then the file's mtime as a last resort.
+    """
+    try:
+        with Image.open(src_path) as im:
+            exif = im.getexif()
+            dt = exif.get_ifd(0x8769).get(0x9003) or exif.get(0x0132)
+        digits = re.sub(r"\D", "", str(dt or ""))
+        if len(digits) >= 8:
+            return digits[:14].ljust(14, "0")
+    except Exception:
+        pass
+    m = _FILENAME_TS.search(os.path.basename(src_path))
+    if m:
+        y, mo, d, hh, mm, ss = (g or "00" for g in m.groups())
+        if "01" <= mo <= "12" and "01" <= d <= "31":
+            return f"{y}{mo}{d}{hh}{mm}{ss}"
+    return datetime.fromtimestamp(os.path.getmtime(src_path)).strftime("%Y%m%d%H%M%S")
 
 
 def _ensure_web_copy(
@@ -137,11 +168,6 @@ def _scatter_layout(
     cell_w = STAGE_W / cols
     rows = -(-n // cols)  # ceil
 
-    # Assign grid slots so the tallest photos sit in upper rows and the
-    # shortest land in the bottom row -> tidy bottom edge, no lone portrait
-    # dangling. Columns within each row are shuffled to keep it scrapbooky.
-    by_height = sorted(range(n), key=lambda i: aspects[i], reverse=True)
-
     best = None
     for attempt in range(8):
         rng = random.Random(f"{seed}-{attempt}")
@@ -151,13 +177,14 @@ def _scatter_layout(
         y_jit = max(0.0, 0.03 - 0.008 * attempt)
         row_gap = cell_w * (0.12 + loosen)
 
+        # Fill the grid in reading order (left-to-right, top-to-bottom) so the
+        # photos stay in the order given -- date taken. Jitter and rotation
+        # below keep it scrapbooky.
         slot = {}
         row_members: list[list[int]] = []
         for r in range(rows):
-            members = by_height[r * cols : (r + 1) * cols]
-            col_order = list(range(len(members)))
-            rng.shuffle(col_order)
-            for member, c in zip(members, col_order):
+            members = list(range(r * cols, min((r + 1) * cols, n)))
+            for c, member in enumerate(members):
                 slot[member] = (r, c)
             row_members.append(members)
 
@@ -201,7 +228,7 @@ def _scatter_layout(
 
 
 def _collect_months() -> list[tuple[str, list[str]]]:
-    """Return [(month_dir, [original filenames sorted])] for existing month folders."""
+    """Return [(month_dir, [filenames sorted by date taken])] for existing month folders."""
     if not os.path.isdir(SRC_ROOT):
         return []
     months = []
@@ -210,9 +237,12 @@ def _collect_months() -> list[tuple[str, list[str]]]:
         if not os.path.isdir(month_path) or not _is_month_dir(name):
             continue
         files = sorted(
-            f
-            for f in os.listdir(month_path)
-            if os.path.splitext(f)[1].lower() in IMAGE_EXTS
+            (
+                f
+                for f in os.listdir(month_path)
+                if os.path.splitext(f)[1].lower() in IMAGE_EXTS
+            ),
+            key=lambda f: (_date_taken(os.path.join(month_path, f)), f),
         )
         if files:
             months.append((name, files))
