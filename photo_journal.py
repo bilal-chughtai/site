@@ -63,34 +63,37 @@ def _month_label(month_dir: str) -> str:
     return datetime.strptime(month_dir, "%Y-%m").strftime("%B %Y")
 
 
-# Timestamps embedded in common filenames: PXL_20260618_091331437,
-# IMG-20260601-WA0009, "Screenshot 2026-06-14 at 12.10.43", 2026-06-14, ...
-_FILENAME_TS = re.compile(
-    r"(20\d{2})[-_]?(\d{2})[-_]?(\d{2})(?:[-_ at.]+(\d{2})[._]?(\d{2})[._]?(\d{2}))?"
-)
+# Dates embedded in common filenames: PXL_20260618_091331437,
+# IMG-20260601-WA0009, "Screenshot 2026-06-14 at 12.10.43", ...
+_FILENAME_DATE = re.compile(r"(20\d{2})[-_]?(\d{2})[-_]?(\d{2})")
 
 
-def _date_taken(src_path: str) -> str:
-    """Sort key 'YYYYMMDDHHMMSS' for when a photo was taken.
+def _date_taken_label(src_path: str) -> str:
+    """Human-readable date a photo was taken ('13 June 2026'), or '' if unknown.
 
-    Prefers EXIF DateTimeOriginal, then a timestamp embedded in the filename,
-    then the file's mtime as a last resort.
+    Reads EXIF DateTimeOriginal, else a date embedded in the filename. No
+    mtime fallback: showing a copy/download time as "date taken" is worse
+    than showing nothing.
     """
+    dt = None
     try:
         with Image.open(src_path) as im:
             exif = im.getexif()
-            dt = exif.get_ifd(0x8769).get(0x9003) or exif.get(0x0132)
-        digits = re.sub(r"\D", "", str(dt or ""))
-        if len(digits) >= 8:
-            return digits[:14].ljust(14, "0")
+            raw = exif.get_ifd(0x8769).get(0x9003) or exif.get(0x0132)
+        if raw:
+            dt = datetime.strptime(str(raw)[:10], "%Y:%m:%d")
     except Exception:
-        pass
-    m = _FILENAME_TS.search(os.path.basename(src_path))
-    if m:
-        y, mo, d, hh, mm, ss = (g or "00" for g in m.groups())
-        if "01" <= mo <= "12" and "01" <= d <= "31":
-            return f"{y}{mo}{d}{hh}{mm}{ss}"
-    return datetime.fromtimestamp(os.path.getmtime(src_path)).strftime("%Y%m%d%H%M%S")
+        dt = None
+    if dt is None:
+        m = _FILENAME_DATE.search(os.path.basename(src_path))
+        if m:
+            try:
+                dt = datetime(int(m.group(1)), int(m.group(2)), int(m.group(3)))
+            except ValueError:
+                dt = None
+    if dt is None:
+        return ""
+    return f"{dt.day} {dt.strftime('%B %Y')}"
 
 
 def _ensure_web_copy(
@@ -168,6 +171,11 @@ def _scatter_layout(
     cell_w = STAGE_W / cols
     rows = -(-n // cols)  # ceil
 
+    # Assign grid slots so the tallest photos sit in upper rows and the
+    # shortest land in the bottom row -> tidy bottom edge, no lone portrait
+    # dangling. Columns within each row are shuffled to keep it scrapbooky.
+    by_height = sorted(range(n), key=lambda i: aspects[i], reverse=True)
+
     best = None
     for attempt in range(8):
         rng = random.Random(f"{seed}-{attempt}")
@@ -177,14 +185,13 @@ def _scatter_layout(
         y_jit = max(0.0, 0.03 - 0.008 * attempt)
         row_gap = cell_w * (0.12 + loosen)
 
-        # Fill the grid in reading order (left-to-right, top-to-bottom) so the
-        # photos stay in the order given -- date taken. Jitter and rotation
-        # below keep it scrapbooky.
         slot = {}
         row_members: list[list[int]] = []
         for r in range(rows):
-            members = list(range(r * cols, min((r + 1) * cols, n)))
-            for c, member in enumerate(members):
+            members = by_height[r * cols : (r + 1) * cols]
+            col_order = list(range(len(members)))
+            rng.shuffle(col_order)
+            for member, c in zip(members, col_order):
                 slot[member] = (r, c)
             row_members.append(members)
 
@@ -228,7 +235,7 @@ def _scatter_layout(
 
 
 def _collect_months() -> list[tuple[str, list[str]]]:
-    """Return [(month_dir, [filenames sorted by date taken])] for existing month folders."""
+    """Return [(month_dir, [original filenames sorted])] for existing month folders."""
     if not os.path.isdir(SRC_ROOT):
         return []
     months = []
@@ -237,12 +244,9 @@ def _collect_months() -> list[tuple[str, list[str]]]:
         if not os.path.isdir(month_path) or not _is_month_dir(name):
             continue
         files = sorted(
-            (
-                f
-                for f in os.listdir(month_path)
-                if os.path.splitext(f)[1].lower() in IMAGE_EXTS
-            ),
-            key=lambda f: (_date_taken(os.path.join(month_path, f)), f),
+            f
+            for f in os.listdir(month_path)
+            if os.path.splitext(f)[1].lower() in IMAGE_EXTS
         )
         if files:
             months.append((name, files))
@@ -263,7 +267,7 @@ def build() -> None:
 
     # Newest month first.
     for month_dir, files in sorted(months, reverse=True):
-        thumbs, fulls = [], []
+        thumbs, fulls, dates = [], [], []
         aspects = []
         web_dir = os.path.join(SRC_ROOT, WEB_SUBDIR, month_dir)
         ref_base = f"img/photo-journal/{WEB_SUBDIR}/{month_dir}"
@@ -278,6 +282,7 @@ def build() -> None:
             expected.add(os.path.abspath(thumb_path))
             fulls.append(f"{ref_base}/{stem}.jpg")
             thumbs.append(f"{ref_base}/{stem}.thumb.jpg")
+            dates.append(_date_taken_label(src_path))
             aspects.append(h / w)
 
         lines.append(f"## {_month_label(month_dir)}")
@@ -288,9 +293,11 @@ def build() -> None:
         narrow_cards, narrow_ratio = _scatter_layout(
             aspects, seed=f"{month_dir}-narrow", cols=2
         )
-        lines += _collage_div("photo-collage--wide", wide_cards, wide_ratio, thumbs, fulls)
         lines += _collage_div(
-            "photo-collage--narrow", narrow_cards, narrow_ratio, thumbs, fulls
+            "photo-collage--wide", wide_cards, wide_ratio, thumbs, fulls, dates
+        )
+        lines += _collage_div(
+            "photo-collage--narrow", narrow_cards, narrow_ratio, thumbs, fulls, dates
         )
         lines.append("")
 
@@ -303,16 +310,22 @@ def build() -> None:
 
 
 def _collage_div(
-    cls: str, cards: list[dict], stage_ratio: float, thumbs: list[str], fulls: list[str]
+    cls: str,
+    cards: list[dict],
+    stage_ratio: float,
+    thumbs: list[str],
+    fulls: list[str],
+    dates: list[str],
 ) -> list[str]:
     """Render one collage container (a positioned scatter) as markdown lines."""
     out = [f'<div class="photo-collage {cls}" style="aspect-ratio: {stage_ratio};">']
-    for thumb, full, card in zip(thumbs, fulls, cards):
+    for thumb, full, date, card in zip(thumbs, fulls, dates, cards):
+        date_attr = f' data-date="{date}"' if date else ""
         out.append(
             '  <figure class="photo-card" style="'
             f'left: {card["left"]}%; top: {card["top"]}%; '
             f'width: {card["width"]}%; --rot: {card["rot"]}deg;">'
-            f'<img src="{thumb}" data-full="{full}" loading="lazy" alt="">'
+            f'<img src="{thumb}" data-full="{full}"{date_attr} loading="lazy" alt="">'
             "</figure>"
         )
     out.append("</div>")
@@ -340,19 +353,23 @@ def _prune_web(expected: set[str]) -> None:
 # Click-to-zoom overlay. Self-contained so no template change is needed.
 LIGHTBOX_HTML = """<div class="photo-lightbox" id="photo-lightbox" aria-hidden="true">
   <img src="" alt="">
+  <div class="photo-lightbox-date"></div>
 </div>
 <script>
 (function () {
   var box = document.getElementById('photo-lightbox');
   var full = box.querySelector('img');
+  var date = box.querySelector('.photo-lightbox-date');
   function close() {
     box.classList.remove('open');
     box.setAttribute('aria-hidden', 'true');
     full.removeAttribute('src');
+    date.textContent = '';
   }
   document.querySelectorAll('.photo-collage .photo-card img').forEach(function (img) {
     img.addEventListener('click', function () {
       full.src = img.getAttribute('data-full') || img.currentSrc || img.src;
+      date.textContent = img.getAttribute('data-date') || '';
       box.classList.add('open');
       box.setAttribute('aria-hidden', 'false');
     });

@@ -178,6 +178,7 @@ img {
     position: fixed;
     inset: 0;
     z-index: 1000;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 4vmin;
@@ -194,8 +195,22 @@ img {
     width: auto;
     height: auto;
     max-width: 96vw;
-    max-height: 92vh;
+    max-height: 88vh;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* Sits in flow below the image so it never covers the photo. */
+.photo-lightbox-date {
+    margin-top: 1.6vmin;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.9rem;
+    letter-spacing: 0.03em;
+    pointer-events: none;
+}
+
+.photo-lightbox-date:empty {
+    display: none;
 }
 
 .post-content table {

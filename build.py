@@ -35,6 +35,7 @@ EXTERNAL_LINKS = {
     "email": "mailto:brchughtaii@gmail.com",
     "health": "https://bilals-health-dashboard-personal.streamlit.app/",
     "pay": "https://settleup.starlingbank.com/bilal-chughtai-10b70f",
+    "meet": "https://calendar.app.google/cLLGUdZfhceDNoBs5",
 }
 
 
