@@ -346,3 +346,56 @@
   wider: true
   disable_sidebar: true
   hide_word_count: true
+
+- label: cot-obfuscation
+  title: "Training on documents about monitoring leads to CoT obfuscation"
+  date: 2026-05-27
+  description: "Models finetuned on documents describing a CoT monitor learn to obfuscate their reasoning to evade it."
+  math: true
+  tags: ["ai", "research", "paper"]
+  coauthors: ["Reilly Haskins", "Josh Engels"]
+  elsewhere:
+    [
+      "https://www.lesswrong.com/posts/vmR9BZmyeFZCihbyx/paper-training-on-documents-about-monitoring-leads-to-cot",
+      "https://arxiv.org/abs/2605.15257"
+    ]
+
+- label: diffing-agents
+  title: "Building and evaluating model diffing agents"
+  date: 2026-06-12
+  description: "Simple LLM agents can reliably find interesting behavioural differences between pairs of models."
+  math: false
+  tags: ["ai", "interpretability", "research"]
+  coauthors: ["Josh Engels", "Neel Nanda"]
+  elsewhere:
+    [
+      "https://www.lesswrong.com/posts/qi4mNbZYAFDYwfRba/building-and-evaluating-model-diffing-agents"
+    ]
+
+- label: diffusiongemma
+  title: "How transparent is DiffusionGemma (and why it matters)"
+  date: 2026-06-20
+  description: "A transparency audit of GDM's new text diffusion model."
+  math: true
+  tags: ["ai", "interpretability", "research", "paper"]
+  coauthors:
+    [
+      "Josh Engels",
+      "Callum McDougall",
+      "János Kramár",
+      "Senthooran Rajamanoharan",
+      "Cindy Wu",
+      "Arthur Conmy",
+      "Asic Chen",
+      "Jean Tarbouriech",
+      "Min Ma",
+      "Brendan O'Donoghue",
+      "João Gabriel Lopes de Oliveira",
+      "Rohin Shah",
+      "Neel Nanda",
+    ]
+  elsewhere:
+    [
+      "https://www.lesswrong.com/posts/zoYXpdaMgFT43Wc24/how-transparent-is-diffusiongemma-and-why-it-matters",
+      "https://arxiv.org/abs/2606.20560"
+    ]

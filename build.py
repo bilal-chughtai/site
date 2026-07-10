@@ -544,6 +544,7 @@ def get_markdown_extensions(meta: PostMeta):
         "tables",
         "sane_lists",
         "footnotes",
+        "md_in_html",
     ]
 
     latex_ext: LatexExtension | None = None
