@@ -1,4 +1,4 @@
-*Last updated: July 10th 2026.*
+*Last updated: July 12th 2026.*
 
 <div class="tab-container reading-tabs">
 <input type="radio" id="reading-tab1" name="reading-tabs">
@@ -71,6 +71,7 @@
 <div class="tab-content" id="reading-online">
 <p class="link-heading">July 2026</p>
 <ul class="reading-list">
+<li><a href="https://jasminexli.substack.com/p/2026-h2-personal-goals?utm_source=post-email-title&amp;publication_id=2083039&amp;post_id=206554737&amp;utm_campaign=email-post-title&amp;isFreemail=true&amp;r=1o9kun&amp;triedRedirect=true&amp;utm_medium=email">my 2026 H2 personal goals - by Jasmine Li</a> <small>(jasminexli.substack.com)</small></li>
 <li><a href="https://benjamintodd.substack.com/p/ai-risk-interventions?utm_source=post-email-title&amp;publication_id=2577442&amp;post_id=205771920&amp;utm_campaign=email-post-title&amp;isFreemail=true&amp;r=1o9kun&amp;triedRedirect=true&amp;utm_medium=email">What would actually reduce AI risk</a> <small>(benjamintodd.substack.com)</small></li>
 <li><a href="https://blog.redwoodresearch.org/p/ai-futurism-reading-list?utm_source=post-email-title&amp;publication_id=2318730&amp;post_id=204724424&amp;utm_campaign=email-post-title&amp;isFreemail=true&amp;r=1o9kun&amp;triedRedirect=true&amp;utm_medium=email">AI Futurism Reading List</a> <small>(blog.redwoodresearch.org)</small></li>
 <li><a href="https://www.planned-obsolescence.org/p/im-never-satisfied?utm_source=post-email-title&amp;publication_id=3069806&amp;post_id=204798011&amp;utm_campaign=email-post-title&amp;isFreemail=true&amp;token=eyJ1c2VyX2lkIjoxMDEyMjM4ODcsInBvc3RfaWQiOjIwNDc5ODAxMSwiaWF0IjoxNzgzMDg3MjY2LCJleHAiOjE3ODU2NzkyNjYsImlzcyI6InB1Yi0zMDY5ODA2Iiwic3ViIjoicG9zdC1yZWFjdGlvbiJ9.l7DXUovZlmkV-FxNGB9wzlD-OgZ06SUBM2tK7dsraqM&amp;r=1o9kun&amp;triedRedirect=true&amp;utm_medium=email">I&#x27;m never satisfied - by Ajeya Cotra - Planned Obsolescence</a> <small>(planned-obsolescence.org)</small></li>

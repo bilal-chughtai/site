@@ -10,15 +10,15 @@ I like running races. Here is a log of all my races. More details on my [strava]
 | 25 Dec 2025 | parkrun | Sutcliffe Park | 5 km | 22:13 | | [link](https://www.strava.com/activities/16834897342) | |
 | 10 Jan 2026 | parkrun | Hackney Marshes | 5 km | 21:02 | ✅ | [link](https://www.strava.com/activities/16997461266) | [link](https://open.spotify.com/playlist/5Jaf5F43al5bhfwX3zj0ic?si=a15fc5b4398a4fd8) |
 | 15 Feb 2026 | River Thames Running | Hampton Court | Half Marathon | injured :( | | | |
-| 28 Mar 2026 | Kew the Run | Kew Gardens | 10 km | 47:12 | ✅ | [link](https://www.strava.com/activities/17885131348) | [link](https://open.spotify.com/playlist/1gIPYrbjWIxAXhVRtsi6aS?si=44123b3738ee456e) |
+| 28 Mar 2026 | Kew the Run | Kew Gardens | 10 km | 47:39 | ✅ | [link](https://www.strava.com/activities/17885131348) | [link](https://open.spotify.com/playlist/1gIPYrbjWIxAXhVRtsi6aS?si=44123b3738ee456e) |
 | 11 Apr 2026 | parkrun | Hampstead Heath | 5 km | 23:30 | | [link](https://www.strava.com/athletes/32291390?num_entries=10) |
 | 16 May 2026 | parkrun | Southwark | 5 km | 21:52 | | [link](https://www.strava.com/activities/18525524920) | |
+| 12 Jul 2026 | Saucony London 10k | Central London | 10 km | 47:35 | ✅ | [link](https://www.strava.com/activities/19279220395) | [link](https://open.spotify.com/playlist/5NVQRTmbYEPSyczVn5RyF4?si=0ee5df1db3674abc) |
 
 ## Upcoming
 
 | Date | Series | Location | Distance |
 |------|--------|----------|----------|
-| 12 Jul 2026 | Saucony London 10k | Central London | 10 km |
 | 13 Sep 2026 | Richmond Half Marathon | Richmond, London | Half Marathon |
 | 27 Sep 2026 | Vitality London 10k | Central London | 10 km |
 | 21 Feb 2027 | Seville Marathon | Seville, Spain | Marathon |
