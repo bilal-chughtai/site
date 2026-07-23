@@ -1,4 +1,4 @@
-*Last updated: July 12th 2026.*
+*Last updated: July 23rd 2026.*
 
 <div class="tab-container reading-tabs">
 <input type="radio" id="reading-tab1" name="reading-tabs">
@@ -71,6 +71,12 @@
 <div class="tab-content" id="reading-online">
 <p class="link-heading">July 2026</p>
 <ul class="reading-list">
+<li><a href="https://manifund.substack.com/p/dont-default-to-nonprofit?utm_source=post-email-title&amp;publication_id=1491799&amp;post_id=207466168&amp;utm_campaign=email-post-title&amp;isFreemail=true&amp;r=1o9kun&amp;triedRedirect=true&amp;utm_medium=email">Don&#x27;t default to nonprofit - by Carol and Austin Chen</a> <small>(manifund.substack.com)</small></li>
+<li><a href="https://www.disneyplus.com/identity/login/enter-email">Login to Disney+ | Login or Signup</a> <small>(disneyplus.com)</small></li>
+<li><a href="https://turntrout.com/why-i-left-google-deepmind">Why I Left Google DeepMind</a> <small>(turntrout.com)</small></li>
+<li><a href="https://notes.andymatuschak.org/zCMhncA1iSE74MKKYQS5PBZ">Work with the garage door up</a> <small>(notes.andymatuschak.org)</small></li>
+<li><a href="https://substack.com/home/post/p-206980597">A Framework for Frontier AI and the Dawning of a New Age</a> <small>(substack.com)</small></li>
+<li><a href="https://ealifestyles.substack.com/p/looking-around-the-kitchen?utm_source=post-email-title&amp;publication_id=1393327&amp;post_id=206904043&amp;utm_campaign=email-post-title&amp;isFreemail=true&amp;r=1o9kun&amp;triedRedirect=true&amp;utm_medium=email">Looking around the kitchen</a> <small>(ealifestyles.substack.com)</small></li>
 <li><a href="https://jasminexli.substack.com/p/2026-h2-personal-goals?utm_source=post-email-title&amp;publication_id=2083039&amp;post_id=206554737&amp;utm_campaign=email-post-title&amp;isFreemail=true&amp;r=1o9kun&amp;triedRedirect=true&amp;utm_medium=email">my 2026 H2 personal goals - by Jasmine Li</a> <small>(jasminexli.substack.com)</small></li>
 <li><a href="https://benjamintodd.substack.com/p/ai-risk-interventions?utm_source=post-email-title&amp;publication_id=2577442&amp;post_id=205771920&amp;utm_campaign=email-post-title&amp;isFreemail=true&amp;r=1o9kun&amp;triedRedirect=true&amp;utm_medium=email">What would actually reduce AI risk</a> <small>(benjamintodd.substack.com)</small></li>
 <li><a href="https://blog.redwoodresearch.org/p/ai-futurism-reading-list?utm_source=post-email-title&amp;publication_id=2318730&amp;post_id=204724424&amp;utm_campaign=email-post-title&amp;isFreemail=true&amp;r=1o9kun&amp;triedRedirect=true&amp;utm_medium=email">AI Futurism Reading List</a> <small>(blog.redwoodresearch.org)</small></li>
