@@ -399,3 +399,9 @@
       "https://www.lesswrong.com/posts/zoYXpdaMgFT43Wc24/how-transparent-is-diffusiongemma-and-why-it-matters",
       "https://arxiv.org/abs/2606.20560"
     ]
+- label: forgetful
+  title: "I'm organized because I'm forgetful"
+  date: 2026-08-14
+  description: "Scrutinizing why I am the way I am."
+  math: false
+  tags: ["productivity", "personal"]

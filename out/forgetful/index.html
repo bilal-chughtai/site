@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Scrutinizing why I am the way I am.">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+
+    <title>I'm organized because I'm forgetful - Bilal Chughtai</title>
+    
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NN7RTLBRKY"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-NN7RTLBRKY');
+</script>
+
+<body>
+    
+<header>
+    <nav>
+        <div class="site-name heading-font">Bilal Chughtai &mdash; <a href="../">home
+                page</a>
+        </div>
+    </nav>
+</header>
+
+    <div class="container">
+        <div class="column left">
+            <div class="sticky-div">
+                
+
+
+            </div>
+        </div>
+        <div class="column main">
+            <div class="collapsed-sidebar">
+                
+            </div>
+            <div class="content">
+                
+<article>
+    
+    <h2 class="post-title">I'm organized because I'm forgetful</h2>
+    <div class="post-meta">
+        
+        <p>
+            <time datetime="2026-08-14">14th August 2026</time>
+            &middot; 421
+                words &middot; 2 minute read </p>
+                <!-- <p class="post-summary"> <strong>Summary</strong>: Scrutinizing why I am the way I am.</p> -->
+    </div>
+
+    
+
+    <div class="post-content">
+        <p>Those who know me know that I'm very into <a href="/todo">systems</a> and process. This makes me very organised, and capable of orchestrating large and complex projects without dropping balls. I think it's one of my greatest comparative advantages.</p>
+<p>I recently found myself on a camping trip where I had decided to not take any devices. I found it pretty jarring to not have read or write access to my digital ecosystem of second brains. This got me thinking about how and why I ended up so dependent on them in the first place. Here is the best explanation I've yet come up with, and some thoughts about whether this is good.</p>
+<p>I think much of this is a direct consequence of some natural character traits of mine.</p>
+<ol>
+<li>I am by default forgetful. My 'storage' is limited.</li>
+<li>I can't hold much in my head. My 'working memory' is limited.</li>
+</ol>
+<p>Thus, if I don't have externalised systems for keeping track of everything I'm working on and need to do, I will:</p>
+<ul>
+<li>Drop balls somewhat randomly. I probably additionally view dropping balls to be more catastrophic than most.</li>
+<li>Be constantly distracted by the long list of future things I am meant to be doing. I will be stressed I am forgetting important things, or devote clock cycles to not-the-current-task, consuming precious and limited cognitive bandwidth.</li>
+</ul>
+<p><br/></p>
+<hr/>
+<p><br/></p>
+<p>There's a positive feedback loop here. Because I really need systems like my to-do list, I've become very good at building, maintaining and iterating on systems of this form over time. I think this is a useful skill for various types of work.</p>
+<p>But there's also a negative feedback loop. Because I externalise so much of my thinking and memory to external systems, I actively get away with having poor memory. During my maths degree, I was pretty good at memorising random pieces of 'bookwork' — proofs of theorems needed for <a href="https://en.wikipedia.org/wiki/Mathematical_Tripos">tripos</a> examinations. But since graduating, I've never actively trained the skill of having good memory. So I think I'm actively degrading here over time.</p>
+<p>I think this is probably costly. There are various types of work that benefit from both having good memory and high cognitive bandwidth. A salient example: lots of novel ideas come from holding multiple pieces of information simultaneously in working memory and seeing connections between them. To the extent that I have poor and worsening memory and cognitive bandwidth, this might lead to me being less creative in the long term.</p>
+<p>Maybe I will do something about this.</p>
+    </div>
+    
+<div class="footer">
+        
+        
+        
+    </div>
+</article>
+
+            </div>
+        </div>
+        <!--<div class="column right">
+            <div class="sticky-div">
+                
+            </div>
+        </div>-->
+    </div>
+    <footer></footer>
+
+    <!-- Footnote tooltip script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Create a single tooltip element
+            const tooltip = document.createElement('div');
+            tooltip.className = 'footnote-tooltip';
+            document.body.appendChild(tooltip);
+            let hideTimer;
+
+            function positionTooltip(ref) {
+                const rect = ref.getBoundingClientRect();
+                const scrollX = window.scrollX || window.pageXOffset;
+                const scrollY = window.scrollY || window.pageYOffset;
+                // Initial placement below the reference
+                let top = scrollY + rect.bottom + 8;
+                let left = scrollX + rect.left;
+                tooltip.style.top = top + 'px';
+                tooltip.style.left = left + 'px';
+                // Adjust if it overflows the right edge
+                const tt = tooltip.getBoundingClientRect();
+                const viewportWidth = document.documentElement.clientWidth;
+                if (tt.right > viewportWidth - 8) {
+                    const overflow = tt.right - (viewportWidth - 8);
+                    tooltip.style.left = (left - overflow) + 'px';
+                }
+                // Adjust if it overflows the left edge
+                if (tt.left < 8) {
+                    tooltip.style.left = (scrollX + 8) + 'px';
+                }
+            }
+
+            function showTooltip(ref) {
+                clearTimeout(hideTimer);
+                tooltip.innerHTML = ref.getAttribute('data-footnote');
+                tooltip.style.display = 'block';
+                positionTooltip(ref);
+            }
+
+            function hideTooltip() {
+                hideTimer = setTimeout(() => {
+                    tooltip.style.display = 'none';
+                }, 300); // 300ms delay before hiding
+            }
+
+            // Attach events to each footnote reference
+            document.querySelectorAll('a.footnote-ref').forEach(function (ref) {
+                ref.addEventListener('mouseenter', () => showTooltip(ref));
+                ref.addEventListener('mouseleave', hideTooltip);
+            });
+
+            // Keep tooltip open when hovering over it
+            tooltip.addEventListener('mouseenter', () => clearTimeout(hideTimer));
+            tooltip.addEventListener('mouseleave', hideTooltip);
+        });
+    </script>
+</body>
+
+</html>
