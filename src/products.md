@@ -1,4 +1,4 @@
-_Last updated: 4th May 2026_
+_Last updated: 27th August 2026_
 
 # Every Day Carry
 
@@ -50,6 +50,8 @@ _Last updated: 4th May 2026_
 
 # Office
 
+**[Flexispot E7 Pro Standing Desk](https://flexispot.co.uk/next-generation-standing-desk-e7-pro)**. Standing desk.
+
 **[Varier Variable Plus](https://www.backinaction.co.uk/variable-plus-kneeling-chair-stock#tab_VariablePlusINSTOCK_VariablePlusINSTOCK_LightBrown)**. Nice chair if, like me, you can't sit still. The plus comes with a back which imo is a nice addition.
 
 **[Mac Pro](https://www.apple.com/uk/macbook-pro/)**. Do I even need to justify this one?
@@ -87,6 +89,8 @@ _Last updated: 4th May 2026_
 **[Google Nest Mini](https://store.google.com/gb/config/google_nest_mini?hl=en-GB&selections=eyJwcm9kdWN0RmFtaWx5IjoiWjI5dloyeGxYMjVsYzNSZmJXbHVhUT09In0%3D)**. A cheapish way to start voice controlling your home. Also a decent speaker.
 
 **Hooks**. Things should have places. This reduces clutter and saves you time when finding things. Having that place be on your wall is an efficient use of space. I use [these](https://amzn.eu/d/8c4wyXn) and [this](https://www.amazon.co.uk/dp/B07W6SVDK7?th=1) but the exact brand is not important.
+
+**[BEAST Bin Bags](https://www.amazon.co.uk/dp/B0H3LMRQPR?th=1)**. Strong bin bags.
 
 **[Squatty Potty](https://amzn.eu/d/2vn5oFb)**. Unkink your colon while you poop.
 

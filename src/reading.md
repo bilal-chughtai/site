@@ -1,4 +1,4 @@
-*Last updated: August 14th 2026.*
+*Last updated: August 27th 2026.*
 
 <div class="tab-container reading-tabs">
 <input type="radio" id="reading-tab1" name="reading-tabs">
@@ -10,6 +10,7 @@
 <div class="tab-content" id="reading-books">
 <p class="link-heading">Currently Reading</p>
 <ul class="reading-list">
+<li><a href="https://www.goodreads.com/en/book/show/243642457-the-gentle-romance">The Gentle Romance: Stories of AI and humanity</a> <small>(Richard Ngo, 2025)</small></li>
 <li><a href="https://www.lesswrong.com/posts/4rSWMjW6MDWt28Qtc/review-good-strategy-bad-strategy">Good Strategy, Bad Strategy: The Difference and Why it Matters</a> <small>(Richard Rumelt, 2011)</small></li>
 </ul>
 <p class="link-heading">2026</p>
@@ -71,6 +72,12 @@
 <div class="tab-content" id="reading-online">
 <p class="link-heading">August 2026</p>
 <ul class="reading-list">
+<li><a href="https://www.lesswrong.com/posts/A2kJKqnHhh5Hq4p2S/we-must-remember-that-our-world-contains-hell">We Must Remember That Our World Contains Hell — LessWrong</a> <small>(lesswrong.com)</small></li>
+<li><a href="https://acotra.substack.com/p/six-thoughts-on-work?utm_source=post-email-title&amp;publication_id=7341286&amp;post_id=212104558&amp;utm_campaign=email-post-title&amp;isFreemail=true&amp;r=1o9kun&amp;triedRedirect=true&amp;utm_medium=email">Six thoughts on work - by Ajeya Cotra - Good Bones</a> <small>(acotra.substack.com)</small></li>
+<li><a href="https://www.lesswrong.com/posts/GRmvZsHXH4vaijPMv/four-llm-loss-functions-four-flavors-of-llm-misalignment">Four LLM loss functions → four flavors of LLM misalignment — LessWrong</a> <small>(lesswrong.com)</small></li>
+<li><a href="https://www.dwarkesh.com/p/era-of-continual-learning?utm_source=post-email-title&amp;publication_id=69345&amp;post_id=210233020&amp;utm_campaign=email-post-title&amp;isFreemail=true&amp;r=1o9kun&amp;triedRedirect=true&amp;utm_medium=email&amp;hide_intro_popup=true">8 Predictions for the Era of Continual Learning</a> <small>(dwarkesh.com)</small></li>
+<li><a href="https://www.planned-obsolescence.org/p/hurtling-through-2026?utm_source=post-email-title&amp;publication_id=3069806&amp;post_id=211149902&amp;utm_campaign=email-post-title&amp;isFreemail=true&amp;token=eyJ1c2VyX2lkIjoxMDEyMjM4ODcsInBvc3RfaWQiOjIxMTE0OTkwMiwiaWF0IjoxNzg2NzE2MzU4LCJleHAiOjE3ODkzMDgzNTgsImlzcyI6InB1Yi0zMDY5ODA2Iiwic3ViIjoicG9zdC1yZWFjdGlvbiJ9.0mVvLyh71oOrSoS7oYIuw3u_C4KrG1pffOR2vjJntww&amp;r=1o9kun&amp;triedRedirect=true&amp;utm_medium=email">Hurtling through 2026 - by Ajeya Cotra</a> <small>(planned-obsolescence.org)</small></li>
+<li><a href="https://blog.sentinel-team.org/p/chinese-company-delays-release-of?utm_source=post-email-title&amp;publication_id=2852775&amp;post_id=211583632&amp;utm_campaign=email-post-title&amp;isFreemail=true&amp;r=1o9kun&amp;triedRedirect=true&amp;utm_medium=email">🟡 Chinese company delays release of AI model weights, hackers use autonomous agents to compromise Taiwanese agencies, Trump cuts US participation in military exercises with South Korea || Global Risk</a> <small>(blog.sentinel-team.org)</small></li>
 <li><a href="https://peterhartree.substack.com/p/newsletter-7?utm_source=post-email-title&amp;publication_id=1577695&amp;post_id=208336757&amp;utm_campaign=email-post-title&amp;isFreemail=true&amp;r=1o9kun&amp;triedRedirect=true&amp;utm_medium=email">Newsletter #7 - Peter Hartree&#x27;s Substack</a> <small>(peterhartree.substack.com)</small></li>
 <li><a href="https://lilianang.substack.com/p/what-even-is-a-generalist?utm_source=post-email-title&amp;publication_id=7158754&amp;post_id=210970432&amp;utm_campaign=email-post-title&amp;isFreemail=true&amp;r=1o9kun&amp;triedRedirect=true&amp;utm_medium=email">What even is a generalist? - Li-Lian Ang</a> <small>(lilianang.substack.com)</small></li>
 <li><a href="https://us2.campaign-archive.com/?e=4d70a632d4&amp;u=aba12f58bbe8075560abdc5b7&amp;id=603c6550f4">The anxiety trap that stops good people from doing good work</a> <small>(us2.campaign-archive.com)</small></li>
