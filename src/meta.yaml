@@ -405,3 +405,10 @@
   description: "Scrutinizing why I am the way I am."
   math: false
   tags: ["productivity", "personal"]
+
+- label: gardening-leave
+  title: "What I got up to on my gardening leave"
+  date: 2026-08-31
+  description: "Side-quest maxing."
+  math: false
+  tags: ["personal"]
