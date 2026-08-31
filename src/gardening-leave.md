@@ -1,6 +1,7 @@
 I recently left my job at Google DeepMind (more on this soon). As such, I was on gardening leave from July 16th through until August 31st before being allowed to start working elsewhere. 
 
 Here is an approximately chronological log of what I got up to.
+
 - Climbed Mount Snowdon.
 - Walked a stretch of the Anglesey coastal path.
 - Saw some puffins.
@@ -41,6 +42,7 @@ Here is an approximately chronological log of what I got up to.
 - Starting thinking seriously about whether I should go vegan.
 
 And here are some summary stats for the period:
+
 - Walked 1,012,043 steps (average: 21,533 a day).
 - Hiked 275 km, over 9 walking days.
 - Ran 133 km.
