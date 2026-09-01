@@ -34,7 +34,7 @@ EXTERNAL_LINKS = {
     "scholar": "https://scholar.google.com/citations?user=i-L98bwAAAAJ&hl=en",
     "email": "mailto:brchughtaii@gmail.com",
     "health": "https://bilals-health-dashboard-personal.streamlit.app/",
-    "meet": "https://calendar.app.google/cLLGUdZfhceDNoBs5",
+    "meet": "https://calendar.app.google/VDuaTQJWnEAxVz9A6",
 }
 
 
