@@ -32,7 +32,7 @@ Here is an approximately chronological log of what I got up to.
 - Mostly failed to pick blackberries in Brockwell Park. Drought :(
 - Did a quarterly review and planning session.
 - Helped 4 friends move into my house.
-- Hosted a [housewarming](https://x.com/wilhelmscreamin/status/2093735965206479346) [party](https://x.com/wilhelmscreamin) to celebrate the above.
+- Hosted a [housewarming](https://x.com/wilhelmscreamin/status/2093735965206479346) [party](https://x.com/wilhelmscreamin/status/2094030725636846026) to celebrate the above.
 - Ran 2 house meetings.
 - Made my house run more smoothly day to day in various ways.
 - Gave 5 people who are thinking about leaving their jobs detailed career advice.
