@@ -412,3 +412,10 @@
   description: "Side quest maxing."
   math: false
   tags: ["personal"]
+
+- label: leaving-gdm
+  title: "Statement on leaving Google DeepMind"
+  date: 2026-09-14
+  description: "Why I resigned, and why I think AI risk is the most important problem facing humanity this century."
+  math: false
+  tags: ["ai", "careers"]

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <meta name="description" content="Why I resigned, and why I think AI risk is the most important problem facing humanity this century.">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+
+    <title>Statement on leaving Google DeepMind - Bilal Chughtai</title>
+    
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NN7RTLBRKY"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-NN7RTLBRKY');
+</script>
+
+<body>
+    
+<header>
+    <nav>
+        <div class="site-name heading-font">Bilal Chughtai &mdash; <a href="../">home
+                page</a>
+        </div>
+    </nav>
+</header>
+
+    <div class="container">
+        <div class="column left">
+            <div class="sticky-div">
+                
+
+
+            </div>
+        </div>
+        <div class="column main">
+            <div class="collapsed-sidebar">
+                
+            </div>
+            <div class="content">
+                
+<article>
+    
+    <h2 class="post-title">Statement on leaving Google DeepMind</h2>
+    <div class="post-meta">
+        
+        <p>
+            <time datetime="2026-09-14">14th September 2026</time>
+            &middot; 423
+                words &middot; 2 minute read </p>
+                <!-- <p class="post-summary"> <strong>Summary</strong>: Why I resigned, and why I think AI risk is the most important problem facing humanity this century.</p> -->
+    </div>
+
+    
+
+    <div class="post-content">
+        <p>I recently resigned from Google DeepMind, where I worked on AGI safety and alignment research. At Google, I witnessed AI development firsthand. I too am extremely concerned by the default trajectory of this technology. I earnestly believe that AI has the potential to kill us all, and that we might be running out of time to avoid this outcome.</p>
+<p>The pace of AI progress in the past few years has been staggering. When I first started working on AI in early 2022, AIs were amusingly useless. Just four years on, AI agent swarms from OpenAI are cracking famous century-old math problems and, more worryingly, escaping the control of OpenAI and autonomously hacking into the third-party company HuggingFace, against anyone's wishes.</p>
+<p>Things will only get crazier: I think it's possible that the AI companies might, in the next few years, succeed in building superintelligent AI systems that far exceed human capabilities in every domain. I am not confident that these AI systems will do what we want. In particular, misaligned superintelligences may, much like the rogue AI agents involved in the HuggingFace incident, escape our control and take dangerous actions that may result in the permanent disempowerment or death of humanity. Alignment is the problem of preventing this, and is both difficult and unsolved. Our present understanding of how to train AI systems that deeply want what we want, is extremely rudimentary. Worse, we are not on track to solve alignment in time: frontier AI capabilities are improving much faster than our understanding of AI alignment.</p>
+<p>I am optimistic that navigating AI safely is possible. In order to do so, we need to coordinate to avoid this manic race between AI companies. We need to pace AI development to a speed that society can handle, where emerging risks can be addressed before extreme harm is realised. We need much more transparency into AI development to ensure that AI companies are not imposing unacceptable levels of risk on us all.</p>
+<p>More broadly, we need many more people thinking carefully about the problem of making AI go well. It is, in my view, the most important problem facing humanity this century, and the stakes are immense. I'm very directly working on this next: I want to help people interested in working on mitigating catastrophic AI threats do the most effective work that they can. I think many people from many backgrounds in many roles have a part to play.</p>
+<p>If you're currently feeling concerned about AI and want to learn more, I recommend <a href="https://80000hours.org/ai/">this reading list</a>.</p>
+    </div>
+    
+<div class="footer">
+        
+        
+        
+    </div>
+</article>
+
+            </div>
+        </div>
+        <!--<div class="column right">
+            <div class="sticky-div">
+                
+            </div>
+        </div>-->
+    </div>
+    <footer></footer>
+
+    <!-- Footnote tooltip script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Create a single tooltip element
+            const tooltip = document.createElement('div');
+            tooltip.className = 'footnote-tooltip';
+            document.body.appendChild(tooltip);
+            let hideTimer;
+
+            function positionTooltip(ref) {
+                const rect = ref.getBoundingClientRect();
+                const scrollX = window.scrollX || window.pageXOffset;
+                const scrollY = window.scrollY || window.pageYOffset;
+                // Initial placement below the reference
+                let top = scrollY + rect.bottom + 8;
+                let left = scrollX + rect.left;
+                tooltip.style.top = top + 'px';
+                tooltip.style.left = left + 'px';
+                // Adjust if it overflows the right edge
+                const tt = tooltip.getBoundingClientRect();
+                const viewportWidth = document.documentElement.clientWidth;
+                if (tt.right > viewportWidth - 8) {
+                    const overflow = tt.right - (viewportWidth - 8);
+                    tooltip.style.left = (left - overflow) + 'px';
+                }
+                // Adjust if it overflows the left edge
+                if (tt.left < 8) {
+                    tooltip.style.left = (scrollX + 8) + 'px';
+                }
+            }
+
+            function showTooltip(ref) {
+                clearTimeout(hideTimer);
+                tooltip.innerHTML = ref.getAttribute('data-footnote');
+                tooltip.style.display = 'block';
+                positionTooltip(ref);
+            }
+
+            function hideTooltip() {
+                hideTimer = setTimeout(() => {
+                    tooltip.style.display = 'none';
+                }, 300); // 300ms delay before hiding
+            }
+
+            // Attach events to each footnote reference
+            document.querySelectorAll('a.footnote-ref').forEach(function (ref) {
+                ref.addEventListener('mouseenter', () => showTooltip(ref));
+                ref.addEventListener('mouseleave', hideTooltip);
+            });
+
+            // Keep tooltip open when hovering over it
+            tooltip.addEventListener('mouseenter', () => clearTimeout(hideTimer));
+            tooltip.addEventListener('mouseleave', hideTooltip);
+        });
+    </script>
+</body>
+
+</html>
