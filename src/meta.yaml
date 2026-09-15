@@ -117,13 +117,6 @@
   coauthors:
     ["Joseph Miller", "William Saunders"]
 
-- label: intellectual-progress-2024
-  title: "Intellectual progress in 2024"
-  date: 2025-01-11
-  description: "Things I thought about and learned about in 2024."
-  math: false
-  tags: ["personal"]
-  
 - label: cuplc
   title: "CUPLC website enhancements"
   date: 2023-09-01
