@@ -1,4 +1,4 @@
-_Last updated: 27th August 2026_
+_Last updated: 7th November 2026_
 
 # Every Day Carry
 
@@ -119,6 +119,10 @@ _Last updated: 27th August 2026_
 **[Lululemon Pace Breaker Lined Short 5"](https://www.lululemon.co.uk/en-gb/p/pace-breaker-lined-short-5%22/prod11400108.html?dwvar_prod11400108_color=68839)**. Comfortable running shorts with a built-in liner.
 
 **[Shokz OpenRun Pro 2](https://uk.shokz.com/products/openrun-pro2?variant=50009478037837)**. Open-ear bone conduction headphones. Hear traffic and surroundings while running on roads or cycling. More in my [headphones post](/headphones).
+
+# Climbing
+
+**[Black Diamond Mondo Chalk Pot](https://eu.blackdiamondequipment.com/products/mondo-chalk-pot)**. Big, stable chalk bucket for bouldering sessions.
 
 # Bike
 

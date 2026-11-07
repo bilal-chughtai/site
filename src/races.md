@@ -14,12 +14,12 @@ I like running races. Here is a log of all my races. More details on my [strava]
 | 11 Apr 2026 | parkrun | Hampstead Heath | 5 km | 23:30 | | [link](https://www.strava.com/athletes/32291390?num_entries=10) |
 | 16 May 2026 | parkrun | Southwark | 5 km | 21:52 | | [link](https://www.strava.com/activities/18525524920) | |
 | 12 Jul 2026 | Saucony London 10k | Central London | 10 km | 47:35 | ✅ | [link](https://www.strava.com/activities/19279220395) | [link](https://open.spotify.com/playlist/5NVQRTmbYEPSyczVn5RyF4?si=0ee5df1db3674abc) |
+| 13 Sep 2026 | Richmond Half Marathon | Richmond, London | Half Marathon | 1:48:23 | ✅ | | |
+| 27 Sep 2026 | Vitality London 10k | Central London | 10 km | skipped | | | |
 
 ## Upcoming
 
 | Date | Series | Location | Distance |
 |------|--------|----------|----------|
-| 13 Sep 2026 | Richmond Half Marathon | Richmond, London | Half Marathon |
-| 27 Sep 2026 | Vitality London 10k | Central London | 10 km |
 | 21 Feb 2027 | Seville Marathon | Seville, Spain | Marathon |
 | 5 Sep 2027 | The Big Half | London | Half Marathon |

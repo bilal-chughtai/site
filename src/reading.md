@@ -1,4 +1,4 @@
-*Last updated: September 14th 2026.*
+*Last updated: November 7th 2026.*
 
 <div class="tab-container reading-tabs">
 <input type="radio" id="reading-tab1" name="reading-tabs">
@@ -70,8 +70,55 @@
 </ul>
 </div>
 <div class="tab-content" id="reading-online">
+<p class="link-heading">November 2026</p>
+<ul class="reading-list">
+<li><a href="https://www.lesswrong.com/posts/mmHctwkKjpvaQdC3c/what-should-you-change-in-response-to-an-emergency-and-ai">What should you change in response to an &quot;emergency&quot;? And AI risk — LessWrong</a> <small>(lesswrong.com)</small></li>
+<li><a href="https://www.lesswrong.com/posts/xud7Mti9jS4tbWqQE/hierarchical-agency-a-missing-piece-in-ai-alignment">Hierarchical Agency: A Missing Piece in AI Alignment — LessWrong</a> <small>(lesswrong.com)</small></li>
+<li><a href="https://strangecities.substack.com/p/racing-down-a-mountain-in-the-fog?utm_source=post-email-title&amp;publication_id=2695785&amp;post_id=223088184&amp;utm_campaign=email-post-title&amp;isFreemail=true&amp;r=1o9kun&amp;triedRedirect=true&amp;utm_medium=email">Racing down a mountain in the fog</a> <small>(strangecities.substack.com)</small></li>
+<li><a href="https://www.lesswrong.com/posts/oL7aFoRmRXGwEMhCm/microdosing-the-spirit-of-anthropic">Microdosing the spirit of Anthropic — LessWrong</a> <small>(lesswrong.com)</small></li>
+</ul>
+<p class="link-heading">October 2026</p>
+<ul class="reading-list">
+<li><a href="https://dynomight.substack.com/p/math?utm_source=post-email-title&amp;publication_id=327510&amp;post_id=222196124&amp;utm_campaign=email-post-title&amp;isFreemail=true&amp;r=1o9kun&amp;triedRedirect=true&amp;utm_medium=email">Scattered thoughts on how doing math feels these days</a> <small>(dynomight.substack.com)</small></li>
+<li><a href="https://acotra.substack.com/p/reviewing-hugging-face-explainers?utm_source=post-email-title&amp;publication_id=7341286&amp;post_id=222749671&amp;utm_campaign=email-post-title&amp;isFreemail=true&amp;r=1o9kun&amp;triedRedirect=true&amp;utm_medium=email">Reviewing Hugging Face explainers</a> <small>(acotra.substack.com)</small></li>
+<li><a href="https://www.lesswrong.com/posts/F3P5BSjNeAazKB7wm/reconceptualize-things-as-your-top-affordances">Reconceptualize things as your top affordances — LessWrong</a> <small>(lesswrong.com)</small></li>
+<li><a href="https://nothinghuman.substack.com/p/some-memories-of-early-anthropic">Some Memories of Early Anthropic - by Ivan Vendrov</a> <small>(nothinghuman.substack.com)</small></li>
+<li><a href="https://lunamustfa.substack.com/p/initial-thoughts-from-the-bay-area?utm_source=post-email-title&amp;publication_id=10059872&amp;post_id=221269140&amp;utm_campaign=email-post-title&amp;isFreemail=true&amp;r=1o9kun&amp;triedRedirect=true&amp;utm_medium=email">(1) Thoughts from the Bay Area - Luna Moss</a> <small>(lunamustfa.substack.com)</small></li>
+<li><a href="https://acotra.substack.com/p/the-art-of-the-epistemic-deal?utm_source=post-email-title&amp;publication_id=7341286&amp;post_id=221768374&amp;utm_campaign=email-post-title&amp;isFreemail=true&amp;r=1o9kun&amp;triedRedirect=true&amp;utm_medium=email">The art of the epistemic deal - by Ajeya Cotra - Good Bones</a> <small>(acotra.substack.com)</small></li>
+<li><a href="https://sorenmindermann.substack.com/p/why-im-becoming-a-professor-in-ai">Why I’m becoming a professor in AI safety in Beijing</a> <small>(sorenmindermann.substack.com)</small></li>
+<li><a href="https://substack.com/home/post/p-220147307">Dear Rina: I also have some travel thoughts. - by Luna</a> <small>(substack.com)</small></li>
+<li><a href="https://www.youtube.com/watch?v=IYc9DElFe74">Viatopia by William MacAskill</a> <small>(youtube.com)</small></li>
+<li><a href="https://www.lesswrong.com/posts/uFBhZhdKLaZ6qF8mn/there-will-be-hells">There Will Be Hells — LessWrong</a> <small>(lesswrong.com)</small></li>
+<li><a href="https://www.lesswrong.com/posts/cM2bansJp9cMK3TNj/the-power-to-punish">The Power to Punish — LessWrong</a> <small>(lesswrong.com)</small></li>
+<li><a href="https://www.lesswrong.com/posts/HpaDhCWtXLXKJs8t6/perspectives-in-favour-of-improving-conceptual-reasoning">Perspectives in favour of improving conceptual reasoning capabilities — LessWrong</a> <small>(lesswrong.com)</small></li>
+<li><a href="https://www.lesswrong.com/s/gFvira6tHpLXnqCLH/p/2MD3NMLBPCqPfnfre">Cached Thoughts — LessWrong</a> <small>(lesswrong.com)</small></li>
+<li><a href="https://gowers.wordpress.com/2026/10/16/how-worried-should-we-be-about-extinction-risk-from-ai/">How worried should we be about extinction risk from AI?</a> <small>(gowers.wordpress.com)</small></li>
+<li><a href="https://www.cold-takes.com/minimal-trust-investigations/">Minimal-trust investigations</a> <small>(cold-takes.com)</small></li>
+<li><a href="https://newsletter.danielpaleka.com/p/the-math-that-openai-keeps-for-itself?utm_source=post-email-title&amp;publication_id=1219827&amp;post_id=220484819&amp;utm_campaign=email-post-title&amp;isFreemail=true&amp;r=1o9kun&amp;triedRedirect=true&amp;utm_medium=email">The math that OpenAI keeps for itself</a> <small>(newsletter.danielpaleka.com)</small></li>
+<li><a href="https://www.cold-takes.com/learning-by-writing/">Learning By Writing</a> <small>(cold-takes.com)</small></li>
+<li><a href="https://www.lesswrong.com/posts/rzqACeBGycZtqCfaX/fun-with-12-ooms-of-compute">Fun with +12 OOMs of Compute — LessWrong</a> <small>(lesswrong.com)</small></li>
+<li><a href="https://mindingourway.com/failing-with-abandon/amp/">Failing with Abandon</a> <small>(mindingourway.com)</small></li>
+<li><a href="https://forum.effectivealtruism.org/posts/c5Qcf8gcbFFHCfZNC/40-hot-takes">40 hot takes — EA Forum</a> <small>(forum.effectivealtruism.org)</small></li>
+<li><a href="https://www.lesswrong.com/posts/AAnLpPekcLkXAr5FQ/do-you-have-any-ideas">Do you have any ideas? — LessWrong</a> <small>(lesswrong.com)</small></li>
+<li><a href="https://www.lesswrong.com/posts/LrAqM4bGmAoA79rP3/quantity-vs-quality-in-pottery-is-a-lie">Quantity vs quality in pottery is a lie — LessWrong</a> <small>(lesswrong.com)</small></li>
+<li><a href="https://www.lesswrong.com/posts/xyg3ecpFNuGr5q8Zq/labs-current-alignment-plans-seem-terrible">Labs’ current alignment plans seem terrible — LessWrong</a> <small>(lesswrong.com)</small></li>
+<li><a href="https://www.lesswrong.com/posts/pRkFkzwKZ2zfa3R6H/without-specific-countermeasures-the-easiest-path-to">Without specific countermeasures, the easiest path to transformative AI likely leads to AI takeover — LessWrong</a> <small>(lesswrong.com)</small></li>
+<li><a href="https://www.lesswrong.com/posts/eSMburFT9eRxHWijf/asi-and-liberty-can-we-do-better-than-a-benevolent-god">ASI and Liberty: Can we do better than a benevolent god? — LessWrong</a> <small>(lesswrong.com)</small></li>
+<li><a href="https://acotra.substack.com/p/perfunctory-goodbyes?utm_source=post-email-title&amp;publication_id=7341286&amp;post_id=219550076&amp;utm_campaign=email-post-title&amp;isFreemail=true&amp;r=1o9kun&amp;triedRedirect=true&amp;utm_medium=email">Perfunctory goodbyes</a> <small>(acotra.substack.com)</small></li>
+<li><a href="https://lilianang.substack.com/p/how-i-plan-my-week-in-one-hour?utm_source=post-email-title&amp;publication_id=7158754&amp;post_id=219365768&amp;utm_campaign=email-post-title&amp;isFreemail=true&amp;r=1o9kun&amp;triedRedirect=true&amp;utm_medium=email">How I plan my week in one hour</a> <small>(lilianang.substack.com)</small></li>
+<li><a href="https://www.lesswrong.com/posts/FogmcDHA6AdMGukum/alignment-engineering-vs-misalignment-science">“Alignment Engineering” vs. “Misalignment Science” — LessWrong</a> <small>(lesswrong.com)</small></li>
+<li><a href="https://acotra.substack.com/p/we-can-get-on-the-same-page?utm_source=post-email-title&amp;publication_id=7341286&amp;post_id=218467166&amp;utm_campaign=email-post-title&amp;isFreemail=true&amp;r=1o9kun&amp;triedRedirect=true&amp;utm_medium=email">We can get on the same page - by Ajeya Cotra - Good Bones</a> <small>(acotra.substack.com)</small></li>
+<li><a href="https://blog.aifutures.org/p/senate-testimony-sept-2026?utm_source=post-email-title&amp;publication_id=3475640&amp;post_id=218462597&amp;utm_campaign=email-post-title&amp;isFreemail=true&amp;r=1o9kun&amp;triedRedirect=true&amp;utm_medium=email">Senate Testimony Sept 2026</a> <small>(blog.aifutures.org)</small></li>
+</ul>
 <p class="link-heading">September 2026</p>
 <ul class="reading-list">
+<li><a href="https://www.planned-obsolescence.org/p/evidence-about-risk-should-be-transparent?utm_source=post-email-title&amp;publication_id=3069806&amp;post_id=217465722&amp;utm_campaign=email-post-title&amp;isFreemail=true&amp;r=1o9kun&amp;triedRedirect=true&amp;utm_medium=email">Evidence about risk should be transparent</a> <small>(planned-obsolescence.org)</small></li>
+<li><a href="https://www.lesswrong.com/posts/XFzqDJjAJBt8fkn8i/common-mistakes-in-ai-safety-group-organizing">Common mistakes in AI safety group organizing — LessWrong</a> <small>(lesswrong.com)</small></li>
+<li><a href="https://www.youtube.com/watch?v=6AgOfiZOWiY&amp;t=427s">OpenAI researcher on agent swarms &amp; recursive self-improvement</a> <small>(youtube.com)</small></li>
+<li><a href="https://nablatheta.substack.com/p/weve-saved-the-world-before?utm_source=post-email-title&amp;publication_id=595913&amp;post_id=194216116&amp;utm_campaign=email-post-title&amp;isFreemail=true&amp;r=1o9kun&amp;triedRedirect=true&amp;utm_medium=email">We’ve saved the world before</a> <small>(nablatheta.substack.com)</small></li>
+<li><a href="https://acotra.substack.com/p/what-is-love?utm_source=post-email-title&amp;publication_id=7341286&amp;post_id=216275950&amp;utm_campaign=email-post-title&amp;isFreemail=true&amp;r=1o9kun&amp;triedRedirect=true&amp;utm_medium=email">What is love?</a> <small>(acotra.substack.com)</small></li>
+<li><a href="https://www.lesswrong.com/posts/nKsyMfNsAuTrxmjmi/quick-notes-from-teaching-technical-profiles-how-to-talk-in">Quick notes from teaching technical profiles how to talk in public — LessWrong</a> <small>(lesswrong.com)</small></li>
+<li><a href="https://www.dwarkesh.com/p/openai-huggingface?utm_source=post-email-title&amp;publication_id=69345&amp;post_id=213336662&amp;utm_campaign=email-post-title&amp;isFreemail=true&amp;r=1o9kun&amp;triedRedirect=true&amp;utm_medium=email">The Rise and Fall of Agent Civilizations</a> <small>(dwarkesh.com)</small></li>
 <li><a href="https://benjamintodd.substack.com/p/what-the-world-still-misunderstands?utm_source=post-email-title&amp;publication_id=2577442&amp;post_id=215155630&amp;utm_campaign=email-post-title&amp;isFreemail=true&amp;r=1o9kun&amp;triedRedirect=true&amp;utm_medium=email">What the world still misunderstands about Hugging Face</a> <small>(benjamintodd.substack.com)</small></li>
 <li><a href="https://www.youtube.com/watch?v=-RXD4bTuFTo&amp;t=4712s">Ryan Greenblatt – What happens once AI can automate AI research? - YouTube</a> <small>(youtube.com)</small></li>
 <li><a href="https://jasminexli.substack.com/p/ai-safety-in-china-a-primer?utm_source=post-email-title&amp;publication_id=2083039&amp;post_id=213774410&amp;utm_campaign=email-post-title&amp;isFreemail=true&amp;r=1o9kun&amp;triedRedirect=true&amp;utm_medium=email">AI Safety in China: A Primer</a> <small>(jasminexli.substack.com)</small></li>

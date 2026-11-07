@@ -9,3 +9,4 @@ venv
 .DS_Store
 .env
 src/img/photo-journal/web/
+.local_build_stamp
